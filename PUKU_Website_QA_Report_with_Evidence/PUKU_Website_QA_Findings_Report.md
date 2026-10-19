@@ -375,7 +375,6 @@ The strip spans much more widely than the site's other content sections, weakeni
 
 The user reports that there is **no longer a way to report an issue as there was before**. The previous entry point appears to have been removed or is no longer discoverable.
 
-Because the earlier location and exact interaction are not provided in the screenshots, this finding records the loss of the reporting capability as reported; it does not assume a particular button location or backend implementation.
 
 #### Expected behavior
 
