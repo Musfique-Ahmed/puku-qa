@@ -1,0 +1,198 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e23]:
+        - button "Switch to dark theme" [ref=e25]
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /login?next=%2Fpuku-app
+        - link "Download" [ref=e29] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e31]:
+    - main [ref=e32]:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: PREVIEW
+          - generic [ref=e40]: Puku App · iOS TestFlight is open →
+        - heading "Your agents, in your pocket." [level=1] [ref=e41]:
+          - generic [aria-hidden] [ref=e42]:
+            - generic [ref=e43]: Your
+            - generic [ref=e45]: agents,
+            - generic [ref=e47]: in
+            - generic [ref=e49]: your
+            - generic [ref=e51]: pocket.
+        - paragraph [ref=e53]: A mobile preview for chats, attachments, projects, and dictated prompts. Installation is coming soon.
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - textbox "Email" [ref=e57]:
+              - /placeholder: you@company.com
+            - button "Join the preview" [ref=e58]
+          - status [ref=e59]: iOS via TestFlight first, Android next. One email when your invite is ready.
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e65]: 04 / 04
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - generic [ref=e69]: 9:41
+              - generic [ref=e70]: ●●●
+            - generic [ref=e71]:
+              - generic [ref=e72]: Sessions
+              - generic [ref=e73]: 1 needs you
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - text: NEEDS APPROVAL
+                - generic [ref=e76]: swipe →
+              - generic [ref=e77]: Run migrations on staging?
+              - generic [ref=e78]: $ npx prisma migrate deploy
+              - generic [ref=e79]:
+                - button "Approve" [ref=e80]
+                - button "Deny" [ref=e81]
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - generic [ref=e84]: Flask reminder API
+                - generic [ref=e85]: ● running
+              - generic [ref=e86]: 3 subagents · started 14s ago
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - generic [ref=e91]: Build mobile navigation
+                - generic [ref=e92]: done
+              - generic [ref=e93]: "+214 −38 · PR #82 opened"
+        - paragraph [ref=e96]:
+          - generic [ref=e97]: Check in from your phone.
+          - text: Approve a command, answer a question, or read the PR from anywhere. Your sessions keep running on your machine. Try it — tap Approve or swipe the card.
+      - generic [ref=e99]:
+        - generic [ref=e101]:
+          - generic [ref=e106]: Approve on the go
+          - generic [ref=e107]: Run once, always allow, or skip. The CLI resumes the second you tap.
+        - generic [ref=e109]:
+          - generic [ref=e113]: Live runs
+          - generic [ref=e114]: Follow each step of an Editor or CLI session as it happens.
+        - generic [ref=e116]:
+          - generic [ref=e121]: Quiet notifications
+          - generic [ref=e122]: Only when something needs you. Everything else waits in Now.
+        - generic [ref=e124]:
+          - generic [ref=e129]: Chat anywhere
+          - generic [ref=e130]: Your Puku Chat history, synced, with voice input.
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - generic [ref=e134]: ROADMAP
+          - heading "Where the preview is going." [level=2] [ref=e135]
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - generic [ref=e138]: NOW
+            - generic [ref=e140]: Chats, attachments, projects
+            - generic [ref=e141]: TestFlight preview
+          - generic [ref=e142]:
+            - generic [ref=e143]: NEXT
+            - generic [ref=e144]: Dictated prompts, approvals, live runs
+            - generic [ref=e145]: In testing
+          - generic [ref=e146]:
+            - generic [ref=e147]: LATER
+            - generic [ref=e148]: App Store and Android
+            - generic [ref=e149]: Installation coming soon
+      - generic [ref=e152]:
+        - img "Puku" [ref=e155]
+        - heading "Join the App preview." [level=2] [ref=e156]:
+          - generic [aria-hidden] [ref=e157]:
+            - generic [ref=e158]: Join
+            - generic [ref=e160]: the
+            - generic [ref=e162]: App
+            - generic [ref=e164]: preview.
+        - paragraph [ref=e167]: Chats, attachments, projects and dictated prompts on iPhone.
+        - generic [ref=e168]:
+          - link "Join TestFlight" [ref=e170] [cursor=pointer]:
+            - /url: "#top"
+          - link "TestFlight preview · iOS" [ref=e172] [cursor=pointer]:
+            - /url: /changelog
+    - contentinfo [ref=e173]:
+      - generic [ref=e176]:
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - link "Puku Puku" [ref=e179] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e180]
+              - generic [ref=e181]: Puku
+            - paragraph [ref=e182]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e184]:
+              - radio "system" [ref=e185]
+              - radio "light" [checked] [ref=e186]
+              - radio "dark" [ref=e188]
+          - generic [ref=e189]:
+            - generic [ref=e190]:
+              - generic [ref=e191]: PRODUCT
+              - link "Puku Editor" [ref=e192] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e194] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e196] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e198] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e200] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e202]:
+              - generic [ref=e203]: RESOURCES
+              - link "Docs" [ref=e204] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e206] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e208] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e210] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e212] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e214]:
+              - generic [ref=e215]: COMPANY
+              - link "About" [ref=e216] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e218] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e220] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e222]: Careers · soon
+            - generic [ref=e223]:
+              - generic [ref=e224]: LEGAL
+              - link "Terms" [ref=e225] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e227] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e229] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e231]:
+          - generic [ref=e232]:
+            - generic [ref=e233]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e234]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e235]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e236]
+          - generic [ref=e237]:
+            - generic [ref=e238]:
+              - link "Discord" [ref=e239] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e240]:
+              - link "YouTube" [ref=e241] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e243] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

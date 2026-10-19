@@ -1,0 +1,47 @@
+### Page
+- Page URL: https://web.dev.puku.sh/email-sent?next=%2F
+- Page Title: Puku
+### Snapshot
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#main-content"
+      - generic [ref=e5]:
+        - link "Puku home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: Puku
+        - navigation "Main" [ref=e8]:
+          - list [ref=e9]:
+            - listitem [ref=e10]:
+              - button "Product" [ref=e11]
+            - listitem [ref=e14]:
+              - link "Pricing" [ref=e15] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e16]:
+              - button "Docs" [ref=e17]
+            - listitem [ref=e20]:
+              - button "Resources" [ref=e21]
+            - listitem [ref=e24]:
+              - link "Contact" [ref=e25] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e26]:
+          - link "Sign in" [ref=e28] [cursor=pointer]:
+            - /url: /login?next=%2Femail-sent
+          - link "Download" [ref=e29] [cursor=pointer]:
+            - /url: /download?platform=win32-x64
+          - 'button "Theme: system. Switch to light" [ref=e31] [cursor=pointer]'
+    - main [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e60]:
+          - heading "Check your email" [level=1] [ref=e61]
+          - paragraph [ref=e62]: We sent a sign-in link to puku-qa-1792408633@maxxspace.com. Open it in this browser to finish signing in. The link expires in 15 minutes.
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - button "Resend in 30s" [disabled]
+            - paragraph [ref=e66]: Didn't get it? Check your spam folder, then resend the email.
+          - link "Back to all sign-in options" [ref=e67] [cursor=pointer]:
+            - /url: /login
+  - alert [ref=e33]
+```

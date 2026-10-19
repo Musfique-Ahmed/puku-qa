@@ -1,0 +1,194 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner:
+      - navigation "Main" [ref=e5]:
+        - generic [ref=e6]:
+          - link "Puku home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Puku" [ref=e9]
+          - list [ref=e10]:
+            - listitem [ref=e11]:
+              - button "Product" [ref=e12]
+            - listitem [ref=e15]:
+              - link "Pricing" [ref=e16] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e17]:
+              - link "Docs" [ref=e18] [cursor=pointer]:
+                - /url: /docs
+            - listitem [ref=e19]:
+              - link "Resources" [ref=e20] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e21]:
+              - link "Contact" [ref=e22] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e23]:
+          - button "Switch to dark theme" [ref=e25]
+          - link "Sign in" [ref=e30] [cursor=pointer]:
+            - /url: /login?next=%2Fabout-us
+          - link "Download" [ref=e32] [cursor=pointer]:
+            - /url: /download
+    - generic [ref=e34]:
+      - main [ref=e35]:
+        - generic [ref=e37]:
+          - generic [ref=e38]: ABOUT PUKU
+          - heading "Software tools got loud. We're building a calmer place to work." [level=1] [ref=e40]:
+            - generic [aria-hidden] [ref=e41]:
+              - generic [ref=e42]: Software
+              - generic [ref=e44]: tools
+              - generic [ref=e46]: got
+              - generic [ref=e48]: loud.
+              - generic [ref=e50]: We're
+              - generic [ref=e52]: building
+              - generic [ref=e54]: a
+              - generic [ref=e56]: calmer
+              - generic [ref=e58]: place
+              - generic [ref=e60]: to
+              - generic [ref=e62]: work.
+          - paragraph [ref=e65]: "Puku is a small team making AI tools that stay out of your way: they ask before acting, remember what matters, and show their work."
+        - generic [ref=e68]:
+          - generic [ref=e69]: HOW WE BUILD
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - generic [ref=e73]: "01"
+              - generic [ref=e74]: Calm by default
+              - generic [ref=e75]: No streaks, no badges, no noise. Notifications only when something needs you.
+            - generic [ref=e76]:
+              - generic [ref=e77]: "02"
+              - generic [ref=e78]: Ask before acting
+              - generic [ref=e79]: Agents propose, people decide. Every write and command is visible and reversible.
+            - generic [ref=e80]:
+              - generic [ref=e81]: "03"
+              - generic [ref=e82]: One memory
+              - generic [ref=e83]: Context belongs to your project, not to a tab. Every surface reads the same notes.
+            - generic [ref=e84]:
+              - generic [ref=e85]: "04"
+              - generic [ref=e86]: Ship small, often
+              - generic [ref=e87]: Weekly releases, public changelog, and a feedback command in every product.
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e92]: 01 — COMPANY
+            - heading "Poridhi io Limited" [level=2] [ref=e94]:
+              - generic [aria-hidden] [ref=e95]:
+                - generic [ref=e96]: Poridhi
+                - generic [ref=e98]: io
+                - generic [ref=e100]: Limited
+            - paragraph [ref=e103]: Since 2021, we've helped ambitious startups and corporations build digital products and grow real DevOps and cloud skills.
+            - paragraph [ref=e104]: Hands-on labs. Real infrastructure. Real results.
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - paragraph [ref=e108]: Corporate Office
+              - generic [ref=e109]: Hashim Tower (3rd Floor), 205 (1/A), Tejgaon Link Road, Gulshan-1, Dhaka-1208, Bangladesh
+              - paragraph [ref=e110]: "Trade License: TRAD/DNCC/005399/2026"
+            - generic [ref=e111]:
+              - paragraph [ref=e112]: Registered Office
+              - generic [ref=e113]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+              - paragraph [ref=e114]: "Trade License: TRAD/DNCC/009542/2023"
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: 02 — MISSION
+            - heading "A calmer place to build." [level=2] [ref=e121]:
+              - generic [aria-hidden] [ref=e122]:
+                - generic [ref=e123]: A
+                - generic [ref=e125]: calmer
+                - generic [ref=e127]: place
+                - generic [ref=e129]: to
+                - generic [ref=e131]: build.
+          - generic [ref=e133]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: Calm by default
+              - generic [ref=e137]: No streaks, no badges, no noise. Notifications only when something needs you.
+            - generic [ref=e139]:
+              - generic [ref=e140]: Ask before acting
+              - generic [ref=e141]: Agents propose, people decide. Every write and command is visible and reversible.
+            - generic [ref=e143]:
+              - generic [ref=e144]: One memory
+              - generic [ref=e145]: Context belongs to your project, not to a tab. Every surface reads the same notes.
+        - generic [ref=e148]:
+          - img "Puku" [ref=e151]
+          - heading "Build with us." [level=2] [ref=e152]:
+            - generic [aria-hidden] [ref=e153]:
+              - generic [ref=e154]: Build
+              - generic [ref=e156]: with
+              - generic [ref=e158]: us.
+          - paragraph [ref=e161]: Free to start. Works with the repo you already have.
+          - generic [ref=e162]:
+            - link "See open roles" [ref=e164] [cursor=pointer]:
+              - /url: /contact
+            - 'button "Copy install command: curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash" [ref=e165]':
+              - generic [ref=e166]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+              - generic: Copied
+      - contentinfo [ref=e173]:
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - link "Puku Puku" [ref=e179] [cursor=pointer]:
+                - /url: /
+                - img "Puku" [ref=e180]
+                - generic [ref=e181]: Puku
+              - paragraph [ref=e182]: A calmer place to build, ship and learn.
+              - radiogroup "Theme" [ref=e184]:
+                - radio "system" [checked] [ref=e185]
+                - radio "light" [ref=e187]
+                - radio "dark" [ref=e188]
+            - generic [ref=e189]:
+              - generic [ref=e190]:
+                - generic [ref=e191]: PRODUCT
+                - link "Puku Editor" [ref=e192] [cursor=pointer]:
+                  - /url: /puku-editor
+                - link "Puku CLI" [ref=e194] [cursor=pointer]:
+                  - /url: /puku-cli
+                - link "Puku Chat" [ref=e196] [cursor=pointer]:
+                  - /url: /puku-chat
+                - link "Puku App" [ref=e198] [cursor=pointer]:
+                  - /url: /puku-app
+                - link "Pricing" [ref=e200] [cursor=pointer]:
+                  - /url: /pricing
+              - generic [ref=e202]:
+                - generic [ref=e203]: RESOURCES
+                - link "Docs" [ref=e204] [cursor=pointer]:
+                  - /url: /docs
+                - link "Changelog" [ref=e206] [cursor=pointer]:
+                  - /url: /changelog
+                - link "Download" [ref=e208] [cursor=pointer]:
+                  - /url: /download
+                - link "Blog" [ref=e210] [cursor=pointer]:
+                  - /url: /blog
+                - link "Status" [ref=e212] [cursor=pointer]:
+                  - /url: /contact
+              - generic [ref=e214]:
+                - generic [ref=e215]: COMPANY
+                - link "About" [ref=e216] [cursor=pointer]:
+                  - /url: /about-us
+                - link "Contact" [ref=e218] [cursor=pointer]:
+                  - /url: /contact
+                - link "Support" [ref=e220] [cursor=pointer]:
+                  - /url: /support
+                - generic [ref=e222]: Careers · soon
+              - generic [ref=e223]:
+                - generic [ref=e224]: LEGAL
+                - link "Terms" [ref=e225] [cursor=pointer]:
+                  - /url: /terms
+                - link "Privacy" [ref=e227] [cursor=pointer]:
+                  - /url: /privacy
+                - link "Refunds" [ref=e229] [cursor=pointer]:
+                  - /url: /refund
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - generic [ref=e233]: © 2026 Puku AI · Operated by Poridhi io Limited
+              - generic [ref=e234]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+              - generic [ref=e235]: "Trade License: TRAD/DNCC/009542/2023"
+            - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e236]
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - link "Discord" [ref=e239] [cursor=pointer]:
+                  - /url: https://discord.gg/WmsGeB68Rv
+                - text: ·
+              - generic [ref=e240]:
+                - link "YouTube" [ref=e241] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@poridhiio
+                - text: ·
+              - link "LinkedIn" [ref=e243] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/poridhiio/
+  - alert [ref=e244]

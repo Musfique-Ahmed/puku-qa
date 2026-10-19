@@ -1,0 +1,471 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e23]:
+        - button "Switch to dark theme" [ref=e25]
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /login?next=%2Fprivacy
+        - link "Download" [ref=e29] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e31]:
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - navigation "Breadcrumb" [ref=e34]:
+          - link "Home" [ref=e35] [cursor=pointer]:
+            - /url: /
+          - text: ›Privacy Policy
+        - generic [ref=e36]:
+          - navigation "Legal documents" [ref=e37]:
+            - generic [ref=e38]: LEGAL
+            - link "Terms of service" [ref=e39] [cursor=pointer]:
+              - /url: /terms
+            - link "Privacy policy" [ref=e40] [cursor=pointer]:
+              - /url: /privacy
+            - link "Refund policy" [ref=e41] [cursor=pointer]:
+              - /url: /refund
+          - article [ref=e42]:
+            - generic [ref=e43]:
+              - paragraph [ref=e44]: "Effective Date: September 8, 2026 · Last Updated: September 8, 2026"
+              - heading "Privacy Policy" [level=1] [ref=e45]
+              - generic [ref=e46]:
+                - paragraph [ref=e47]: Puku AI ("Puku") is operated by Poridhi io Limited, a company incorporated in Bangladesh. This Privacy Policy explains how Puku collects, processes, uses, stores, and shares information when you use the Puku mobile application, your Puku account, Puku AI features, payment features, and related support services.
+                - list [ref=e48]:
+                  - listitem [ref=e49]:
+                    - generic [ref=e50]: Operator
+                    - generic [ref=e51]: Poridhi io Limited
+                  - listitem [ref=e52]:
+                    - generic [ref=e53]: Privacy contact
+                    - link "legal@puku.sh" [ref=e55] [cursor=pointer]:
+                      - /url: mailto:legal@puku.sh
+            - generic [ref=e56]:
+              - paragraph [ref=e57]: "01"
+              - heading "Introduction" [level=2] [ref=e58]
+              - paragraph [ref=e59]: Puku AI ("Puku") is operated by Poridhi io Limited, a company incorporated in Bangladesh.
+              - paragraph [ref=e60]: This Privacy Policy explains how Puku collects, processes, uses, stores, and shares information when you use the Puku mobile application, your Puku account, Puku AI features, payment features, and related support services.
+            - generic [ref=e61]:
+              - paragraph [ref=e62]: "02"
+              - heading "Information We Collect and Process" [level=2] [ref=e63]
+              - heading "2.1 Account Information" [level=3] [ref=e64]
+              - paragraph [ref=e65]: "When you create or use a Puku account, Puku collects:"
+              - list [ref=e66]:
+                - listitem [ref=e67]: Full name
+                - listitem [ref=e68]: Email address
+                - listitem [ref=e69]: Profile photo
+                - listitem [ref=e70]: Internal user ID
+              - paragraph [ref=e71]: "Puku currently supports the following authentication methods:"
+              - list [ref=e72]:
+                - listitem [ref=e73]: Google Sign-In
+                - listitem [ref=e74]: Microsoft sign-in
+                - listitem [ref=e75]: Magic link
+              - paragraph [ref=e76]: "When Google or Microsoft authentication is used, the authentication provider supplies Puku with information needed to create and identify your account, including your:"
+              - list [ref=e77]:
+                - listitem [ref=e78]: Full name
+                - listitem [ref=e79]: Email address
+                - listitem [ref=e80]: Profile photo
+                - listitem [ref=e81]: User ID
+              - paragraph [ref=e82]: "Puku does not currently support:"
+              - list [ref=e83]:
+                - listitem [ref=e84]: Sign in with Apple
+                - listitem [ref=e85]: Email/password authentication
+                - listitem [ref=e86]: Phone-number authentication
+                - listitem [ref=e87]: Enterprise SSO
+              - heading "2.2 Prompts and AI Interactions" [level=3] [ref=e88]
+              - paragraph [ref=e89]: When you use Puku's AI features, Puku processes information necessary to perform the interaction you request.
+              - paragraph [ref=e90]: "This can include:"
+              - list [ref=e91]:
+                - listitem [ref=e92]: User prompts
+                - listitem [ref=e93]: AI-generated responses
+                - listitem [ref=e94]: Search queries
+                - listitem [ref=e95]: Agent activity
+                - listitem [ref=e96]: Tool calls
+                - listitem [ref=e97]: Error information
+              - paragraph [ref=e98]: Puku processes this information to provide AI responses and supported AI functionality, operate the product, perform analytics, troubleshoot errors, and improve the Puku service.
+              - heading "2.3 Conversation History" [level=3] [ref=e99]
+              - paragraph [ref=e100]: Puku conversation history is stored locally for the user rather than being retained by Puku as server-side chat history.
+              - paragraph [ref=e101]: Conversation history associated with a project remains locally available until the user deletes that project.
+              - paragraph [ref=e102]: When the project is deleted, the associated locally stored conversation history is also deleted.
+              - heading "2.4 Documents and Images" [level=3] [ref=e103]
+              - paragraph [ref=e104]: Puku allows supported AI interactions to use documents and images.
+              - paragraph [ref=e105]: Puku does not retain or store uploaded documents or images as Puku-hosted user content.
+              - paragraph [ref=e106]: When a document or image is provided for an AI interaction, information needed to process that request is passed to the applicable AI model or processing route.
+              - paragraph [ref=e107]: Puku does not retain the document or image metadata after it has been passed for the requested AI processing.
+              - paragraph [ref=e108]: Documents, images, and their metadata are not retained by Puku for model training or model tuning.
+              - heading "2.5 Voice and Audio" [level=3] [ref=e109]
+              - paragraph [ref=e110]: Puku may process voice or audio when you use a supported voice-input feature.
+              - paragraph [ref=e111]: Voice or audio is sent through the applicable AI-processing route to provide the requested functionality.
+              - paragraph [ref=e112]: Puku does not retain or store the voice or audio recording as Puku-hosted user content.
+              - paragraph [ref=e113]: Voice and audio submitted through the Puku App are not retained by Puku for model training.
+              - heading "2.6 Device and Technical Information" [level=3] [ref=e114]
+              - paragraph [ref=e115]: "When you use the Puku App, Puku may collect and process technical information including:"
+              - list [ref=e116]:
+                - listitem [ref=e117]: IP address
+                - listitem [ref=e118]: Device identifiers
+                - listitem [ref=e119]: Operating system
+                - listitem [ref=e120]: Puku app version
+                - listitem [ref=e121]: Session information
+                - listitem [ref=e122]: Crash reports
+                - listitem [ref=e123]: Error information
+              - paragraph [ref=e124]: Puku uses this information to operate and maintain the application, understand technical performance, perform analytics, identify crashes and errors, debug technical problems, and maintain the security and reliability of the service.
+              - heading "2.7 Crash and Error Monitoring" [level=3] [ref=e125]
+              - paragraph [ref=e126]: Puku uses Sentry as an internal crash and error-monitoring service.
+              - paragraph [ref=e127]: Sentry is used to help Puku identify, monitor, analyze, and debug application crashes and technical errors.
+              - paragraph [ref=e128]: Puku does not publicly disclose its detailed internal Sentry configuration or debugging implementation.
+              - heading "2.8 Device Permissions" [level=3] [ref=e129]
+              - paragraph [ref=e130]: The Puku mobile application currently uses the following device permissions when required by the relevant feature.
+              - paragraph [ref=e131]: Photos
+              - paragraph [ref=e132]: Photo access allows you to choose a photo and provide it to Puku as part of an AI interaction.
+              - paragraph [ref=e133]: Puku does not retain the uploaded photo as stored Puku user content.
+              - paragraph [ref=e134]: Microphone
+              - paragraph [ref=e135]: Microphone access allows you to provide voice input when you choose to use a supported voice feature.
+              - paragraph [ref=e136]: Puku does not retain the resulting voice or audio recording as stored Puku user content.
+              - paragraph [ref=e137]: "Puku does not currently require:"
+              - list [ref=e138]:
+                - listitem [ref=e139]: Notification permission
+                - listitem [ref=e140]: Files or storage permission
+                - listitem [ref=e141]: Location permission
+                - listitem [ref=e142]: Contacts permission
+            - generic [ref=e143]:
+              - paragraph [ref=e144]: "03"
+              - heading "Payment and Subscription Information" [level=2] [ref=e145]
+              - paragraph [ref=e146]: Puku currently accepts payments through bKash.
+              - paragraph [ref=e147]: Puku uses SSL eCommerce as its payment gateway. bKash provides the payment method and SSL eCommerce provides the payment-gateway service used to process the transaction.
+              - paragraph [ref=e148]: Puku may receive and retain transaction and subscription-related information needed to identify payments, maintain subscription status, provide customer support, and perform internal analysis.
+              - paragraph [ref=e149]: Payment credentials handled by the applicable payment service are processed through the payment provider and payment gateway rather than being used by Puku as general account information.
+              - paragraph [ref=e150]: Subscription-related records may be retained in Puku's internal systems for operational and analytical purposes.
+            - generic [ref=e151]:
+              - paragraph [ref=e152]: "04"
+              - heading "How We Use Information" [level=2] [ref=e153]
+              - paragraph [ref=e154]: "Puku uses the information described in this Privacy Policy to:"
+              - list [ref=e155]:
+                - listitem [ref=e156]: Create and maintain Puku accounts
+                - listitem [ref=e157]: Authenticate users
+                - listitem [ref=e158]: Provide Puku AI functionality
+                - listitem [ref=e159]: Process prompts and generate responses
+                - listitem [ref=e160]: Process user-requested documents, images, and voice interactions
+                - listitem [ref=e161]: Support search functionality
+                - listitem [ref=e162]: Support agent activity and tool calls
+                - listitem [ref=e163]: Maintain local conversation functionality
+                - listitem [ref=e164]: Process and manage payments and subscriptions
+                - listitem [ref=e165]: Provide customer support
+                - listitem [ref=e166]: Perform product analytics
+                - listitem [ref=e167]: Improve the Puku service
+                - listitem [ref=e168]: Identify and debug crashes and technical errors
+                - listitem [ref=e169]: Maintain logging and monitoring systems
+                - listitem [ref=e170]: Protect accounts and Puku systems
+                - listitem [ref=e171]: Prevent fraud and misuse
+                - listitem [ref=e172]: Respond to security incidents
+                - listitem [ref=e173]: Comply with applicable legal obligations
+            - generic [ref=e174]:
+              - paragraph [ref=e175]: "05"
+              - heading "AI Models and Processing" [level=2] [ref=e176]
+              - paragraph [ref=e177]: Puku uses different AI-processing routes depending on the feature and complexity of the request.
+              - heading "5.1 Puku-ai-2.8" [level=3] [ref=e178]
+              - paragraph [ref=e179]:
+                - strong [ref=e180]: Puku-ai-2.8
+                - text: is a Puku-hosted model fine-tuned on
+                - strong [ref=e181]: GLM-5.2
+                - text: .
+              - paragraph [ref=e182]: Information needed to perform a request may be processed through Puku-ai-2.8 when that model is selected for the interaction.
+              - heading "5.2 Puku-ai-2.7" [level=3] [ref=e183]
+              - paragraph [ref=e184]:
+                - strong [ref=e185]: Puku-ai-2.7
+                - text: is Puku's routing model.
+              - paragraph [ref=e186]: "Depending on the complexity and requirements of a request, Puku-ai-2.7 may route the AI interaction through:"
+              - list [ref=e187]:
+                - listitem [ref=e188]: GLM
+                - listitem [ref=e189]: MiniMax
+                - listitem [ref=e190]: OpenRouter
+              - paragraph [ref=e191]: The routing process is used to select an appropriate model-processing path for the requested interaction.
+              - heading "5.3 Opus 4.8 Through OpenRouter" [level=3] [ref=e192]
+              - paragraph [ref=e193]:
+                - text: Puku provides access to
+                - strong [ref=e194]: Opus 4.8 through OpenRouter
+                - text: .
+              - paragraph [ref=e195]: Puku does not obtain or serve Opus 4.8 through a direct Anthropic integration.
+              - paragraph [ref=e196]: OpenRouter acts as Puku's provider for this model route. OpenRouter may use an underlying model provider to perform the request according to its routing system, service configuration, and provider availability.
+              - paragraph [ref=e197]: Information required to perform the AI interaction may therefore pass through OpenRouter and the model-processing infrastructure selected by OpenRouter.
+              - paragraph [ref=e198]: Puku does not separately provide users' account-profile information to OpenRouter or an underlying model provider for independent use. Information is transmitted through an AI-processing route only as necessary to perform the interaction requested by the user.
+              - paragraph [ref=e199]: OpenRouter's own privacy and provider policies govern how OpenRouter and its underlying model providers handle information processed through its service.
+              - heading "5.4 Puku App Data and Model Training" [level=3] [ref=e200]
+              - paragraph [ref=e201]:
+                - strong [ref=e202]: Puku App user data is not used to train Puku's AI models.
+              - paragraph [ref=e203]: "Puku does not use Puku App:"
+              - list [ref=e204]:
+                - listitem [ref=e205]: Prompts
+                - listitem [ref=e206]: AI responses
+                - listitem [ref=e207]: Conversation history
+                - listitem [ref=e208]: Documents
+                - listitem [ref=e209]: Images
+                - listitem [ref=e210]: Voice or audio
+                - listitem [ref=e211]: Search queries
+                - listitem [ref=e212]: Other Puku App user content
+              - paragraph [ref=e213]: to train or fine-tune Puku models or Puku's reinforcement-learning pipeline.
+              - paragraph [ref=e214]:
+                - text: Puku operates an RL pipeline using data from
+                - strong [ref=e215]: Puku Editor
+                - text: ", not data from the Puku App."
+              - paragraph [ref=e216]: The Puku App and Puku Editor therefore have different training-related data practices. This Privacy Policy describes the practices applicable to the Puku App.
+              - paragraph [ref=e217]: Processing user information through an AI model to generate a requested response is separate from Puku using that information to train a model.
+            - generic [ref=e218]:
+              - paragraph [ref=e219]: "06"
+              - heading "Third-Party Services" [level=2] [ref=e220]
+              - paragraph [ref=e221]: Puku uses third-party services where necessary to provide and operate supported functionality.
+              - paragraph [ref=e222]: "These currently include:"
+              - heading "Google" [level=3] [ref=e223]
+              - paragraph [ref=e224]: Used for Google Sign-In and account authentication.
+              - heading "Microsoft" [level=3] [ref=e225]
+              - paragraph [ref=e226]: Used for Microsoft sign-in and account authentication.
+              - heading "OpenRouter" [level=3] [ref=e227]
+              - paragraph [ref=e228]: Used as an AI model provider and routing service, including to provide access to Opus 4.8.
+              - heading "GLM" [level=3] [ref=e229]
+              - paragraph [ref=e230]: Used as part of supported Puku AI processing, including the model foundation used for Puku-ai-2.8 and as a possible route for Puku-ai-2.7.
+              - heading "MiniMax" [level=3] [ref=e231]
+              - paragraph [ref=e232]: Used as a possible AI-processing route through Puku-ai-2.7.
+              - heading "Sentry" [level=3] [ref=e233]
+              - paragraph [ref=e234]: Used for internal crash monitoring, error monitoring, analysis, and debugging.
+              - heading "Cloudflare" [level=3] [ref=e235]
+              - paragraph [ref=e236]: Used as part of Puku's service and infrastructure delivery.
+              - heading "Microsoft Azure" [level=3] [ref=e237]
+              - paragraph [ref=e238]: Used as part of Puku's cloud infrastructure.
+              - heading "Huawei Cloud" [level=3] [ref=e239]
+              - paragraph [ref=e240]: Used as part of Puku's cloud infrastructure.
+              - heading "bKash" [level=3] [ref=e241]
+              - paragraph [ref=e242]: Used as the currently supported payment method.
+              - heading "SSL eCommerce" [level=3] [ref=e243]
+              - paragraph [ref=e244]: Used as the payment gateway for Puku payments.
+              - paragraph [ref=e245]: Third-party services process information according to the functions they provide and their applicable terms and privacy practices.
+              - paragraph [ref=e246]: Puku does not sell personal information to these providers.
+            - generic [ref=e247]:
+              - paragraph [ref=e248]: "07"
+              - heading "Sale of Personal Information and Advertising" [level=2] [ref=e249]
+              - paragraph [ref=e250]: Puku does not sell users' personal information.
+              - paragraph [ref=e251]: Puku does not use Puku App personal information for advertising or advertising tracking.
+              - paragraph [ref=e252]: Puku does not collect advertising IDs for advertising purposes.
+            - generic [ref=e253]:
+              - paragraph [ref=e254]: "08"
+              - heading "Data Retention" [level=2] [ref=e255]
+              - paragraph [ref=e256]: Puku applies different retention practices depending on the type of information.
+              - heading "8.1 Account Profile" [level=3] [ref=e257]
+              - paragraph [ref=e258]: Puku account-profile information is retained while the account exists.
+              - paragraph [ref=e259]: Where an account is deleted, Puku does not maintain a separate general deleted-account record.
+              - heading "8.2 Conversation History" [level=3] [ref=e260]
+              - paragraph [ref=e261]: Conversation history is stored locally.
+              - paragraph [ref=e262]: It remains available locally until the relevant project is deleted.
+              - paragraph [ref=e263]: When that project is deleted, the associated conversation history is deleted.
+              - heading "8.3 Documents and Images" [level=3] [ref=e264]
+              - paragraph [ref=e265]: Puku does not store submitted documents or images.
+              - paragraph [ref=e266]: Puku also does not retain their metadata after the information has been passed for the requested AI interaction.
+              - heading "8.4 Voice and Audio" [level=3] [ref=e267]
+              - paragraph [ref=e268]: Puku does not retain voice or audio submitted for supported AI interactions.
+              - heading "8.5 Analytics" [level=3] [ref=e269]
+              - paragraph [ref=e270]: Analytics information is kept for as long as it is reasonably needed for Puku's internal analytical purposes.
+              - paragraph [ref=e271]: There is no single fixed retention period for all analytics information because the period depends on the analytical purpose for which the information is being used.
+              - heading "8.6 Server Logs" [level=3] [ref=e272]
+              - paragraph [ref=e273]: Server logs are retained for 7 days.
+              - heading "8.7 Security Logs" [level=3] [ref=e274]
+              - paragraph [ref=e275]: Security logs are retained for 7 days.
+              - heading "8.8 Support Tickets" [level=3] [ref=e276]
+              - paragraph [ref=e277]: Support tickets are retained for 7 days.
+              - heading "8.9 Subscription Records" [level=3] [ref=e278]
+              - paragraph [ref=e279]: Subscription-related information is retained in Puku's internal systems for operational and analytical purposes for as long as it is reasonably needed for those purposes.
+              - heading "8.10 Backups" [level=3] [ref=e280]
+              - paragraph [ref=e281]: Backups containing applicable user information or subscription information may remain for up to 30 days as Puku's backup data is rolled over.
+              - heading "8.11 Limited Retention After Account Closure or Deletion" [level=3] [ref=e282]
+              - paragraph [ref=e283]: "Puku may retain limited information when reasonably necessary for:"
+              - list [ref=e284]:
+                - listitem [ref=e285]: Fraud prevention
+                - listitem [ref=e286]: Security
+                - listitem [ref=e287]: Compliance with legal obligations
+                - listitem [ref=e288]: Dispute handling
+              - paragraph [ref=e289]: Any retained information is limited to the purpose for which continued retention is required.
+            - generic [ref=e290]:
+              - paragraph [ref=e291]: "09"
+              - heading "Data Security" [level=2] [ref=e292]
+              - paragraph [ref=e293]: Puku uses administrative, technical, and organizational safeguards designed to protect information.
+              - paragraph [ref=e294]: "Confirmed measures and practices include:"
+              - list [ref=e295]:
+                - listitem [ref=e296]: HTTPS / TLS
+                - listitem [ref=e297]: Authentication controls
+                - listitem [ref=e298]: OAuth
+                - listitem [ref=e299]: Access controls
+                - listitem [ref=e300]: Logging
+                - listitem [ref=e301]: Monitoring
+                - listitem [ref=e302]: Incident-response processes
+              - paragraph [ref=e303]: These safeguards are designed to reduce risks including unauthorized access, loss, misuse, or disclosure.
+              - paragraph [ref=e304]: No system, network, or electronic method of storage or transmission can be guaranteed to be completely secure.
+            - generic [ref=e305]:
+              - paragraph [ref=e306]: "10"
+              - heading "Account and Privacy Choices" [level=2] [ref=e307]
+              - paragraph [ref=e308]: You may contact Puku about personal information associated with your account, including questions about access, correction, or other privacy matters.
+              - paragraph [ref=e309]: "Privacy requests can be sent to:"
+              - paragraph [ref=e310]:
+                - link "legal@puku.sh" [ref=e311] [cursor=pointer]:
+                  - /url: mailto:legal@puku.sh
+              - paragraph [ref=e312]: Puku currently does not provide a self-service account-deletion option in the Puku App.
+              - paragraph [ref=e313]: "Current information regarding account deletion is available at:"
+              - paragraph [ref=e314]:
+                - link "https://puku.sh/settings" [ref=e315] [cursor=pointer]:
+                  - /url: https://puku.sh/settings
+              - paragraph [ref=e316]: "Where a Puku account is deleted:"
+              - list [ref=e317]:
+                - listitem [ref=e318]: Account-profile information is removed in accordance with Puku's account process
+                - listitem [ref=e319]: Puku does not maintain a separate general deleted-account record
+                - listitem [ref=e320]: Applicable backup copies may remain for up to 30 days
+                - listitem [ref=e321]: Limited information may be retained where needed for fraud prevention, security, legal obligations, or dispute handling
+              - paragraph [ref=e322]: Deleting a project separately removes the conversation history stored locally for that project.
+            - generic [ref=e323]:
+              - paragraph [ref=e324]: "11"
+              - heading "Subscription Cancellation" [level=2] [ref=e325]
+              - paragraph [ref=e326]: Account deletion and subscription cancellation are separate matters.
+              - paragraph [ref=e327]: "If you want to cancel a Puku subscription, contact:"
+              - paragraph [ref=e328]:
+                - link "support@puku.sh" [ref=e329] [cursor=pointer]:
+                  - /url: mailto:support@puku.sh
+              - paragraph [ref=e330]: To avoid being charged for the next billing period, cancellation should be requested at least 24 hours before the subscription is scheduled to renew.
+              - paragraph [ref=e331]: Cancellation takes effect at the end of the current billing period, and paid access continues until that date.
+            - generic [ref=e332]:
+              - paragraph [ref=e333]: "12"
+              - heading "Processing Location and International Processing" [level=2] [ref=e334]
+              - paragraph [ref=e335]: Puku's own confirmed data processing and infrastructure operations for Puku user information are based in Bangladesh.
+              - paragraph [ref=e336]: Puku also relies on third-party cloud and AI services.
+              - paragraph [ref=e337]: When an AI interaction is processed through services such as OpenRouter, GLM, MiniMax, Azure, Huawei Cloud, or other underlying infrastructure selected as part of those services, information required for the interaction may be processed through infrastructure outside Puku's own Bangladesh-based systems.
+              - paragraph [ref=e338]: Third-party processing is governed by the applicable provider's terms, privacy practices, technical configuration, and contractual arrangements.
+            - generic [ref=e339]:
+              - paragraph [ref=e340]: "13"
+              - heading "Children's Privacy and Eligibility" [level=2] [ref=e341]
+              - paragraph [ref=e342]: Puku is not intended for children.
+              - paragraph [ref=e343]: You must be at least 18 years old, or the age of majority in your jurisdiction if that age is higher, to use Puku.
+              - paragraph [ref=e344]: For users domiciled in Bangladesh, the applicable age requirement follows Bangladesh law, including circumstances in which the legal age of majority may be higher than 18.
+              - paragraph [ref=e345]: Puku does not knowingly permit a person who does not meet the applicable age requirement to register for a Puku account.
+            - generic [ref=e346]:
+              - paragraph [ref=e347]: "14"
+              - heading "Changes to This Privacy Policy" [level=2] [ref=e348]
+              - paragraph [ref=e349]: Puku may update this Privacy Policy when its products, data practices, providers, or applicable requirements change.
+              - paragraph [ref=e350]: When the policy is updated, Puku will revise the Last Updated date shown at the top of this page.
+              - paragraph [ref=e351]: Where required by applicable law, Puku may provide additional notice of material changes.
+            - generic [ref=e352]:
+              - paragraph [ref=e353]: "15"
+              - heading "Contact Us" [level=2] [ref=e354]
+              - paragraph [ref=e355]: "For questions about this Privacy Policy or Puku's handling of personal information, contact:"
+              - generic [ref=e356]:
+                - generic [ref=e357]:
+                  - paragraph [ref=e358]: Corporate Office
+                  - generic [ref=e359]: Hashim Tower (3rd Floor), 205 (1/A), Tejgaon Link Road, Gulshan-1, Dhaka-1208, Bangladesh
+                  - paragraph [ref=e360]: "Trade License: TRAD/DNCC/005399/2026"
+                - generic [ref=e361]:
+                  - paragraph [ref=e362]: Registered Office
+                  - generic [ref=e363]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+                  - paragraph [ref=e364]: "Trade License: TRAD/DNCC/009542/2023"
+              - generic [ref=e365]:
+                - generic [ref=e366]:
+                  - term [ref=e367]: Product
+                  - definition [ref=e368]: Puku AI
+                - generic [ref=e369]:
+                  - term [ref=e370]: General Contact
+                  - definition [ref=e371]:
+                    - link "contact@puku.sh" [ref=e372] [cursor=pointer]:
+                      - /url: mailto:contact@puku.sh
+                - generic [ref=e373]:
+                  - term [ref=e374]: Privacy and Legal
+                  - definition [ref=e375]:
+                    - link "legal@puku.sh" [ref=e376] [cursor=pointer]:
+                      - /url: mailto:legal@puku.sh
+                - generic [ref=e377]:
+                  - term [ref=e378]: Support
+                  - definition [ref=e379]:
+                    - link "support@puku.sh" [ref=e380] [cursor=pointer]:
+                      - /url: mailto:support@puku.sh
+        - paragraph [ref=e382]: © 2026 Puku. All rights reserved.
+    - contentinfo [ref=e383]:
+      - generic [ref=e386]:
+        - generic [ref=e387]:
+          - generic [ref=e388]:
+            - link "Puku Puku" [ref=e389] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e390]
+              - generic [ref=e391]: Puku
+            - paragraph [ref=e392]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e394]:
+              - radio "system" [ref=e395]
+              - radio "light" [checked] [ref=e396]
+              - radio "dark" [ref=e398]
+          - generic [ref=e399]:
+            - generic [ref=e400]:
+              - generic [ref=e401]: PRODUCT
+              - link "Puku Editor" [ref=e402] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e404] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e406] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e408] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e410] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e412]:
+              - generic [ref=e413]: RESOURCES
+              - link "Docs" [ref=e414] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e416] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e418] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e420] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e422] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e424]:
+              - generic [ref=e425]: COMPANY
+              - link "About" [ref=e426] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e428] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e430] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e432]: Careers · soon
+            - generic [ref=e433]:
+              - generic [ref=e434]: LEGAL
+              - link "Terms" [ref=e435] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e437] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e439] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e441]:
+          - generic [ref=e442]:
+            - generic [ref=e443]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e444]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e445]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e446]
+          - generic [ref=e447]:
+            - generic [ref=e448]:
+              - link "Discord" [ref=e449] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e450]:
+              - link "YouTube" [ref=e451] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e453] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

@@ -1,0 +1,875 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner:
+      - navigation "Main" [ref=e5]:
+        - generic [ref=e6]:
+          - link "Puku home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Puku" [ref=e9]
+          - list [ref=e10]:
+            - listitem [ref=e11]:
+              - button "Product" [active] [ref=e12]
+            - listitem [ref=e15]:
+              - link "Pricing" [ref=e16] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e17]:
+              - link "Docs" [ref=e18] [cursor=pointer]:
+                - /url: /docs
+            - listitem [ref=e19]:
+              - link "Resources" [ref=e20] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e21]:
+              - link "Contact" [ref=e22] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e23]:
+          - button "Switch to dark theme" [ref=e25]
+          - link "Sign in" [ref=e27] [cursor=pointer]:
+            - /url: /login?next=%2F
+          - link "Download" [ref=e29] [cursor=pointer]:
+            - /url: /download
+    - generic [ref=e31]:
+      - main [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e38]:
+            - link "NEW Puku 2.8 · subagents in parallel →" [ref=e40] [cursor=pointer]:
+              - /url: /changelog
+              - generic [ref=e41]: NEW
+              - generic [ref=e43]:
+                - text: Puku 2.8 · subagents in parallel
+                - generic [ref=e44]: →
+            - heading "A calm workbench for shipping software." [level=1] [ref=e45]:
+              - generic [aria-hidden] [ref=e46]:
+                - generic [ref=e47]: A
+                - generic [ref=e49]: calm
+                - generic [ref=e51]: workbench
+                - generic [ref=e53]: for
+              - generic [aria-hidden] [ref=e55]:
+                - generic [ref=e56]: shipping
+                - generic [ref=e58]: software.
+            - paragraph [ref=e60]: Editor, CLI, Chat and App share one memory of your project. Works with the repo you already have.
+            - generic [ref=e61]:
+              - link "Download for Mac" [ref=e63] [cursor=pointer]:
+                - /url: /download
+              - 'button "Copy install command: curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash" [ref=e64]':
+                - generic [ref=e65]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+                - generic: Copied
+            - paragraph [ref=e72]: Version 2.8 for Apple Silicon · Windows and Linux in beta
+          - generic [ref=e80]:
+            - generic [ref=e81]: Aideployed-CMS
+            - generic [ref=e87]:
+              - complementary [ref=e88]:
+                - generic [ref=e98]: AIDEPLOYED-CMS
+                - generic [ref=e99]:
+                  - button "› .agents" [ref=e101]:
+                    - generic [ref=e102]: ›
+                    - generic [ref=e104]: .agents
+                  - button "› .next" [ref=e106]:
+                    - generic [ref=e107]: ›
+                    - generic [ref=e109]: .next
+                  - button "› e2e" [ref=e111]:
+                    - generic [ref=e112]: ›
+                    - generic [ref=e114]: e2e
+                  - button "› integration-snippets" [ref=e116]:
+                    - generic [ref=e117]: ›
+                    - generic [ref=e119]: integration-snippets
+                  - button "› node_modules" [ref=e121]:
+                    - generic [ref=e122]: ›
+                    - generic [ref=e124]: node_modules
+                  - button "› prisma" [ref=e126]:
+                    - generic [ref=e127]: ›
+                    - generic [ref=e129]: prisma
+                  - button "› public" [ref=e131]:
+                    - generic [ref=e132]: ›
+                    - generic [ref=e134]: public
+                  - button "› scripts" [ref=e136]:
+                    - generic [ref=e137]: ›
+                    - generic [ref=e139]: scripts
+                  - button "› src" [ref=e141]:
+                    - generic [ref=e142]: ›
+                    - generic [ref=e144]: src
+                  - button "› test-results" [ref=e146]:
+                    - generic [ref=e147]: ›
+                    - generic [ref=e149]: test-results
+                  - button "› .env" [ref=e151]:
+                    - generic [ref=e152]: ›
+                    - generic [ref=e154]: .env
+                  - button "› .env.example" [ref=e156]:
+                    - generic [ref=e157]: ›
+                    - generic [ref=e159]: .env.example
+                  - button "› .gitignore" [ref=e161]:
+                    - generic [ref=e162]: ›
+                    - generic [ref=e164]: .gitignore
+                  - button "› AGENTS.md" [ref=e166]:
+                    - generic [ref=e167]: ›
+                    - generic [ref=e169]: AGENTS.md
+                  - button "› PUKU.md" [ref=e171]:
+                    - generic [ref=e172]: ›
+                    - generic [ref=e174]: PUKU.md
+                  - button "› eslint.config.mjs" [ref=e176]:
+                    - generic [ref=e177]: ›
+                    - generic [ref=e179]: eslint.config.mjs
+                  - button "› MEMORY.md" [ref=e181]:
+                    - generic [ref=e182]: ›
+                    - generic [ref=e184]: MEMORY.md
+                  - button "› next.config.ts" [ref=e186]:
+                    - generic [ref=e187]: ›
+                    - generic [ref=e189]: next.config.ts
+                  - button "› package.json" [ref=e191]:
+                    - generic [ref=e192]: ›
+                    - generic [ref=e194]: package.json
+                  - button "› playwright.config.ts" [ref=e196]:
+                    - generic [ref=e197]: ›
+                    - generic [ref=e199]: playwright.config.ts
+                  - button "› README.md" [ref=e201]:
+                    - generic [ref=e202]: ›
+                    - generic [ref=e204]: README.md
+                  - button "› tsconfig.json" [ref=e206]:
+                    - generic [ref=e207]: ›
+                    - generic [ref=e209]: tsconfig.json
+                - generic [ref=e210]: OUTLINE
+                - generic [ref=e211]: TIMELINE
+              - generic [ref=e212]:
+                - generic [ref=e214]:
+                  - button "Welcome" [ref=e215]
+                  - button "Close Welcome" [ref=e217]: ×
+                - generic [ref=e219]:
+                  - generic [ref=e220]: Puku
+                  - generic [ref=e221]: Editing evolved
+                  - generic [ref=e222]:
+                    - generic [ref=e223]:
+                      - generic [ref=e224]: Start
+                      - button "New File..." [ref=e225]
+                      - button "Open..." [ref=e226]
+                      - button "Clone Git Repository..." [ref=e227]
+                      - button "Connect to..." [ref=e228]
+                      - button "Generate New Workspace..." [ref=e229]
+                    - generic [ref=e230]:
+                      - generic [ref=e231]: Recent
+                      - button "portfolio-CMO-main ~/Downloads" [ref=e232]:
+                        - text: portfolio-CMO-main
+                        - generic [ref=e233]: ~/Downloads
+                  - generic [ref=e234]: Show welcome page on startup
+              - complementary [ref=e237]:
+                - generic [ref=e238]:
+                  - generic [ref=e239]: New Agent
+                  - button "New agent" [ref=e241]: +
+                - generic [ref=e243]:
+                  - generic [ref=e244]: TRY
+                  - button "PATCH should return 404 like DELETE does." [ref=e245]
+                  - button "Add a test for the 404 case" [ref=e246]
+                  - button "Explain route.ts" [ref=e247]
+                - generic [ref=e248]:
+                  - textbox "Message the editor agent" [ref=e249]:
+                    - /placeholder: Describe what to build — / for commands, @ for context
+                  - generic [ref=e250]:
+                    - generic [ref=e251]: Agent ⌄
+                    - generic [ref=e252]: Puku-ai 2.8 ⌄
+                    - button "Send ↵" [disabled] [ref=e253]
+            - generic [ref=e254]:
+              - generic [ref=e255]: ⑂ main
+              - generic [ref=e256]: ⊗ 0 ⚠ 0
+        - generic [ref=e258]:
+          - generic [ref=e260]:
+            - generic [ref=e261]: SURFACES
+            - generic [ref=e262]: Editor, CLI, Chat and App on one plan
+          - generic [ref=e266]:
+            - generic [ref=e267]: MEMORY
+            - generic [ref=e268]: PUKU.md, read by every agent
+          - generic [ref=e272]:
+            - generic [ref=e273]: SILENT WRITES
+            - generic [ref=e274]: Every change shown as a diff first
+          - generic [ref=e278]:
+            - paragraph [ref=e279]: Open a repo. Puku reads it, remembers it, and asks before it touches anything.
+            - link "Get started free" [ref=e280] [cursor=pointer]:
+              - /url: /download
+        - generic [ref=e293]:
+          - heading "Give every agent the whole picture." [level=2] [ref=e294]:
+            - generic [aria-hidden] [ref=e295]:
+              - generic [ref=e296]: Give
+              - generic [ref=e298]: every
+              - generic [ref=e300]: agent
+              - generic [ref=e302]: the
+              - generic [ref=e304]: whole
+              - generic [ref=e306]: picture.
+          - paragraph [ref=e309]: The same project memory follows you from the editor to the terminal, to chat, to your phone.
+        - generic [ref=e311]:
+          - generic [ref=e312]:
+            - generic [ref=e314]: 01 / 04
+            - generic [ref=e321]:
+              - generic [ref=e322]: Aideployed-CMS
+              - generic [ref=e328]:
+                - complementary [ref=e329]:
+                  - generic [ref=e339]: AIDEPLOYED-CMS
+                  - generic [ref=e340]:
+                    - button "› .agents" [ref=e342]:
+                      - generic [ref=e343]: ›
+                      - generic [ref=e345]: .agents
+                    - button "› .next" [ref=e347]:
+                      - generic [ref=e348]: ›
+                      - generic [ref=e350]: .next
+                    - button "› e2e" [ref=e352]:
+                      - generic [ref=e353]: ›
+                      - generic [ref=e355]: e2e
+                    - button "› integration-snippets" [ref=e357]:
+                      - generic [ref=e358]: ›
+                      - generic [ref=e360]: integration-snippets
+                    - button "› node_modules" [ref=e362]:
+                      - generic [ref=e363]: ›
+                      - generic [ref=e365]: node_modules
+                    - button "› prisma" [ref=e367]:
+                      - generic [ref=e368]: ›
+                      - generic [ref=e370]: prisma
+                    - button "› public" [ref=e372]:
+                      - generic [ref=e373]: ›
+                      - generic [ref=e375]: public
+                    - button "› scripts" [ref=e377]:
+                      - generic [ref=e378]: ›
+                      - generic [ref=e380]: scripts
+                    - generic [ref=e381]:
+                      - button "› src" [ref=e382]:
+                        - generic [ref=e383]: ›
+                        - generic [ref=e385]: src
+                      - generic [ref=e386]:
+                        - button "› route.ts" [ref=e388]:
+                          - generic [ref=e389]: ›
+                          - generic [ref=e391]: route.ts
+                        - button "› route.test.ts" [ref=e393]:
+                          - generic [ref=e394]: ›
+                          - generic [ref=e396]: route.test.ts
+                        - button "› db.ts" [ref=e398]:
+                          - generic [ref=e399]: ›
+                          - generic [ref=e401]: db.ts
+                    - button "› test-results" [ref=e403]:
+                      - generic [ref=e404]: ›
+                      - generic [ref=e406]: test-results
+                    - button "› .env" [ref=e408]:
+                      - generic [ref=e409]: ›
+                      - generic [ref=e411]: .env
+                    - button "› .env.example" [ref=e413]:
+                      - generic [ref=e414]: ›
+                      - generic [ref=e416]: .env.example
+                    - button "› .gitignore" [ref=e418]:
+                      - generic [ref=e419]: ›
+                      - generic [ref=e421]: .gitignore
+                    - button "› AGENTS.md" [ref=e423]:
+                      - generic [ref=e424]: ›
+                      - generic [ref=e426]: AGENTS.md
+                    - button "› PUKU.md" [ref=e428]:
+                      - generic [ref=e429]: ›
+                      - generic [ref=e431]: PUKU.md
+                    - button "› eslint.config.mjs" [ref=e433]:
+                      - generic [ref=e434]: ›
+                      - generic [ref=e436]: eslint.config.mjs
+                    - button "› MEMORY.md" [ref=e438]:
+                      - generic [ref=e439]: ›
+                      - generic [ref=e441]: MEMORY.md
+                    - button "› next.config.ts" [ref=e443]:
+                      - generic [ref=e444]: ›
+                      - generic [ref=e446]: next.config.ts
+                    - button "› package.json" [ref=e448]:
+                      - generic [ref=e449]: ›
+                      - generic [ref=e451]: package.json
+                    - button "› playwright.config.ts" [ref=e453]:
+                      - generic [ref=e454]: ›
+                      - generic [ref=e456]: playwright.config.ts
+                    - button "› README.md" [ref=e458]:
+                      - generic [ref=e459]: ›
+                      - generic [ref=e461]: README.md
+                    - button "› tsconfig.json" [ref=e463]:
+                      - generic [ref=e464]: ›
+                      - generic [ref=e466]: tsconfig.json
+                  - generic [ref=e467]: OUTLINE
+                  - generic [ref=e468]: TIMELINE
+                - generic [ref=e469]:
+                  - generic [ref=e471]:
+                    - button "route.ts" [ref=e472]
+                    - button "Close route.ts" [ref=e474]: ×
+                  - generic [ref=e476]:
+                    - generic [ref=e477]: src › app › api › reminders › route.ts
+                    - generic [ref=e478]:
+                      - generic [ref=e479]: "12"
+                      - generic [ref=e481]: "import { NextResponse } from \"next/server\""
+                    - generic [ref=e482]:
+                      - generic [ref=e483]: "13"
+                      - generic [ref=e485]: "import { db } from \"@/lib/db\""
+                    - generic [ref=e486]: "14"
+                    - generic [ref=e489]:
+                      - generic [ref=e490]: "15"
+                      - generic [ref=e492]: "export async function PATCH(req: Request, { params }) {"
+                    - generic [ref=e493]:
+                      - generic [ref=e494]: "16"
+                      - generic [ref=e496]: "const item = await db.reminder.findUnique({ where: { id: params.id } })"
+                    - generic [ref=e497]:
+                      - generic [ref=e498]: "17"
+                      - generic [ref=e500]: return NextResponse.json(item)
+                    - generic [ref=e501]:
+                      - generic [ref=e502]: "18"
+                      - generic [ref=e504]: "}"
+                    - generic [ref=e505]: "19"
+                    - generic [ref=e508]:
+                      - generic [ref=e509]: "20"
+                      - generic [ref=e511]: "export async function DELETE(req: Request, { params }) {"
+                    - generic [ref=e512]:
+                      - generic [ref=e513]: "21"
+                      - generic [ref=e515]: "const item = await db.reminder.delete({ where: { id: params.id } })"
+                    - generic [ref=e516]:
+                      - generic [ref=e517]: "22"
+                      - generic [ref=e519]: "if (!item) return NextResponse.json({ error: \"not_found\" }, { status: 404 })"
+                    - generic [ref=e520]:
+                      - generic [ref=e521]: "23"
+                      - generic [ref=e523]: return NextResponse.json(item)
+                    - generic [ref=e524]:
+                      - generic [ref=e525]: "24"
+                      - generic [ref=e527]: "}"
+                - complementary [ref=e529]:
+                  - generic [ref=e530]:
+                    - generic [ref=e531]: New Agent
+                    - button "New agent" [ref=e533]: +
+                  - generic [ref=e535]:
+                    - generic [ref=e536]: TRY
+                    - button "PATCH should return 404 like DELETE does." [ref=e537]
+                    - button "Add a test for the 404 case" [ref=e538]
+                    - button "Explain route.ts" [ref=e539]
+                  - generic [ref=e540]:
+                    - textbox "Message the editor agent" [ref=e541]:
+                      - /placeholder: Describe what to build — / for commands, @ for context
+                    - generic [ref=e542]:
+                      - generic [ref=e543]: Agent ⌄
+                      - generic [ref=e544]: Puku-ai 2.8 ⌄
+                      - button "Send ↵" [disabled] [ref=e545]
+              - generic [ref=e546]:
+                - generic [ref=e547]: ⑂ main
+                - generic [ref=e548]: ⊗ 0 ⚠ 0
+          - paragraph [ref=e551]:
+            - generic [ref=e552]: Edit with an agent.
+            - text: Puku Editor reads your project, proposes the change inline, and runs the tests before you keep it.
+        - generic [ref=e554]:
+          - generic [ref=e555]:
+            - generic [ref=e557]: 02 / 04
+            - generic [ref=e564]:
+              - generic [ref=e565]: ~/aideployed-cms — puku
+              - generic [ref=e572]:
+                - generic [ref=e573]:
+                  - generic [ref=e574]: Welcome back, Md. Imtiaz Ahamed
+                  - img "Puku" [ref=e575]
+                  - generic [ref=e576]: Puku-ai 2.8~/aideployed-cms
+                - generic [ref=e577]:
+                  - generic [ref=e578]: Recent activity
+                  - generic [ref=e579]: Fix 404 shape · 2h ago
+                  - generic [ref=e580]: Rate limiting · yesterday
+                  - generic [ref=e582]: What's new
+                  - generic [ref=e583]: /remote-control live message feed
+                  - generic [ref=e584]: Puku mobile app relay session view
+                  - generic [ref=e585]: /release-notes for more
+              - generic [ref=e588]:
+                - generic [ref=e589]:
+                  - generic [ref=e590]: ►
+                  - textbox "Puku CLI input" [ref=e591]:
+                    - /placeholder: type a task, or /help
+                - generic [ref=e592]: / for commands · ? for help · context 23% · ask before edits
+          - paragraph [ref=e595]:
+            - generic [ref=e596]: Run it from the terminal.
+            - text: Puku CLI plans, shows the diff, and asks before it runs anything. Same memory as the editor.
+        - generic [ref=e598]:
+          - generic [ref=e599]:
+            - generic [ref=e601]: 03 / 04
+            - generic [ref=e607]:
+              - complementary [ref=e609]:
+                - generic [ref=e610]: puku
+                - generic [ref=e616]:
+                  - generic [ref=e617]:
+                    - text: Search
+                    - generic [ref=e621]: ⌘K
+                  - button "New chat" [ref=e622]
+                - generic [ref=e625]:
+                  - generic [ref=e626]: All projects
+                  - button [ref=e632]
+                - generic [ref=e635]:
+                  - button "Compare model baselines" [ref=e636]
+                  - generic [ref=e642]: Recent
+                  - button "Plan next week's experiments" [ref=e646]
+                - generic [ref=e651]: Customize
+                - generic [ref=e663]:
+                  - generic [ref=e664]:
+                    - generic [ref=e665]: ᵔᴥᵔ
+                    - text: Alex Morgan
+                  - generic [ref=e666]: Pro
+              - generic [ref=e670]:
+                - generic [ref=e672]:
+                  - heading "Compare model baselines" [level=3] [ref=e673]
+                  - generic [ref=e674]:
+                    - button "Rename" [ref=e675]
+                    - button "Share" [ref=e676]
+                    - button "Archive" [ref=e677]
+                    - button "Delete" [ref=e678]
+                    - button "New project" [ref=e679]
+                    - button "Preview streaming" [ref=e680]
+                  - generic [ref=e681]:
+                    - generic [ref=e682]:
+                      - generic [ref=e687]: evaluation-notes
+                      - generic [ref=e688]: TXT
+                    - paragraph [ref=e689]: Compare a small baseline with a larger model.
+                  - generic [ref=e690]:
+                    - button [ref=e691]
+                    - button [ref=e695]
+                  - button [ref=e698]
+                - generic [ref=e709]:
+                  - textbox "Message Puku Chat" [ref=e710]:
+                    - /placeholder: A question, a thought, a wild idea…
+                  - generic [ref=e711]:
+                    - button "Attach a file" [ref=e712]
+                    - button "Puku-ai 2.8 Fast" [ref=e716]:
+                      - text: Puku-ai 2.8
+                      - generic [ref=e717]: Fast
+                    - button "Think" [ref=e721]
+                    - button "Voice input" [ref=e724]
+                    - button "Send message" [disabled] [ref=e728]
+          - paragraph [ref=e733]:
+            - generic [ref=e734]: Research in Chat.
+            - text: Ask with sources, then send the answer straight to the CLI as a task.
+        - generic [ref=e736]:
+          - generic [ref=e737]:
+            - generic [ref=e739]: 04 / 04
+            - generic [ref=e741]:
+              - generic [ref=e742]:
+                - generic [ref=e743]: 9:41
+                - generic [ref=e744]: ●●●
+              - generic [ref=e745]:
+                - generic [ref=e746]: Sessions
+                - generic [ref=e747]: 1 needs you
+              - generic [ref=e748]:
+                - generic [ref=e749]:
+                  - text: NEEDS APPROVAL
+                  - generic [ref=e750]: swipe →
+                - generic [ref=e751]: Run migrations on staging?
+                - generic [ref=e752]: $ npx prisma migrate deploy
+                - generic [ref=e753]:
+                  - button "Approve" [ref=e754]
+                  - button "Deny" [ref=e755]
+              - generic [ref=e756]:
+                - generic [ref=e757]:
+                  - generic [ref=e758]: Flask reminder API
+                  - generic [ref=e759]: ● running
+                - generic [ref=e760]: 3 subagents · started 14s ago
+              - generic [ref=e763]:
+                - generic [ref=e764]:
+                  - generic [ref=e765]: Build mobile navigation
+                  - generic [ref=e766]: done
+                - generic [ref=e767]: "+214 −38 · PR #82 opened"
+          - paragraph [ref=e770]:
+            - generic [ref=e771]: Check in from your phone.
+            - text: Approve a command, answer a question, or read the PR from anywhere. Your sessions keep running on your machine.
+        - generic [ref=e773]:
+          - generic [ref=e774]:
+            - generic [ref=e775]:
+              - generic [ref=e776]: 02 — PRODUCTS
+              - heading "Products that work as one system." [level=2] [ref=e778]:
+                - generic [aria-hidden] [ref=e779]:
+                  - generic [ref=e780]: Products
+                  - generic [ref=e782]: that
+                  - generic [ref=e784]: work
+                  - generic [ref=e786]: as
+                  - generic [ref=e788]: one
+                  - generic [ref=e790]: system.
+            - paragraph [ref=e793]: Work in the editor, from the terminal, or in your browser.
+          - generic [ref=e794]:
+            - link "EDITOR Puku Editor An AI-native development environment. Write and change code with an agent that knows your project. Download for macOS →" [ref=e796] [cursor=pointer]:
+              - /url: /puku-editor
+              - generic [ref=e797]: EDITOR
+              - generic [ref=e798]: Puku Editor
+              - generic [ref=e799]: An AI-native development environment. Write and change code with an agent that knows your project.
+              - generic [ref=e800]:
+                - text: Download for macOS
+                - generic [ref=e801]: →
+            - link "CLI Puku CLI Run automation, infrastructure operations and execution workflows from your terminal. Install the CLI →" [ref=e803] [cursor=pointer]:
+              - /url: /puku-cli
+              - generic [ref=e804]: CLI
+              - generic [ref=e805]: Puku CLI
+              - generic [ref=e806]: Run automation, infrastructure operations and execution workflows from your terminal.
+              - generic [ref=e807]:
+                - text: Install the CLI
+                - generic [ref=e808]: →
+            - link "CHAT Puku Chat Chat, work with files, and explore projects and research in your browser. Open Puku Chat →" [ref=e810] [cursor=pointer]:
+              - /url: /puku-chat
+              - generic [ref=e811]: CHAT
+              - generic [ref=e812]: Puku Chat
+              - generic [ref=e813]: Chat, work with files, and explore projects and research in your browser.
+              - generic [ref=e814]:
+                - text: Open Puku Chat
+                - generic [ref=e815]: →
+            - link "PREVIEW Puku App A mobile preview for chats, attachments, projects, and dictated prompts. Learn about Puku App →" [ref=e817] [cursor=pointer]:
+              - /url: /puku-app
+              - generic [ref=e818]: PREVIEW
+              - generic [ref=e819]: Puku App
+              - generic [ref=e820]: A mobile preview for chats, attachments, projects, and dictated prompts.
+              - generic [ref=e821]:
+                - text: Learn about Puku App
+                - generic [ref=e822]: →
+          - generic [ref=e824]:
+            - generic [ref=e825]: COMING SOON
+            - generic [ref=e826]: Puku Co-Work
+            - generic [ref=e827]:
+              - generic [ref=e828]: ·
+              - text: Puku Design
+            - generic [ref=e829]:
+              - generic [ref=e830]: ·
+              - text: Puku Cloud
+            - link "See what’s next →" [ref=e831] [cursor=pointer]:
+              - /url: /coming-soon
+              - generic [ref=e832]: See what’s next
+              - generic [ref=e833]: →
+        - generic [ref=e834]:
+          - generic [ref=e835]:
+            - generic [ref=e836]:
+              - paragraph [ref=e837]: Introducing PUKU.md
+              - heading "A memory every agent can read." [level=2] [ref=e838]:
+                - generic [aria-hidden] [ref=e839]:
+                  - generic [ref=e840]: A
+                  - generic [ref=e842]: memory
+                  - generic [ref=e844]: every
+                  - generic [ref=e846]: agent
+                  - generic [ref=e848]: can
+                  - generic [ref=e850]: read.
+            - generic [ref=e852]:
+              - paragraph [ref=e853]: Plans, decisions and conventions, kept in plain markdown and versioned with your code. Pick up the same context in Editor, CLI, Chat or App.
+              - link "Read the docs" [ref=e854] [cursor=pointer]:
+                - /url: /docs
+          - img "Editor, CLI, Chat and App share plans, decisions and conventions in PUKU.md, carrying context into a diff, PR and deployment." [ref=e867]:
+            - generic [ref=e868]:
+              - generic [ref=e896]:
+                - generic [ref=e897]: Editor
+                - generic [ref=e903]: CLI
+                - generic [ref=e907]: Chat
+                - generic [ref=e911]: App
+              - article [ref=e915]:
+                - generic [ref=e916]:
+                  - strong [ref=e920]: PUKU.md
+                  - generic [ref=e921]: .md
+                - generic [ref=e922]:
+                  - generic [ref=e923]:
+                    - heading "# Plans" [level=3] [ref=e924]
+                    - paragraph [ref=e925]: What happens next
+                  - generic [ref=e926]:
+                    - heading "# Decisions" [level=3] [ref=e927]
+                    - paragraph [ref=e928]: Why it works this way
+                  - generic [ref=e929]:
+                    - heading "# Conventions" [level=3] [ref=e930]
+                    - paragraph [ref=e931]: How this repo is written
+                - generic [ref=e932]: Versioned with your code
+              - generic [ref=e936]:
+                - generic [ref=e937]: Diff
+                - generic [ref=e941]: PR
+                - generic [ref=e947]: Deploy
+        - generic [ref=e952]:
+          - generic [ref=e954]:
+            - generic [ref=e955]: PUKU GRAPH · CODEBASE CONTEXT
+            - heading "The right code. Before the first edit." [level=2] [ref=e957]:
+              - generic [aria-hidden] [ref=e958]:
+                - generic [ref=e959]: The
+                - generic [ref=e961]: right
+                - generic [ref=e963]: code.
+              - generic [aria-hidden] [ref=e965]:
+                - generic [ref=e966]: Before
+                - generic [ref=e968]: the
+                - generic [ref=e970]: first
+                - generic [ref=e972]: edit.
+          - figure "01 Your project files · tickets · docs — everything Puku can read 02 PUKU.md memory decisions and conventions every agent shares 03 Focused context only the slice this task needs 04 Code graph imports, calls, tests — followed, not guessed 05 Shipped change diff, review, commit" [ref=e975]:
+            - img "Project files become shared memory and focused context, connect through a code graph, and produce a shipped change" [ref=e976]:
+              - generic [ref=e1209]:
+                - generic [ref=e1210]:
+                  - generic [ref=e1212]: "01"
+                  - generic [ref=e1213]: Your project
+                  - generic [ref=e1214]: files · tickets · docs — everything Puku can read
+                - generic [ref=e1215]:
+                  - generic [ref=e1217]: "02"
+                  - generic [ref=e1218]: PUKU.md memory
+                  - generic [ref=e1219]: decisions and conventions every agent shares
+                - generic [ref=e1220]:
+                  - generic [ref=e1222]: "03"
+                  - generic [ref=e1223]: Focused context
+                  - generic [ref=e1224]: only the slice this task needs
+                - generic [ref=e1225]:
+                  - generic [ref=e1227]: "04"
+                  - generic [ref=e1228]: Code graph
+                  - generic [ref=e1229]: imports, calls, tests — followed, not guessed
+                - generic [ref=e1230]:
+                  - generic [ref=e1232]: "05"
+                  - generic [ref=e1233]: Shipped change
+                  - generic [ref=e1234]: diff, review, commit
+        - generic [ref=e1236]:
+          - generic [ref=e1237]:
+            - generic [ref=e1238]:
+              - generic [ref=e1239]: 02 — YOU STAY IN CONTROL
+              - heading "Agents that ask first." [level=2] [ref=e1241]:
+                - generic [aria-hidden] [ref=e1242]:
+                  - generic [ref=e1243]: Agents
+                  - generic [ref=e1245]: that
+                  - generic [ref=e1247]: ask
+                  - generic [ref=e1249]: first.
+            - paragraph [ref=e1252]: Every write, command and network call goes through permissions you set once per project.
+          - generic [ref=e1253]:
+            - generic [ref=e1255]:
+              - generic [ref=e1267]:
+                - generic [ref=e1268]: Plan · auth refactor
+                - generic [ref=e1269]: +
+              - generic [ref=e1280]:
+                - heading "Plan before it edits" [level=3] [ref=e1281]
+                - paragraph [ref=e1282]: Puku proposes steps first. Reorder, cut or approve the plan, then let it run.
+            - generic [ref=e1284]:
+              - generic [ref=e1298]:
+                - generic [ref=e1299]: ↓ read · 14 notes
+                - generic [ref=e1300]: ↑ write · PUKU.md
+              - generic [ref=e1301]:
+                - heading "Remembers what matters" [level=3] [ref=e1302]
+                - paragraph [ref=e1303]: Decisions land in PUKU.md, so the next agent starts where the last one stopped.
+          - generic [ref=e1304]:
+            - generic [ref=e1306]:
+              - generic [ref=e1308]:
+                - generic [ref=e1309]:
+                  - generic [ref=e1310]: Last approval
+                  - generic [ref=e1311]: 2m ago
+                - generic [ref=e1312]:
+                  - generic [ref=e1313]:
+                    - generic [ref=e1314]: write
+                    - generic [ref=e1315]: ● ALLOW
+                  - generic [ref=e1316]:
+                    - generic [ref=e1317]: shell
+                    - generic [ref=e1318]: ● ASK
+                  - generic [ref=e1319]:
+                    - generic [ref=e1320]: network
+                    - generic [ref=e1321]: ○ OFF
+              - generic [ref=e1331]:
+                - heading "Permissions you can read" [level=3] [ref=e1332]
+                - paragraph [ref=e1333]: Allow, ask or deny per tool and per project. /sandbox shows it all in one view.
+            - generic [ref=e1335]:
+              - generic [ref=e1337]:
+                - generic [ref=e1338]:
+                  - generic [ref=e1339]: You
+                  - generic [ref=e1340]: Tests fail on CI but pass locally. Why?
+                - generic [ref=e1346]:
+                  - img "Puku" [ref=e1349]
+                  - generic [ref=e1350]: CI uses Node 20. Your lockfile pins a Node 22 API. Want me to fix it?
+                - generic [ref=e1351]:
+                  - generic [ref=e1352]: You
+                  - generic [ref=e1353]: Yes. Open a PR.
+                - generic [ref=e1354]: "↗ PR #214 opened · fix/node-engines"
+              - generic [ref=e1355]:
+                - heading "From question to pull request" [level=3] [ref=e1356]
+                - paragraph [ref=e1357]: Ask in Chat, hand it to the CLI, review the PR. Context travels with it.
+        - generic [ref=e1359]:
+          - generic [ref=e1360]:
+            - generic [ref=e1361]: 03 — BUILT FOR FLOW
+            - heading "Less context switching." [level=2] [ref=e1363]:
+              - generic [aria-hidden] [ref=e1364]:
+                - generic [ref=e1365]: Less
+                - generic [ref=e1367]: context
+                - generic [ref=e1369]: switching.
+          - generic [ref=e1371]:
+            - article [ref=e1373]:
+              - img "Editor and CLI share PUKU.md memory" [ref=e1375]:
+                - generic [ref=e1376]:
+                  - generic [ref=e1377]: "[PUKU.md]"
+                  - generic [ref=e1381]: EDITOR
+                  - generic [ref=e1422]: CLI
+              - generic [ref=e1463]:
+                - heading "One memory, every surface." [level=3] [ref=e1464]
+                - paragraph [ref=e1465]: Decisions written in the Editor are waiting in the CLI before you switch windows.
+                - generic [ref=e1466]: PUKU.md sync
+            - article [ref=e1470]:
+              - img "Session history from June through October" [ref=e1472]:
+                - generic [ref=e1473]:
+                  - generic [ref=e1474]: JUN
+                  - generic [ref=e1476]: JUL
+                  - generic [ref=e1478]: AUG
+                  - generic [ref=e1480]: SEP
+                  - generic [ref=e1482]: OCT
+              - generic [ref=e1669]:
+                - heading "Never lose a session." [level=3] [ref=e1670]
+                - paragraph [ref=e1671]: Every run, diff and question is searchable, even the one from last quarter.
+                - generic [ref=e1672]: Session history
+            - article [ref=e1676]:
+              - img "Parallel agents with completed, running and queued work" [ref=e1678]
+              - generic [ref=e1778]:
+                - heading "Agents in parallel." [level=3] [ref=e1779]
+                - paragraph [ref=e1780]: Fan out review, tests and docs at once. See who is running, queued or done.
+                - generic [ref=e1781]: Subagents
+            - article [ref=e1785]:
+              - img "Rewind to checkpoint 04 before the auth edit" [ref=e1787]:
+                - generic [ref=e1818]:
+                  - generic [ref=e1820]: puku > rewind --to 04
+                  - generic [ref=e1824]: checkpoint 04 · before auth edit
+              - generic [ref=e1826]:
+                - heading "Rewind any checkpoint." [level=3] [ref=e1827]
+                - paragraph [ref=e1828]: Every edit is a checkpoint. Step back before the change that broke the build.
+                - generic [ref=e1829]: Checkpoints
+        - generic [ref=e1833]:
+          - generic [ref=e1834]:
+            - generic [ref=e1835]: 03 — SHIPPING WEEKLY
+            - heading "Small releases, often." [level=2] [ref=e1837]:
+              - generic [aria-hidden] [ref=e1838]:
+                - generic [ref=e1839]: Small
+                - generic [ref=e1841]: releases,
+                - generic [ref=e1843]: often.
+            - link "Full changelog →" [ref=e1846] [cursor=pointer]:
+              - /url: /changelog
+              - generic [ref=e1847]: Full changelog
+              - generic [ref=e1848]: →
+          - generic [ref=e1849]:
+            - link "1.8.66 CLI Polished /sandbox and /permissions UX, clearer install instructions Oct 9" [ref=e1851] [cursor=pointer]:
+              - /url: /changelog
+              - generic [ref=e1852]: 1.8.66
+              - generic [ref=e1853]: CLI
+              - generic [ref=e1854]: Polished /sandbox and /permissions UX, clearer install instructions
+              - generic [ref=e1855]: Oct 9
+            - link "2.7.0 Editor Agent panel with keep / review per file, puku-ai-2.7 as default model Oct 6" [ref=e1857] [cursor=pointer]:
+              - /url: /changelog
+              - generic [ref=e1858]: 2.7.0
+              - generic [ref=e1859]: Editor
+              - generic [ref=e1860]: Agent panel with keep / review per file, puku-ai-2.7 as default model
+              - generic [ref=e1861]: Oct 6
+            - link "1.8.65 CLI Smoother installer, automatic PKCE refresh, new /feedback command Oct 2" [ref=e1863] [cursor=pointer]:
+              - /url: /changelog
+              - generic [ref=e1864]: 1.8.65
+              - generic [ref=e1865]: CLI
+              - generic [ref=e1866]: Smoother installer, automatic PKCE refresh, new /feedback command
+              - generic [ref=e1867]: Oct 2
+            - link "0.9.0 CHAT Research mode with cited sources and Send to CLI Sep 28" [ref=e1869] [cursor=pointer]:
+              - /url: /changelog
+              - generic [ref=e1870]: 0.9.0
+              - generic [ref=e1871]: CHAT
+              - generic [ref=e1872]: Research mode with cited sources and Send to CLI
+              - generic [ref=e1873]: Sep 28
+        - generic [ref=e1875]:
+          - generic [ref=e1876]:
+            - generic [ref=e1877]:
+              - generic [ref=e1878]: 04 — PRICING
+              - heading "One plan covers every surface." [level=2] [ref=e1880]:
+                - generic [aria-hidden] [ref=e1881]:
+                  - generic [ref=e1882]: One
+                  - generic [ref=e1884]: plan
+                  - generic [ref=e1886]: covers
+                  - generic [ref=e1888]: every
+                  - generic [ref=e1890]: surface.
+            - link "Compare plans →" [ref=e1893] [cursor=pointer]:
+              - /url: /pricing
+              - generic [ref=e1894]: Compare plans
+              - generic [ref=e1895]: →
+          - generic [ref=e1896]:
+            - generic [ref=e1898]:
+              - generic [ref=e1899]: Free
+              - generic [ref=e1901]:
+                - generic [ref=e1902]: $0
+                - generic [ref=e1903]: forever
+              - paragraph [ref=e1904]: Editor, CLI and Chat with daily limits. Good for trying Puku on a side project.
+              - link "Download" [ref=e1906] [cursor=pointer]:
+                - /url: /download
+            - generic [ref=e1908]:
+              - generic [ref=e1909]:
+                - generic [ref=e1910]: Pro
+                - generic [ref=e1911]: MOST CHOSEN
+              - generic [ref=e1912]:
+                - generic [ref=e1913]: $20
+                - generic [ref=e1914]: / month · ৳2,400
+              - paragraph [ref=e1915]: Higher limits on every surface, research mode, background runs.
+              - link "Start Pro" [ref=e1917] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e1919]:
+              - generic [ref=e1920]: Team
+              - generic [ref=e1922]:
+                - generic [ref=e1923]: $40
+                - generic [ref=e1924]: / seat / month
+              - paragraph [ref=e1925]: Shared memory and skills, org permissions, SSO, audit log.
+              - link "Contact sales" [ref=e1927] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e1930]:
+          - img "Puku" [ref=e1933]
+          - heading "Bring Puku into your next commit." [level=2] [ref=e1934]:
+            - generic [aria-hidden] [ref=e1935]:
+              - generic [ref=e1936]: Bring
+              - generic [ref=e1938]: Puku
+              - generic [ref=e1940]: into
+              - generic [ref=e1942]: your
+              - generic [ref=e1944]: next
+              - generic [ref=e1946]: commit.
+          - paragraph [ref=e1949]: Free to start. Works with the repo you already have.
+          - generic [ref=e1950]:
+            - link "Download for Mac" [ref=e1952] [cursor=pointer]:
+              - /url: /download
+            - 'button "Copy install command: curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash" [ref=e1953]':
+              - generic [ref=e1954]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+              - generic: Copied
+      - contentinfo [ref=e1961]:
+        - generic [ref=e1964]:
+          - generic [ref=e1965]:
+            - generic [ref=e1966]:
+              - link "Puku Puku" [ref=e1967] [cursor=pointer]:
+                - /url: /
+                - img "Puku" [ref=e1968]
+                - generic [ref=e1969]: Puku
+              - paragraph [ref=e1970]: A calmer place to build, ship and learn.
+              - radiogroup "Theme" [ref=e1972]:
+                - radio "system" [checked] [ref=e1973]
+                - radio "light" [ref=e1974]
+                - radio "dark" [ref=e1976]
+            - generic [ref=e1977]:
+              - generic [ref=e1978]:
+                - generic [ref=e1979]: PRODUCT
+                - link "Puku Editor" [ref=e1980] [cursor=pointer]:
+                  - /url: /puku-editor
+                - link "Puku CLI" [ref=e1982] [cursor=pointer]:
+                  - /url: /puku-cli
+                - link "Puku Chat" [ref=e1984] [cursor=pointer]:
+                  - /url: /puku-chat
+                - link "Puku App" [ref=e1986] [cursor=pointer]:
+                  - /url: /puku-app
+                - link "Pricing" [ref=e1988] [cursor=pointer]:
+                  - /url: /pricing
+              - generic [ref=e1990]:
+                - generic [ref=e1991]: RESOURCES
+                - link "Docs" [ref=e1992] [cursor=pointer]:
+                  - /url: /docs
+                - link "Changelog" [ref=e1994] [cursor=pointer]:
+                  - /url: /changelog
+                - link "Download" [ref=e1996] [cursor=pointer]:
+                  - /url: /download
+                - link "Blog" [ref=e1998] [cursor=pointer]:
+                  - /url: /blog
+                - link "Status" [ref=e2000] [cursor=pointer]:
+                  - /url: /contact
+              - generic [ref=e2002]:
+                - generic [ref=e2003]: COMPANY
+                - link "About" [ref=e2004] [cursor=pointer]:
+                  - /url: /about-us
+                - link "Contact" [ref=e2006] [cursor=pointer]:
+                  - /url: /contact
+                - link "Support" [ref=e2008] [cursor=pointer]:
+                  - /url: /support
+                - generic [ref=e2010]: Careers · soon
+              - generic [ref=e2011]:
+                - generic [ref=e2012]: LEGAL
+                - link "Terms" [ref=e2013] [cursor=pointer]:
+                  - /url: /terms
+                - link "Privacy" [ref=e2015] [cursor=pointer]:
+                  - /url: /privacy
+                - link "Refunds" [ref=e2017] [cursor=pointer]:
+                  - /url: /refund
+          - generic [ref=e2019]:
+            - generic [ref=e2020]:
+              - generic [ref=e2021]: © 2026 Puku AI · Operated by Poridhi io Limited
+              - generic [ref=e2022]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+              - generic [ref=e2023]: "Trade License: TRAD/DNCC/009542/2023"
+            - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e2024]
+            - generic [ref=e2025]:
+              - generic [ref=e2026]:
+                - link "Discord" [ref=e2027] [cursor=pointer]:
+                  - /url: https://discord.gg/WmsGeB68Rv
+                - text: ·
+              - generic [ref=e2028]:
+                - link "YouTube" [ref=e2029] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@poridhiio
+                - text: ·
+              - link "LinkedIn" [ref=e2031] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/poridhiio/
+  - alert [ref=e2036]

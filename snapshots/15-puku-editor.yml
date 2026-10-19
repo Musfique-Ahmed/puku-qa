@@ -1,0 +1,599 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e23]:
+        - button "Switch to dark theme" [ref=e25]
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /login?next=%2Fpuku-editor
+        - link "Download" [ref=e29] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e31]:
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e38]:
+          - link "EDITOR Puku Editor 2.7 · next-edit completion →" [ref=e40] [cursor=pointer]:
+            - /url: /changelog
+            - generic [ref=e41]: EDITOR
+            - generic [ref=e43]:
+              - text: Puku Editor 2.7 · next-edit completion
+              - generic [ref=e44]: →
+          - heading "The editor where the agent sits beside you." [level=1] [ref=e45]:
+            - generic [aria-hidden] [ref=e46]:
+              - generic [ref=e47]: The
+              - generic [ref=e49]: editor
+              - generic [ref=e51]: where
+              - generic [ref=e53]: the
+              - generic [ref=e55]: agent
+              - generic [ref=e57]: sits
+              - generic [ref=e59]: beside
+              - generic [ref=e61]: you.
+          - paragraph [ref=e63]: A fast desktop editor with an agent that reads your project, proposes diffs, and waits for you to keep them.
+          - generic [ref=e64]:
+            - link "Download for Mac" [ref=e66] [cursor=pointer]:
+              - /url: /download
+            - 'button "Copy install command: curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash" [ref=e67]':
+              - generic [ref=e68]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+              - generic: Copied
+          - paragraph [ref=e75]: Apple silicon · Intel · x64 · arm64 · imports VS Code settings
+        - generic [ref=e83]:
+          - generic [ref=e84]: Aideployed-CMS
+          - generic [ref=e90]:
+            - complementary [ref=e91]:
+              - generic [ref=e101]: AIDEPLOYED-CMS
+              - generic [ref=e102]:
+                - button "› .agents" [ref=e104]:
+                  - generic [ref=e105]: ›
+                  - generic [ref=e107]: .agents
+                - button "› .next" [ref=e109]:
+                  - generic [ref=e110]: ›
+                  - generic [ref=e112]: .next
+                - button "› e2e" [ref=e114]:
+                  - generic [ref=e115]: ›
+                  - generic [ref=e117]: e2e
+                - button "› integration-snippets" [ref=e119]:
+                  - generic [ref=e120]: ›
+                  - generic [ref=e122]: integration-snippets
+                - button "› node_modules" [ref=e124]:
+                  - generic [ref=e125]: ›
+                  - generic [ref=e127]: node_modules
+                - button "› prisma" [ref=e129]:
+                  - generic [ref=e130]: ›
+                  - generic [ref=e132]: prisma
+                - button "› public" [ref=e134]:
+                  - generic [ref=e135]: ›
+                  - generic [ref=e137]: public
+                - button "› scripts" [ref=e139]:
+                  - generic [ref=e140]: ›
+                  - generic [ref=e142]: scripts
+                - generic [ref=e143]:
+                  - button "› src" [ref=e144]:
+                    - generic [ref=e145]: ›
+                    - generic [ref=e147]: src
+                  - generic [ref=e148]:
+                    - button "› route.ts" [ref=e150]:
+                      - generic [ref=e151]: ›
+                      - generic [ref=e153]: route.ts
+                    - button "› route.test.ts" [ref=e155]:
+                      - generic [ref=e156]: ›
+                      - generic [ref=e158]: route.test.ts
+                    - button "› db.ts" [ref=e160]:
+                      - generic [ref=e161]: ›
+                      - generic [ref=e163]: db.ts
+                - button "› test-results" [ref=e165]:
+                  - generic [ref=e166]: ›
+                  - generic [ref=e168]: test-results
+                - button "› .env" [ref=e170]:
+                  - generic [ref=e171]: ›
+                  - generic [ref=e173]: .env
+                - button "› .env.example" [ref=e175]:
+                  - generic [ref=e176]: ›
+                  - generic [ref=e178]: .env.example
+                - button "› .gitignore" [ref=e180]:
+                  - generic [ref=e181]: ›
+                  - generic [ref=e183]: .gitignore
+                - button "› AGENTS.md" [ref=e185]:
+                  - generic [ref=e186]: ›
+                  - generic [ref=e188]: AGENTS.md
+                - button "› PUKU.md" [ref=e190]:
+                  - generic [ref=e191]: ›
+                  - generic [ref=e193]: PUKU.md
+                - button "› eslint.config.mjs" [ref=e195]:
+                  - generic [ref=e196]: ›
+                  - generic [ref=e198]: eslint.config.mjs
+                - button "› MEMORY.md" [ref=e200]:
+                  - generic [ref=e201]: ›
+                  - generic [ref=e203]: MEMORY.md
+                - button "› next.config.ts" [ref=e205]:
+                  - generic [ref=e206]: ›
+                  - generic [ref=e208]: next.config.ts
+                - button "› package.json" [ref=e210]:
+                  - generic [ref=e211]: ›
+                  - generic [ref=e213]: package.json
+                - button "› playwright.config.ts" [ref=e215]:
+                  - generic [ref=e216]: ›
+                  - generic [ref=e218]: playwright.config.ts
+                - button "› README.md" [ref=e220]:
+                  - generic [ref=e221]: ›
+                  - generic [ref=e223]: README.md
+                - button "› tsconfig.json" [ref=e225]:
+                  - generic [ref=e226]: ›
+                  - generic [ref=e228]: tsconfig.json
+              - generic [ref=e229]: OUTLINE
+              - generic [ref=e230]: TIMELINE
+            - generic [ref=e231]:
+              - generic [ref=e233]:
+                - button "route.ts" [ref=e234]
+                - button "Close route.ts" [ref=e236]: ×
+              - generic [ref=e238]:
+                - generic [ref=e239]: src › app › api › reminders › route.ts
+                - generic [ref=e240]:
+                  - generic [ref=e241]: "12"
+                  - generic [ref=e243]: "import { NextResponse } from \"next/server\""
+                - generic [ref=e246]:
+                  - generic [ref=e247]: "13"
+                  - generic [ref=e249]: "import { db } from \"@/lib/db\""
+                - generic [ref=e252]: "14"
+                - generic [ref=e256]:
+                  - generic [ref=e257]: "15"
+                  - generic [ref=e259]: "export async function PATCH(req: Request, { params }) {"
+                - generic [ref=e261]:
+                  - generic [ref=e262]: "16"
+                  - generic [ref=e264]: "const item = await db.reminder.findUnique({ where: { id: params.id } })"
+                - generic [ref=e265]:
+                  - generic [ref=e266]: "17"
+                  - generic [ref=e268]: return NextResponse.json(item)
+                - generic [ref=e269]:
+                  - generic [ref=e270]: "18"
+                  - generic [ref=e272]: "}"
+                - generic [ref=e273]: "19"
+                - generic [ref=e277]:
+                  - generic [ref=e278]: "20"
+                  - generic [ref=e280]: "export async function DELETE(req: Request, { params }) {"
+                - generic [ref=e282]:
+                  - generic [ref=e283]: "21"
+                  - generic [ref=e285]: "const item = await db.reminder.delete({ where: { id: params.id } })"
+                - generic [ref=e286]:
+                  - generic [ref=e287]: "22"
+                  - generic [ref=e289]: "if (!item) return NextResponse.json({ error: \"not_found\" }, { status: 404 })"
+                - generic [ref=e290]:
+                  - generic [ref=e291]: "23"
+                  - generic [ref=e293]: return NextResponse.json(item)
+                - generic [ref=e294]:
+                  - generic [ref=e295]: "24"
+                  - generic [ref=e297]: "}"
+            - complementary [ref=e299]:
+              - generic [ref=e300]:
+                - generic [ref=e301]: New Agent
+                - button "New agent" [ref=e303]: +
+              - generic [ref=e305]:
+                - generic [ref=e306]: TRY
+                - button "PATCH should return 404 like DELETE does." [ref=e307]
+                - button "Add a test for the 404 case" [ref=e308]
+                - button "Explain route.ts" [ref=e309]
+              - generic [ref=e310]:
+                - textbox "Message the editor agent" [ref=e311]:
+                  - /placeholder: Describe what to build — / for commands, @ for context
+                - generic [ref=e312]:
+                  - generic [ref=e313]: Agent ⌄
+                  - generic [ref=e314]: Puku-ai 2.8 ⌄
+                  - button "Send ↵" [disabled] [ref=e315]
+          - generic [ref=e316]:
+            - generic [ref=e317]: ⑂ main
+            - generic [ref=e318]: ⊗ 0 ⚠ 0
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - generic [ref=e323]: 01 / 04
+          - generic [ref=e330]:
+            - generic [ref=e331]: Aideployed-CMS
+            - generic [ref=e337]:
+              - complementary [ref=e338]:
+                - generic [ref=e348]: AIDEPLOYED-CMS
+                - generic [ref=e349]:
+                  - button "› .agents" [ref=e351]:
+                    - generic [ref=e352]: ›
+                    - generic [ref=e354]: .agents
+                  - button "› .next" [ref=e356]:
+                    - generic [ref=e357]: ›
+                    - generic [ref=e359]: .next
+                  - button "› e2e" [ref=e361]:
+                    - generic [ref=e362]: ›
+                    - generic [ref=e364]: e2e
+                  - button "› integration-snippets" [ref=e366]:
+                    - generic [ref=e367]: ›
+                    - generic [ref=e369]: integration-snippets
+                  - button "› node_modules" [ref=e371]:
+                    - generic [ref=e372]: ›
+                    - generic [ref=e374]: node_modules
+                  - button "› prisma" [ref=e376]:
+                    - generic [ref=e377]: ›
+                    - generic [ref=e379]: prisma
+                  - button "› public" [ref=e381]:
+                    - generic [ref=e382]: ›
+                    - generic [ref=e384]: public
+                  - button "› scripts" [ref=e386]:
+                    - generic [ref=e387]: ›
+                    - generic [ref=e389]: scripts
+                  - button "› src" [ref=e391]:
+                    - generic [ref=e392]: ›
+                    - generic [ref=e394]: src
+                  - button "› test-results" [ref=e396]:
+                    - generic [ref=e397]: ›
+                    - generic [ref=e399]: test-results
+                  - button "› .env" [ref=e401]:
+                    - generic [ref=e402]: ›
+                    - generic [ref=e404]: .env
+                  - button "› .env.example" [ref=e406]:
+                    - generic [ref=e407]: ›
+                    - generic [ref=e409]: .env.example
+                  - button "› .gitignore" [ref=e411]:
+                    - generic [ref=e412]: ›
+                    - generic [ref=e414]: .gitignore
+                  - button "› AGENTS.md" [ref=e416]:
+                    - generic [ref=e417]: ›
+                    - generic [ref=e419]: AGENTS.md
+                  - button "› PUKU.md" [ref=e421]:
+                    - generic [ref=e422]: ›
+                    - generic [ref=e424]: PUKU.md
+                  - button "› eslint.config.mjs" [ref=e426]:
+                    - generic [ref=e427]: ›
+                    - generic [ref=e429]: eslint.config.mjs
+                  - button "› MEMORY.md" [ref=e431]:
+                    - generic [ref=e432]: ›
+                    - generic [ref=e434]: MEMORY.md
+                  - button "› next.config.ts" [ref=e436]:
+                    - generic [ref=e437]: ›
+                    - generic [ref=e439]: next.config.ts
+                  - button "› package.json" [ref=e441]:
+                    - generic [ref=e442]: ›
+                    - generic [ref=e444]: package.json
+                  - button "› playwright.config.ts" [ref=e446]:
+                    - generic [ref=e447]: ›
+                    - generic [ref=e449]: playwright.config.ts
+                  - button "› README.md" [ref=e451]:
+                    - generic [ref=e452]: ›
+                    - generic [ref=e454]: README.md
+                  - button "› tsconfig.json" [ref=e456]:
+                    - generic [ref=e457]: ›
+                    - generic [ref=e459]: tsconfig.json
+                - generic [ref=e460]: OUTLINE
+                - generic [ref=e461]: TIMELINE
+              - generic [ref=e462]:
+                - generic [ref=e464]:
+                  - button "Welcome" [ref=e465]
+                  - button "Close Welcome" [ref=e467]: ×
+                - generic [ref=e469]:
+                  - generic [ref=e470]: Puku
+                  - generic [ref=e471]: Editing evolved
+                  - generic [ref=e472]:
+                    - generic [ref=e473]:
+                      - generic [ref=e474]: Start
+                      - button "New File..." [ref=e475]
+                      - button "Open..." [ref=e476]
+                      - button "Clone Git Repository..." [ref=e477]
+                      - button "Connect to..." [ref=e478]
+                      - button "Generate New Workspace..." [ref=e479]
+                    - generic [ref=e480]:
+                      - generic [ref=e481]: Recent
+                      - button "portfolio-CMO-main ~/Downloads" [ref=e482]:
+                        - text: portfolio-CMO-main
+                        - generic [ref=e483]: ~/Downloads
+                  - generic [ref=e484]: Show welcome page on startup
+              - complementary [ref=e487]:
+                - generic [ref=e488]:
+                  - generic [ref=e489]: New Agent
+                  - button "New agent" [ref=e491]: +
+                - generic [ref=e493]:
+                  - generic [ref=e494]: TRY
+                  - button "PATCH should return 404 like DELETE does." [ref=e495]
+                  - button "Add a test for the 404 case" [ref=e496]
+                  - button "Explain route.ts" [ref=e497]
+                - generic [ref=e498]:
+                  - textbox "Message the editor agent" [ref=e499]:
+                    - /placeholder: Describe what to build — / for commands, @ for context
+                  - generic [ref=e500]:
+                    - generic [ref=e501]: Agent ⌄
+                    - generic [ref=e502]: Puku-ai 2.8 ⌄
+                    - button "Send ↵" [disabled] [ref=e503]
+            - generic [ref=e504]:
+              - generic [ref=e505]: ⑂ main
+              - generic [ref=e506]: ⊗ 0 ⚠ 0
+        - paragraph [ref=e509]:
+          - generic [ref=e510]: Open any repo.
+          - text: Clone, open or generate a workspace. Your VS Code settings, keybindings and extensions come with you.
+      - generic [ref=e513]:
+        - generic [ref=e514]:
+          - generic [ref=e515]: 01 — PUKU GRAPH
+          - heading "Puku Graph guides the agent to the right code." [level=2] [ref=e517]:
+            - generic [aria-hidden] [ref=e518]:
+              - generic [ref=e519]: Puku
+              - generic [ref=e521]: Graph
+              - generic [ref=e523]: guides
+              - generic [ref=e525]: the
+              - generic [ref=e527]: agent
+              - generic [ref=e529]: to
+              - generic [ref=e531]: the
+              - generic [ref=e533]: right
+              - generic [ref=e535]: code.
+        - generic [ref=e537]:
+          - generic [ref=e538]:
+            - generic [ref=e539]: TASK
+            - generic [ref=e540]: Sessions expire after 5 minutes instead of 24 hours.
+            - generic [ref=e541]: Context ready · 1.2s
+          - generic [ref=e544]:
+            - generic [ref=e545]:
+              - generic [ref=e546]:
+                - generic [ref=e547]: "01"
+                - generic [ref=e548]: Seed search
+                - generic [ref=e549]: done · 180ms
+              - paragraph [ref=e552]: Symbols, stack traces and file hints pick the starting points.
+              - generic [ref=e553]:
+                - generic [ref=e555]:
+                  - generic [ref=e556]: SYMBOL
+                  - generic [ref=e557]: SESSION_TTL
+                  - generic [ref=e558]: config/ttl.ts
+                - generic [ref=e560]:
+                  - generic [ref=e561]: TRACE
+                  - generic [ref=e562]: refreshSession()
+                  - generic [ref=e563]: session.ts:42
+                - generic [ref=e565]:
+                  - generic [ref=e566]: FILE
+                  - generic [ref=e567]: auth/middleware.ts
+                  - generic [ref=e568]: open tab
+              - generic [ref=e569]:
+                - generic [ref=e570]: 3 seeds
+                - generic [ref=e571]: from 1,284 files
+            - generic [ref=e572]:
+              - generic [ref=e573]:
+                - generic [ref=e574]: "02"
+                - generic [ref=e575]: Dependency graph
+                - generic [ref=e576]: done · 420ms
+              - paragraph [ref=e579]: Imports, calls and inheritance map how the code connects.
+              - generic [ref=e580]:
+                - generic [ref=e582]:
+                  - generic [ref=e583]: IMPORTS
+                  - generic [ref=e584]: session.ts → ttl.ts
+                - generic [ref=e586]:
+                  - generic [ref=e587]: CALLS
+                  - generic [ref=e588]: middleware → refreshSession
+                - generic [ref=e590]:
+                  - generic [ref=e591]: READS
+                  - generic [ref=e592]: session.ts → redis.client.ts
+              - generic [ref=e593]:
+                - generic [ref=e594]: 14 nodes · 21 edges
+                - generic [ref=e595]: depth 2
+            - generic [ref=e596]:
+              - generic [ref=e597]:
+                - generic [ref=e598]: "03"
+                - generic [ref=e599]: Focused context
+                - generic [ref=e600]: done · 610ms
+              - paragraph [ref=e603]: Ranking and summaries keep only what the fix needs.
+              - generic [ref=e604]:
+                - generic [ref=e606]:
+                  - generic [ref=e607]: config/ttl.ts
+                  - generic [ref=e610]: ".94"
+                - generic [ref=e612]:
+                  - generic [ref=e613]: session.ts
+                  - generic [ref=e616]: ".91"
+                - generic [ref=e618]:
+                  - generic [ref=e619]: auth/middleware.ts
+                  - generic [ref=e622]: ".78"
+              - generic [ref=e623]:
+                - generic [ref=e624]: 6 files kept
+                - generic [ref=e627]: 2.4k / 8k tok
+        - generic [ref=e628]:
+          - paragraph [ref=e629]: Shared context.
+          - paragraph [ref=e630]: Puku keeps what it learns across sessions and teammates, so nobody explains the codebase twice.
+      - generic [ref=e633]:
+        - generic [ref=e634]:
+          - generic [ref=e635]: 02 — WHAT IT DOES
+          - heading "Less switching. More finished work." [level=2] [ref=e637]:
+            - generic [aria-hidden] [ref=e638]:
+              - generic [ref=e639]: Less
+              - generic [ref=e641]: switching.
+              - generic [ref=e643]: More
+              - generic [ref=e645]: finished
+              - generic [ref=e647]: work.
+        - generic [ref=e649]:
+          - generic [ref=e650]:
+            - generic [ref=e651]:
+              - generic [ref=e652]: "export async function login(req: Request) {"
+              - generic [ref=e653]: "const { email, password } = await req.json()"
+              - generic [ref=e654]: "+ await rateLimit(req.ip, { max: 10 })"
+              - generic [ref=e655]: "const user = await db.user.find({ email })"
+              - generic [ref=e656]: if (!user) return unauthorized()
+            - generic [ref=e657]:
+              - generic [ref=e658]: Next-edit completion
+              - generic [ref=e659]: Predicts the edit you'll make next, not just the next word. Press ⇥ to accept, keep typing to ignore.
+          - generic [ref=e660]:
+            - generic [ref=e661]:
+              - generic [ref=e662]:
+                - text: Refactor
+                - generic [ref=e663]: "@auth.tsx"
+                - text: using
+                - generic [ref=e664]: $session-skill
+              - generic [ref=e666]:
+                - button "@ auth.tsx app/renderer ↵" [ref=e667]:
+                  - generic [ref=e668]: "@ auth.tsx app/renderer"
+                  - generic [ref=e669]: ↵
+                - button "@ auth.test.ts app/renderer" [ref=e670]
+                - button "@ PUKU.md project memory" [ref=e672]
+            - generic [ref=e674]:
+              - generic [ref=e675]: Context you can point at
+              - generic [ref=e676]: "@ files and symbols, $ skills, / commands. The agent only reads what it needs."
+        - generic [ref=e677]:
+          - generic [ref=e679]:
+            - generic [ref=e680]: Skills
+            - generic [ref=e681]: Save a workflow once as a skill. Run it from the Editor, CLI or Chat.
+          - generic [ref=e683]:
+            - generic [ref=e684]: Git-aware reviews
+            - generic [ref=e685]: Ask for a review of your branch. Comments land inline, ready to accept.
+          - generic [ref=e687]:
+            - generic [ref=e688]: Keyboard first
+            - generic [ref=e689]: Every action has a shortcut. ⌘K finds the rest.
+          - generic [ref=e691]:
+            - generic [ref=e692]: Brings your setup
+            - generic [ref=e693]: Imports VS Code settings, keybindings and extensions on first launch.
+      - generic [ref=e695]:
+        - generic [ref=e696]:
+          - generic [ref=e697]: 03 — SHORTCUTS
+          - heading "Learn six keys. Skip the mouse." [level=2] [ref=e699]:
+            - generic [aria-hidden] [ref=e700]:
+              - generic [ref=e701]: Learn
+              - generic [ref=e703]: six
+              - generic [ref=e705]: keys.
+              - generic [ref=e707]: Skip
+              - generic [ref=e709]: the
+              - generic [ref=e711]: mouse.
+          - paragraph [ref=e714]: Press ⌘/ in the editor to see every binding.
+        - generic [ref=e716]:
+          - button "Open agent ⌘ L" [ref=e717]:
+            - generic [ref=e718]: Open agent
+            - generic [ref=e719]:
+              - generic [ref=e720]: ⌘
+              - generic [ref=e721]: L
+          - button "Edit selection inline ⌘ I" [ref=e722]:
+            - generic [ref=e723]: Edit selection inline
+            - generic [ref=e724]:
+              - generic [ref=e725]: ⌘
+              - generic [ref=e726]: I
+          - button "Accept next edit ⇥" [ref=e727]:
+            - generic [ref=e728]: Accept next edit
+            - generic [ref=e729]: ⇥
+          - button "Keep all changes ⌘ ↵" [ref=e731]:
+            - generic [ref=e732]: Keep all changes
+            - generic [ref=e733]:
+              - generic [ref=e734]: ⌘
+              - generic [ref=e735]: ↵
+          - button "Command palette ⌘ K" [ref=e736]:
+            - generic [ref=e737]: Command palette
+            - generic [ref=e738]:
+              - generic [ref=e739]: ⌘
+              - generic [ref=e740]: K
+          - 'button "Open in Puku CLI ⌃ `" [ref=e741]':
+            - generic [ref=e742]: Open in Puku CLI
+            - generic [ref=e743]:
+              - generic [ref=e744]: ⌃
+              - generic [ref=e745]: "`"
+          - paragraph [ref=e746]: Try it — press a combo on your keyboard.
+      - generic [ref=e748]:
+        - generic [ref=e749]: 04 — RUNS ON
+        - generic [ref=e751]:
+          - generic [ref=e753]:
+            - generic [ref=e754]: macOS
+            - generic [ref=e755]: 12 Monterey or later · Apple silicon & Intel
+          - generic [ref=e757]:
+            - generic [ref=e758]: Windows
+            - generic [ref=e759]: Windows 10 or 11 · x64 & arm64
+          - generic [ref=e761]:
+            - generic [ref=e762]: Linux
+            - generic [ref=e763]: .deb · .rpm · AppImage
+      - generic [ref=e766]:
+        - img "Puku" [ref=e769]
+        - heading "Open your repo in Puku Editor." [level=2] [ref=e770]:
+          - generic [aria-hidden] [ref=e771]:
+            - generic [ref=e772]: Open
+            - generic [ref=e774]: your
+            - generic [ref=e776]: repo
+            - generic [ref=e778]: in
+            - generic [ref=e780]: Puku
+            - generic [ref=e782]: Editor.
+        - paragraph [ref=e785]: Free download. Your VS Code settings come with you.
+        - generic [ref=e786]:
+          - link "Download for Mac" [ref=e788] [cursor=pointer]:
+            - /url: /download
+          - 'button "Copy install command: curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash" [ref=e789]':
+            - generic [ref=e790]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+            - generic: Copied
+    - contentinfo [ref=e797]:
+      - generic [ref=e800]:
+        - generic [ref=e801]:
+          - generic [ref=e802]:
+            - link "Puku Puku" [ref=e803] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e804]
+              - generic [ref=e805]: Puku
+            - paragraph [ref=e806]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e808]:
+              - radio "system" [ref=e809]
+              - radio "light" [checked] [ref=e810]
+              - radio "dark" [ref=e812]
+          - generic [ref=e813]:
+            - generic [ref=e814]:
+              - generic [ref=e815]: PRODUCT
+              - link "Puku Editor" [ref=e816] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e818] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e820] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e822] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e824] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e826]:
+              - generic [ref=e827]: RESOURCES
+              - link "Docs" [ref=e828] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e830] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e832] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e834] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e836] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e838]:
+              - generic [ref=e839]: COMPANY
+              - link "About" [ref=e840] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e842] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e844] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e846]: Careers · soon
+            - generic [ref=e847]:
+              - generic [ref=e848]: LEGAL
+              - link "Terms" [ref=e849] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e851] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e853] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e855]:
+          - generic [ref=e856]:
+            - generic [ref=e857]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e858]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e859]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e860]
+          - generic [ref=e861]:
+            - generic [ref=e862]:
+              - link "Discord" [ref=e863] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e864]:
+              - link "YouTube" [ref=e865] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e867] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

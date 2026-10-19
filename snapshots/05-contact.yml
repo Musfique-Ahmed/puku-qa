@@ -1,0 +1,175 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e24]:
+        - button "Switch to dark theme" [ref=e26]
+        - link "Sign in" [ref=e28] [cursor=pointer]:
+          - /url: /login?next=%2Fcontact
+        - link "Download" [ref=e30] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e32]:
+    - main [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: CONTACT
+            - heading "Talk to a person." [level=1] [ref=e39]:
+              - generic [aria-hidden] [ref=e40]:
+                - generic [ref=e41]: Talk
+                - generic [ref=e43]: to
+                - generic [ref=e45]: a
+                - generic [ref=e47]: person.
+            - paragraph [ref=e50]: "We reply within one working day. For bugs, /feedback in any Puku product is faster: it attaches logs for you."
+          - generic [ref=e51]:
+            - link "Support support@puku.sh →" [ref=e52] [cursor=pointer]:
+              - /url: mailto:support@puku.sh
+              - generic [ref=e57]:
+                - generic [ref=e58]: Support
+                - generic [ref=e59]: support@puku.sh
+              - generic [ref=e60]: →
+            - link "Team & Enterprise sales@puku.sh →" [ref=e61] [cursor=pointer]:
+              - /url: mailto:sales@puku.sh
+              - generic [ref=e66]:
+                - generic [ref=e67]: Team & Enterprise
+                - generic [ref=e68]: sales@puku.sh
+              - generic [ref=e69]: →
+            - link "Community discord.gg/puku →" [ref=e70] [cursor=pointer]:
+              - /url: https://discord.gg/puku
+              - generic [ref=e74]:
+                - generic [ref=e75]: Community
+                - generic [ref=e76]: discord.gg/puku
+              - generic [ref=e77]: →
+            - generic [ref=e80]:
+              - generic [ref=e81]: Service status
+              - generic [ref=e82]: status.puku.sh
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e86]: Name
+              - textbox "Name" [ref=e87]:
+                - /placeholder: Your name
+            - generic [ref=e88]:
+              - generic [ref=e89]: Work email
+              - textbox "Work email" [ref=e90]:
+                - /placeholder: you@company.com
+          - generic [ref=e91]:
+            - generic [ref=e92]: What's this about?
+            - generic [ref=e93]:
+              - button "Support" [pressed] [ref=e94]
+              - button "Billing" [ref=e95]
+              - button "Team plan" [ref=e96]
+              - button "Press" [ref=e97]
+              - button "Other" [ref=e98]
+          - generic [ref=e99]:
+            - generic [ref=e100]: Product
+            - combobox "Product" [ref=e101]:
+              - option "Puku Editor"
+              - option "Puku CLI" [selected]
+              - option "Puku Chat"
+              - option "Puku App"
+              - option "Not sure"
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - text: Message
+              - generic [ref=e104]: 0/1000
+            - textbox "Message 0/1000" [ref=e105]:
+              - /placeholder: What happened, and what did you expect?
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - text: Opens a draft in your email app.
+              - link "Privacy policy." [ref=e108] [cursor=pointer]:
+                - /url: /privacy
+            - button "Open email draft →" [ref=e109]
+    - contentinfo [ref=e110]:
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - link "Puku Puku" [ref=e116] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e117]
+              - generic [ref=e118]: Puku
+            - paragraph [ref=e119]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e121]:
+              - radio "system" [ref=e122]
+              - radio "light" [checked] [ref=e123]
+              - radio "dark" [ref=e125]
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - generic [ref=e128]: PRODUCT
+              - link "Puku Editor" [ref=e129] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e131] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e133] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e135] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e137] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e139]:
+              - generic [ref=e140]: RESOURCES
+              - link "Docs" [ref=e141] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e143] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e145] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e147] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e149] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e151]:
+              - generic [ref=e152]: COMPANY
+              - link "About" [ref=e153] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e155] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e157] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e159]: Careers · soon
+            - generic [ref=e160]:
+              - generic [ref=e161]: LEGAL
+              - link "Terms" [ref=e162] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e164] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e166] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - generic [ref=e170]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e171]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e172]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e173]
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - link "Discord" [ref=e176] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e177]:
+              - link "YouTube" [ref=e178] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e180] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

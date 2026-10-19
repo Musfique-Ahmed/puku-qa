@@ -1,0 +1,19 @@
+{
+  "name": "puku-web-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright QA audit suite for https://web.dev.puku.sh/",
+  "scripts": {
+    "test": "playwright test",
+    "test:full": "playwright test --project=chromium-desktop --project=firefox-desktop --project=webkit-desktop --project=mobile-chrome --project=mobile-safari --project=tablet",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:ui": "playwright test --ui",
+    "test:hygiene": "playwright test tests/hygiene.spec.ts",
+    "test:smoke": "playwright test tests/hygiene.spec.ts tests/homepage.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "typescript": "^5.6.0"
+  }
+}

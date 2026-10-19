@@ -1,0 +1,366 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#nd-page"
+  - generic [ref=e7]:
+    - banner [ref=e8]:
+      - generic [ref=e9]:
+        - navigation "Site navigation" [ref=e12]:
+          - list [ref=e14]:
+            - listitem [ref=e15]:
+              - button "Products" [ref=e16]
+            - listitem [ref=e19]:
+              - link "Pricing" [ref=e20] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e21]:
+              - link "Docs" [ref=e22] [cursor=pointer]:
+                - /url: /docs
+            - listitem [ref=e24]:
+              - link "Resources" [ref=e25] [cursor=pointer]:
+                - /url: /resources
+            - listitem [ref=e26]:
+              - link "Contact" [ref=e27] [cursor=pointer]:
+                - /url: /contact
+        - button "Switch to dark theme" [ref=e28]
+    - complementary [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - link "Puku home" [ref=e33] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e36]: Puku
+            - generic [aria-hidden] [ref=e37]: /
+            - combobox "Product documentation" [ref=e38] [cursor=pointer]:
+              - generic [ref=e39]: Editor docs
+            - textbox [aria-hidden] [ref=e40]: /docs/puku-editor/introduction
+          - button "Collapse Sidebar" [expanded] [ref=e41]
+        - button "Search ⌘ K" [ref=e44]:
+          - text: Search
+          - generic [ref=e48]:
+            - generic [ref=e49]: ⌘
+            - generic [ref=e50]: K
+      - generic [ref=e53]:
+        - paragraph [ref=e54]:
+          - strong [ref=e55]: Getting Started
+        - link "Introduction" [ref=e56] [cursor=pointer]:
+          - /url: /docs/puku-editor/introduction
+        - link "Quickstart" [ref=e57] [cursor=pointer]:
+          - /url: /docs/puku-editor/quick-start
+        - link "Sign in" [ref=e58] [cursor=pointer]:
+          - /url: /docs/puku-editor/sign-in
+        - link "Troubleshooting" [ref=e59] [cursor=pointer]:
+          - /url: /docs/puku-editor/troubleshooting
+        - link "Download" [ref=e60] [cursor=pointer]:
+          - /url: /download
+        - paragraph [ref=e61]:
+          - strong [ref=e62]: Core Features
+        - link "Overview" [ref=e63] [cursor=pointer]:
+          - /url: /docs/puku-editor/features
+        - link "AI Chat" [ref=e64] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/chat
+        - link "PUKU-AI Engine" [ref=e65] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/puku-ai-engine
+        - link "Context Engine" [ref=e66] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/context-engine
+        - link "Code Completions" [ref=e67] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/completions
+        - link "Semantic Search" [ref=e68] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/search
+        - link "Extension Import" [ref=e69] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/extension-import
+        - link "Workspace Folder" [ref=e70] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/workspace-folder
+        - link "Plan & Usage" [ref=e71] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/plan-and-usage
+        - link "Image Uploads" [ref=e72] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/puku_image_documentation
+        - link "Sub-Agents" [ref=e73] [cursor=pointer]:
+          - /url: /docs/puku-editor/features/sub_agents_documentation
+        - paragraph [ref=e74]:
+          - strong [ref=e75]: Agent Window
+        - link "Overview" [ref=e76] [cursor=pointer]:
+          - /url: /docs/puku-editor/agent-window/overview
+        - link "Workspace & Inspection" [ref=e77] [cursor=pointer]:
+          - /url: /docs/puku-editor/agent-window/workspace-and-inspection
+        - link "Composer & Context" [ref=e78] [cursor=pointer]:
+          - /url: /docs/puku-editor/agent-window/composer-and-context
+        - link "Plan Mode" [ref=e79] [cursor=pointer]:
+          - /url: /docs/puku-editor/agent-window/plan-mode
+        - link "Live Exploration" [ref=e80] [cursor=pointer]:
+          - /url: /docs/puku-editor/agent-window/live-exploration
+        - link "Settings & Account" [ref=e81] [cursor=pointer]:
+          - /url: /docs/puku-editor/agent-window/settings-and-account
+        - paragraph [ref=e82]:
+          - strong [ref=e83]: Customizing
+        - link "Skills" [ref=e84] [cursor=pointer]:
+          - /url: /docs/puku-editor/customizing/skills
+        - link "Custom Skills" [ref=e85] [cursor=pointer]:
+          - /url: /docs/puku-editor/customizing/custom-skills
+        - link "Custom Agents" [ref=e86] [cursor=pointer]:
+          - /url: /docs/puku-editor/customizing/custom-agents
+        - link "MCP" [ref=e87] [cursor=pointer]:
+          - /url: /docs/puku-editor/customizing/mcp
+        - link "Hooks" [ref=e88] [cursor=pointer]:
+          - /url: /docs/puku-editor/customizing/hooks
+        - link "Ignore Files" [ref=e89] [cursor=pointer]:
+          - /url: /docs/puku-editor/customizing/ignore-files
+        - paragraph
+        - link "Pricing" [ref=e90] [cursor=pointer]:
+          - /url: /pricing
+    - generic:
+      - button "Collapse Sidebar" [expanded]
+      - button "Open Search"
+    - generic [ref=e91]:
+      - main [ref=e92]:
+        - article [ref=e93]:
+          - generic [ref=e94]:
+            - heading "Introduction" [level=1] [ref=e95]
+            - paragraph [ref=e96]: Puku Editor is a VS Code-based editor with AI chat, inline completions, and semantic code search. Open a workspace to give these features project context, then inspect the code behind any answer or suggestion.
+            - heading [level=2] [ref=e97]:
+              - link "What is Puku?" [ref=e98] [cursor=pointer]:
+                - /url: "#what-is-puku"
+              - button "Copy Anchor Link" [ref=e99]
+            - paragraph [ref=e104]: Puku builds on VS Code and adds code suggestions, workspace search, and agent chat. Use search to locate a relevant file, chat to understand it, and completions while editing.
+            - heading [level=2] [ref=e105]:
+              - link "Available Platforms" [ref=e106] [cursor=pointer]:
+                - /url: "#available-platforms"
+              - button "Copy Anchor Link" [ref=e107]
+            - table [ref=e113]:
+              - rowgroup [ref=e114]:
+                - row [ref=e115]:
+                  - columnheader "Platform" [ref=e116]
+                  - columnheader "Package" [ref=e117]
+              - rowgroup [ref=e118]:
+                - row [ref=e119]:
+                  - cell "Windows 10 or 11, x64" [ref=e120]
+                  - cell "Installer" [ref=e121]
+                - row [ref=e122]:
+                  - cell "Debian or Ubuntu, x64" [ref=e123]
+                  - cell [ref=e124]:
+                    - code [ref=e125]: .deb
+                    - text: package
+                - row [ref=e126]:
+                  - cell "macOS 12 or later, Apple Silicon" [ref=e127]
+                  - cell [ref=e128]:
+                    - code [ref=e129]: .dmg
+                    - text: disk image
+            - paragraph [ref=e130]:
+              - text: Use the
+              - link "Download page" [ref=e131] [cursor=pointer]:
+                - /url: /download
+              - text: to check the current packages for your system.
+            - heading [level=2] [ref=e132]:
+              - link "What Makes Puku Different?" [ref=e133] [cursor=pointer]:
+                - /url: "#what-makes-puku-different"
+              - button "Copy Anchor Link" [ref=e134]
+            - heading [level=3] [ref=e139]:
+              - link "PUKU-AI Context Engine" [ref=e140] [cursor=pointer]:
+                - /url: "#puku-ai-context-engine"
+              - button "Copy Anchor Link" [ref=e141]
+            - paragraph [ref=e146]: PUKU-AI routes requests across models based on task context. Its published design describes learning from acceptance rates, response timing, and follow-up edits. Model selection can affect relevance and speed; inspect the answer and any changed code before using it.
+            - heading [level=3] [ref=e147]:
+              - link "Fill-In-the-Middle (FIM) Completions" [ref=e148] [cursor=pointer]:
+                - /url: "#fill-in-the-middle-fim-completions"
+              - button "Copy Anchor Link" [ref=e149]
+            - paragraph [ref=e154]: Fill-In-the-Middle completions consider code before and after the cursor. Start a function near an existing pattern and review the ghost text for correct types, APIs, and edge cases.
+            - heading [level=3] [ref=e155]:
+              - link "Semantic Code Understanding" [ref=e156] [cursor=pointer]:
+                - /url: "#semantic-code-understanding"
+              - button "Copy Anchor Link" [ref=e157]
+            - paragraph [ref=e162]: Vector embeddings and AST-based chunking can surface related code without an exact text match. Search for "authentication logic," then open the results to check whether they implement the behavior you meant.
+            - heading [level=3] [ref=e163]:
+              - link "Edge-Deployed Backend" [ref=e164] [cursor=pointer]:
+                - /url: "#edge-deployed-backend"
+              - button "Copy Anchor Link" [ref=e165]
+            - paragraph [ref=e170]: The published architecture uses Cloudflare Workers and a local workspace index. Network, model, and project size affect response time. AI inference and embedding generation may process project context remotely; a local index does not make all AI processing local.
+            - heading [level=2] [ref=e171]:
+              - link "Core Features" [ref=e172] [cursor=pointer]:
+                - /url: "#core-features"
+              - button "Copy Anchor Link" [ref=e173]
+            - table [ref=e179]:
+              - rowgroup [ref=e180]:
+                - row [ref=e181]:
+                  - columnheader "Feature" [ref=e182]
+                  - columnheader "Use it for" [ref=e183]
+              - rowgroup [ref=e184]:
+                - row [ref=e185]:
+                  - cell [ref=e186]:
+                    - link "Completions" [ref=e187] [cursor=pointer]:
+                      - /url: /docs/puku-editor/features/completions
+                  - cell "Suggest code near your cursor using file and import context" [ref=e188]
+                - row [ref=e189]:
+                  - cell [ref=e190]:
+                    - link "Chat" [ref=e191] [cursor=pointer]:
+                      - /url: /docs/puku-editor/features/chat
+                  - cell "Ask about a file or discuss a change" [ref=e192]
+                - row [ref=e193]:
+                  - cell [ref=e194]:
+                    - link "Semantic search" [ref=e195] [cursor=pointer]:
+                      - /url: /docs/puku-editor/features/search
+                  - cell "Find code by behavior when you do not know its name" [ref=e196]
+                - row [ref=e197]:
+                  - cell [ref=e198]:
+                    - link "Context Engine" [ref=e199] [cursor=pointer]:
+                      - /url: /docs/puku-editor/features/context-engine
+                  - cell "Continue long conversations through summarization" [ref=e200]
+            - heading [level=2] [ref=e201]:
+              - link "How It Works" [ref=e202] [cursor=pointer]:
+                - /url: "#how-it-works"
+              - button "Copy Anchor Link" [ref=e203]
+            - paragraph [ref=e208]:
+              - strong [ref=e209]: Indexing
+              - text: "- Puku parses workspace code into semantic chunks and caches embeddings for retrieval. Indexing time depends on project size and environment."
+            - paragraph [ref=e210]:
+              - strong [ref=e211]: Predictions
+              - text: "- As you edit, Puku can use recent changes and codebase structure to suggest code. Review suggestions before accepting them."
+            - paragraph [ref=e212]:
+              - strong [ref=e213]: Data
+              - text: "- Puku keeps a workspace index locally. AI features may send context to remote services for inference or embedding generation. Keep generated index data out of Git, review any shared project instructions, and check the context you attach to a prompt. See"
+              - link "the workspace folder guide" [ref=e214] [cursor=pointer]:
+                - /url: /docs/puku-editor/features/workspace-folder
+              - text: .
+            - heading [level=2] [ref=e215]:
+              - link "Who Is Puku For?" [ref=e216] [cursor=pointer]:
+                - /url: "#who-is-puku-for"
+              - button "Copy Anchor Link" [ref=e217]
+            - paragraph [ref=e222]:
+              - text: Puku can help you explore an unfamiliar repository or work on a change in a codebase you already know. Open the relevant workspace, then use
+              - link "Quickstart" [ref=e223] [cursor=pointer]:
+                - /url: /docs/puku-editor/quick-start
+              - text: for a first task. Teams should review generated changes through their usual code review and test process.
+            - heading [level=2] [ref=e224]:
+              - link "Next Steps" [ref=e225] [cursor=pointer]:
+                - /url: "#next-steps"
+              - button "Copy Anchor Link" [ref=e226]
+            - paragraph [ref=e231]: To get started, install Puku, open a project, sign in, and try a code question. Check the cited file before acting on an answer.
+            - list [ref=e232]:
+              - listitem [ref=e233]:
+                - link "Quickstart" [ref=e234] [cursor=pointer]:
+                  - /url: /docs/puku-editor/quick-start
+                - text: "- Install, open a project, and complete a first task"
+              - listitem [ref=e235]:
+                - link "Features" [ref=e236] [cursor=pointer]:
+                  - /url: /docs/puku-editor/features
+                - text: "- Choose a feature by task"
+              - listitem [ref=e237]:
+                - link "Agent Window" [ref=e238] [cursor=pointer]:
+                  - /url: /docs/puku-editor/agent-window/overview
+                - text: "- Plan work and inspect agent changes"
+          - link [ref=e240] [cursor=pointer]:
+            - /url: /docs/puku-editor/quick-start
+            - paragraph [ref=e244]: Quickstart
+            - paragraph [ref=e245]: Next Page
+      - generic [ref=e246]:
+        - heading "On this page" [level=3] [ref=e247]
+        - generic [ref=e250]:
+          - link "Introduction" [ref=e251] [cursor=pointer]:
+            - /url: "#introduction"
+          - link "What is Puku?" [ref=e253] [cursor=pointer]:
+            - /url: "#what-is-puku"
+          - link "Available Platforms" [ref=e255] [cursor=pointer]:
+            - /url: "#available-platforms"
+          - link "What Makes Puku Different?" [ref=e257] [cursor=pointer]:
+            - /url: "#what-makes-puku-different"
+          - link "PUKU-AI Context Engine" [ref=e259] [cursor=pointer]:
+            - /url: "#puku-ai-context-engine"
+          - link "Fill-In-the-Middle (FIM) Completions" [ref=e262] [cursor=pointer]:
+            - /url: "#fill-in-the-middle-fim-completions"
+          - link "Semantic Code Understanding" [ref=e264] [cursor=pointer]:
+            - /url: "#semantic-code-understanding"
+          - link "Edge-Deployed Backend" [ref=e266] [cursor=pointer]:
+            - /url: "#edge-deployed-backend"
+          - link "Core Features" [ref=e268] [cursor=pointer]:
+            - /url: "#core-features"
+          - link "How It Works" [ref=e271] [cursor=pointer]:
+            - /url: "#how-it-works"
+          - link "Who Is Puku For?" [ref=e273] [cursor=pointer]:
+            - /url: "#who-is-puku-for"
+          - link "Next Steps" [ref=e275] [cursor=pointer]:
+            - /url: "#next-steps"
+    - contentinfo [ref=e278]:
+      - generic [ref=e279]:
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - link "Puku home" [ref=e282] [cursor=pointer]:
+              - /url: /
+              - text: Puku
+            - paragraph [ref=e283]: A calmer place to build, ship, and learn with your tools close at hand.
+            - list "Puku on social media" [ref=e284]:
+              - listitem [ref=e285]:
+                - link "Discord" [ref=e286] [cursor=pointer]:
+                  - /url: https://discord.gg/WmsGeB68Rv
+              - listitem [ref=e287]:
+                - link "Facebook" [ref=e288] [cursor=pointer]:
+                  - /url: https://www.facebook.com/profile.php?id=61588772290692
+              - listitem [ref=e289]:
+                - link "YouTube" [ref=e290] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@poridhiio
+              - listitem [ref=e291]:
+                - link "LinkedIn" [ref=e292] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/company/poridhiio/posts/?feedView=all
+          - navigation "Footer" [ref=e293]:
+            - generic [ref=e294]:
+              - heading "Product" [level=2] [ref=e295]
+              - list [ref=e296]:
+                - listitem [ref=e297]:
+                  - link "Puku Editor" [ref=e298] [cursor=pointer]:
+                    - /url: /puku-editor
+                - listitem [ref=e299]:
+                  - link "Puku CLI" [ref=e300] [cursor=pointer]:
+                    - /url: /puku-cli
+                - listitem [ref=e301]:
+                  - link "Puku Chat" [ref=e302] [cursor=pointer]:
+                    - /url: /puku-chat
+                - listitem [ref=e303]:
+                  - link "Puku App (preview)" [ref=e304] [cursor=pointer]:
+                    - /url: /puku-app
+              - paragraph [ref=e305]: "Coming soon: Puku Co-Work, Puku Design, Puku Cloud"
+            - generic [ref=e306]:
+              - heading "Resources" [level=2] [ref=e307]
+              - list [ref=e308]:
+                - listitem [ref=e309]:
+                  - link "Download" [ref=e310] [cursor=pointer]:
+                    - /url: /download?platform=darwin-arm64
+                - listitem [ref=e311]:
+                  - link "Puku Editor docs" [ref=e312] [cursor=pointer]:
+                    - /url: /docs/puku-editor/introduction
+                - listitem [ref=e313]:
+                  - link "Puku CLI docs" [ref=e314] [cursor=pointer]:
+                    - /url: /docs/puku-cli/introduction
+                - listitem [ref=e315]:
+                  - link "Puku Chat docs" [ref=e316] [cursor=pointer]:
+                    - /url: /docs/puku-chat/introduction
+                - listitem [ref=e317]:
+                  - link "Puku App docs" [ref=e318] [cursor=pointer]:
+                    - /url: /docs/puku-app/introduction
+                - listitem [ref=e319]:
+                  - link "Changelog" [ref=e320] [cursor=pointer]:
+                    - /url: /changelog
+            - generic [ref=e321]:
+              - heading "Company" [level=2] [ref=e322]
+              - list [ref=e323]:
+                - listitem [ref=e324]:
+                  - link "About" [ref=e325] [cursor=pointer]:
+                    - /url: /about-us
+              - paragraph [ref=e326]: "Coming soon: Careers, Team, Brand guidelines, Future notes"
+            - generic [ref=e327]:
+              - heading "Legal" [level=2] [ref=e328]
+              - list [ref=e329]:
+                - listitem [ref=e330]:
+                  - link "Terms & conditions" [ref=e331] [cursor=pointer]:
+                    - /url: /terms
+                - listitem [ref=e332]:
+                  - link "Privacy policy" [ref=e333] [cursor=pointer]:
+                    - /url: /privacy
+                - listitem [ref=e334]:
+                  - link "Support" [ref=e335] [cursor=pointer]:
+                    - /url: /support
+                - listitem [ref=e336]:
+                  - link "Refund policy" [ref=e337] [cursor=pointer]:
+                    - /url: /refund
+              - paragraph [ref=e338]: "Coming soon: Cookie policy"
+        - generic [ref=e339]:
+          - generic [ref=e340]:
+            - paragraph [ref=e341]: © 2026 Puku AI. All rights reserved.
+            - paragraph [ref=e342]: Operated by Poridhi io Limited · 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - paragraph [ref=e343]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e344]

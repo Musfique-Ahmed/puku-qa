@@ -1,0 +1,352 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e23]:
+        - button "Switch to dark theme" [ref=e25]
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /login?next=%2Fterms
+        - link "Download" [ref=e29] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e31]:
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - navigation "Breadcrumb" [ref=e34]:
+          - link "Home" [ref=e35] [cursor=pointer]:
+            - /url: /
+          - text: ›Terms of Service
+        - generic [ref=e36]:
+          - navigation "Legal documents" [ref=e37]:
+            - generic [ref=e38]: LEGAL
+            - link "Terms of service" [ref=e39] [cursor=pointer]:
+              - /url: /terms
+            - link "Privacy policy" [ref=e40] [cursor=pointer]:
+              - /url: /privacy
+            - link "Refund policy" [ref=e41] [cursor=pointer]:
+              - /url: /refund
+          - article [ref=e42]:
+            - generic [ref=e43]:
+              - paragraph [ref=e44]: Effective September 2, 2026
+              - heading "Terms of Service" [level=1] [ref=e45]
+              - generic [ref=e46]:
+                - paragraph [ref=e47]: Welcome to Puku! Before you access our services, please read these Terms of Service. These Terms of Service ("Terms") govern your use of our websites, applications, products, and services, including Puku Editor, Puku CLI, Puku Co-work, Puku Design, Puku Cloud, and Puku App, along with any associated apps, software, and websites (together, our "Services").
+                - paragraph [ref=e48]: These Terms are a contract between you and Poridhi io Limited, 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh ("Puku", "we", "us") (and not our Providers), and they include our Acceptable Use Policy. By accessing our Services, you agree to these Terms.
+                - paragraph [ref=e49]:
+                  - text: Please read our
+                  - link "Privacy Policy" [ref=e50] [cursor=pointer]:
+                    - /url: /privacy
+                  - text: ", which describes how we collect and use personal information."
+                - paragraph [ref=e51]: "Please note: Our Commercial Terms of Service govern your use of any Puku API key, the Puku developer console, or any other Puku offerings that reference the Commercial Terms of Service. For clarity, this does not include use of the consumer-facing Puku Editor, Puku CLI, or Puku App for individuals."
+                - list [ref=e52]:
+                  - listitem [ref=e53]:
+                    - generic [ref=e54]: Operator
+                    - generic [ref=e55]: Poridhi io Limited
+                  - listitem [ref=e56]:
+                    - generic [ref=e57]: Governing law
+                    - generic [ref=e58]: People's Republic of Bangladesh
+                  - listitem [ref=e59]:
+                    - generic [ref=e60]: Legal contact
+                    - link "legal@puku.sh" [ref=e62] [cursor=pointer]:
+                      - /url: mailto:legal@puku.sh
+            - complementary "At a glance" [ref=e63]:
+              - paragraph [ref=e64]: Summary
+              - paragraph [ref=e65]:
+                - text: These Terms govern your use of Puku. Operated by
+                - strong [ref=e66]: Poridhi io Limited
+                - text: from Dhaka, Bangladesh. Consumer use of Puku Editor, Puku CLI, and Puku App is covered here; Puku API and developer-console use are covered by the Commercial Terms.
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - term [ref=e69]: Your account
+                  - definition [ref=e70]: You must be at least 18, give accurate information, and keep your credentials to yourself.
+                - generic [ref=e71]:
+                  - term [ref=e72]: Your content
+                  - definition [ref=e73]: You own what you bring in. Outputs may be inaccurate — evaluate them before relying on them in consequential contexts.
+                - generic [ref=e74]:
+                  - term [ref=e75]: Your payment
+                  - definition [ref=e76]: Paid subscriptions renew automatically; cancel at least 24 hours before renewal. Fees are non-refundable except where required by law.
+            - generic [ref=e77]:
+              - paragraph [ref=e78]: "01"
+              - heading "1. Who we are." [level=2] [ref=e79]
+              - paragraph [ref=e80]: Puku builds an AI-native operating environment that connects development, design, execution, collaboration, and organizational context across its products. We conduct research, develop and apply safety techniques, and deploy the resulting systems via a set of products and partnerships.
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: "02"
+              - heading "2. Account creation and access." [level=2] [ref=e83]
+              - paragraph [ref=e84]:
+                - strong [ref=e85]: Minimum age.
+                - text: You must be at least 18 years old, or the minimum age required to consent to use the Services in your location, whichever is higher.
+              - paragraph [ref=e86]:
+                - strong [ref=e87]: Your Puku Account.
+                - text: To access our Services, we may ask you to create an account. You agree to provide correct, current, and complete account information and allow us to use it to communicate with you about our Services. Our communications to you using your account information will satisfy any requirements for legal notices.
+              - paragraph [ref=e88]: You may not share your account credentials, and you are responsible for all activity under the account through which you access the Services. Please notify us promptly of any suspected unauthorized access.
+              - paragraph [ref=e89]:
+                - strong [ref=e90]: Organizational accounts.
+                - text: If you access the Services through an organization, the administrator of that organization may control your membership and workspace access. Administrators may have visibility into account, usage, and workspace information consistent with the product and the organization's configuration.
+            - generic [ref=e91]:
+              - paragraph [ref=e92]: "03"
+              - heading "3. Use of our Services." [level=2] [ref=e93]
+              - paragraph [ref=e94]: You may access and use our Services only in compliance with these Terms, including our Acceptable Use Policy, the policies governing the countries and regions we currently support, and any guidelines or supplemental terms we may post on the Services (the "Permitted Use").
+              - paragraph [ref=e95]: "You are responsible for all activity under the account through which you access the Services. You may not access or use, or help another person to access or use, our Services in any of the following ways:"
+              - list [ref=e96]:
+                - listitem [ref=e97]: In violation of applicable law, third-party rights, or security requirements.
+                - listitem [ref=e98]: To commit fraud, phishing, scams, or deceptive impersonation; to create, possess, or distribute malware, destructive code, or content that infringes intellectual property or confidentiality.
+                - listitem [ref=e99]: To threaten, harass, or target others, or to facilitate serious physical harm.
+                - listitem [ref=e100]: To bypass authentication, security controls, quotas, or rate limits.
+                - listitem [ref=e101]: To collect or exploit sensitive personal information without authorization.
+                - listitem [ref=e102]: To use agents, tools, or integrations beyond the permissions granted by the relevant user or organization.
+                - listitem [ref=e103]: To materially disrupt the Services or third-party infrastructure.
+                - listitem [ref=e104]: To make unlawful high-impact decisions (employment, credit, housing, insurance, healthcare, legal, or public-benefit) without appropriate human oversight.
+            - generic [ref=e105]:
+              - paragraph [ref=e106]: "04"
+              - heading "4. Inputs, Outputs, Actions, and Materials." [level=2] [ref=e107]
+              - paragraph [ref=e108]:
+                - strong [ref=e109]: Generally.
+                - text: You may interact with our Services in a variety of formats (we call these "Inputs"). Our Services may generate responses (we call these "Outputs"), or enable the Services to take Actions on your behalf, such as reading or modifying files, executing commands, invoking tools, and interacting with connected services through custom agents, reusable skills, hooks, and Model Context Protocol connections (we call these "Actions"), based on your Inputs. Inputs and Outputs collectively are "Materials."
+              - paragraph [ref=e110]:
+                - strong [ref=e111]: Rights and responsibilities.
+                - text: You are responsible for all Inputs you submit to our Services, including their accuracy, legality, and the rights and authority necessary for us to process them. You represent that you have the rights and authority necessary for Puku to process your Inputs.
+              - paragraph [ref=e112]:
+                - strong [ref=e113]: Outputs may be inaccurate.
+                - text: Outputs may be inaccurate, incomplete, insecure, misleading, or otherwise unsuitable for a particular purpose. You must independently evaluate Outputs before relying on them in production, publication, legal, financial, medical, security, or other consequential contexts.
+              - paragraph [ref=e114]:
+                - strong [ref=e115]: Agent actions.
+                - text: Where the Services take Actions on your behalf, you remain responsible for the permissions you grant and for reviewing consequential Actions before they execute. AI automation does not transfer legal or professional responsibility from you to Puku.
+              - paragraph [ref=e116]:
+                - strong [ref=e117]: Our use of Materials.
+                - text: Our use of Materials is governed by our
+                - link "Privacy Policy" [ref=e118] [cursor=pointer]:
+                  - /url: /privacy
+                - text: . As described in Section 8 of the Privacy Policy, Puku does not use your Materials to train AI models by default.
+            - generic [ref=e119]:
+              - paragraph [ref=e120]: "05"
+              - heading "5. Feedback." [level=2] [ref=e121]
+              - paragraph [ref=e122]: We appreciate feedback, including ideas and suggestions for improvement, or rating an Output in response to an Input ("Feedback"). If you rate an Output in response to an Input—for example, by using a thumbs up/thumbs down icon—we will store the related conversation as part of your Feedback.
+              - paragraph [ref=e123]: You have no obligation to give us Feedback, but if you do, you agree that we may use the Feedback however we choose without any obligation or other payment to you.
+            - generic [ref=e124]:
+              - paragraph [ref=e125]: "06"
+              - heading "6. Subscriptions, fees, and payment." [level=2] [ref=e126]
+              - paragraph [ref=e127]:
+                - strong [ref=e128]: Fees and billing.
+                - text: You may be required to pay us fees to access or use our Services or certain features of our Services. You are responsible for paying any applicable fees listed on our pricing page unless otherwise communicated to you by Puku in writing. If you purchase access to our Services or features of our Services, you must provide complete and accurate billing information ("Payment Method"). You agree that we may charge the Payment Method for any applicable fees.
+              - paragraph [ref=e129]:
+                - strong [ref=e130]: Automatic renewal.
+                - text: Paid subscriptions automatically renew for the same period as your initial subscription term unless you cancel before the renewal date. We will provide at least 30 days' notice before any renewal.
+              - paragraph [ref=e131]:
+                - strong [ref=e132]: Cancellation.
+                - text: You may cancel your subscription at any time through your account settings or by contacting
+                - link "support@puku.sh" [ref=e133] [cursor=pointer]:
+                  - /url: mailto:support@puku.sh
+                - text: . To avoid being charged for the next billing period, submit your cancellation request at least 24 hours before your subscription is scheduled to renew. Cancellation takes effect at the end of your current billing period, and you keep access to the applicable paid features until the end of that billing period.
+              - paragraph [ref=e134]:
+                - strong [ref=e135]: Usage limits.
+                - text: AI and execution products may have quotas, rate limits, fair-use controls, or overage rules. We will communicate any applicable limits before any charge applies.
+              - paragraph [ref=e136]:
+                - strong [ref=e137]: Refunds.
+                - text: Except where required by applicable law, fees are non-refundable. If you are a consumer in the EEA, UK, or Switzerland, you have a 14-day right of withdrawal from a paid subscription in accordance with applicable consumer protection law. If Puku terminates your subscription for a reason other than a breach of these Terms by you, Puku will provide a pro-rata refund for the remaining unused portion of the applicable subscription term.
+              - paragraph [ref=e138]:
+                - strong [ref=e139]: Billing errors.
+                - text: If you believe you have been charged in error, please contact us at
+                - link "legal@puku.sh" [ref=e140] [cursor=pointer]:
+                  - /url: mailto:legal@puku.sh
+                - text: .
+              - paragraph [ref=e141]:
+                - strong [ref=e142]: Taxes.
+                - text: You are responsible for any applicable taxes unless legally exempt.
+            - generic [ref=e143]:
+              - paragraph [ref=e144]: "07"
+              - heading "7. Third-party services and links." [level=2] [ref=e145]
+              - paragraph [ref=e146]: Our Services may use or be used in connection with third-party content ("Third-Party Content"), services, or integrations. We do not control or accept responsibility for any loss or damage that may arise from your use of any Third-Party Content, services, or integrations, for which we make no representations or warranties. Your use of any Third-Party Content, services, or integrations is at your own risk and subject to any terms, conditions, or policies (including privacy policies) applicable to those third-party offerings.
+              - paragraph [ref=e147]: Connecting to a third-party service does not make that third party part of Puku, and Puku is not responsible for third-party services.
+            - generic [ref=e148]:
+              - paragraph [ref=e149]: "08"
+              - heading "8. Content moderation." [level=2] [ref=e150]
+              - paragraph [ref=e151]: Third-Party Content is the responsibility of the person or entity that provides it to our Services. Puku is under no obligation to host or serve Third-Party Content. Third-Party Content may appear in Inputs or Outputs and become part of Materials.
+              - paragraph [ref=e152]:
+                - text: If you see any Third-Party Content you believe does not comply with these Terms, including by violating our Acceptable Use Policy or the law, you can report it to us at
+                - link "legal@puku.sh" [ref=e153] [cursor=pointer]:
+                  - /url: mailto:legal@puku.sh
+                - text: . If we become aware that any Third-Party Content (a) infringes another's copyright, trademark, or other rights; (b) is unlawful; or (c) violates our policies, we may remove or restrict access to it. Repeat or serious violations may result in suspension or termination of your account.
+            - generic [ref=e154]:
+              - paragraph [ref=e155]: "09"
+              - heading "9. Software." [level=2] [ref=e156]
+              - paragraph [ref=e157]: We may offer manual or automatic updates to our software, including our apps ("Puku Software"), without advance notice to you. Puku Software may include open source software. In the event of any conflict between these Terms and any other Puku or third-party terms applicable to any portion of Puku Software, such as open-source license terms, those other terms will control as to that portion of the Puku Software and to the extent of the conflict.
+            - generic [ref=e158]:
+              - paragraph [ref=e159]: "10"
+              - heading "10. Ownership of the Services." [level=2] [ref=e160]
+              - paragraph [ref=e161]: The Services are owned, operated, and provided by us and our affiliates, licensors, distributors, and service providers (collectively "Providers"). We and our Providers retain all of our respective rights, title, and interest, including intellectual property rights, in and to the Services. Other than the rights of access and use expressly granted in these Terms, these Terms do not grant you any right, title, or interest in or to our Services.
+              - paragraph [ref=e162]: You retain the rights you already possess in your lawful content. Rights in generated Outputs depend on applicable law, product design, and any third-party provider terms. Nothing in these Terms grants you exclusivity or ownership beyond what Puku can grant.
+            - generic [ref=e163]:
+              - paragraph [ref=e164]: "11"
+              - heading "11. Disclaimer of warranties, limitations of liability, and indemnity." [level=2] [ref=e165]
+              - paragraph [ref=e166]: Our team works hard to provide great services, and we're continuously working on improvements. However, there are certain aspects we can't guarantee. We are using capital letters below to explain this, to make sure that you see it.
+              - paragraph [ref=e167]: YOUR USE OF THE SERVICES, MATERIALS, AND ACTIONS IS SOLELY AT YOUR OWN RISK. THE SERVICES, OUTPUTS, AND ACTIONS ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS AND, TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, ARE PROVIDED WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. PUKU DOES NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.
+              - paragraph [ref=e168]: TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, PUKU WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUES, DATA, OR GOODWILL, ARISING FROM OR RELATED TO YOUR USE OF THE SERVICES. THE AGGREGATE LIABILITY OF PUKU FOR ANY CLAIM ARISING FROM OR RELATED TO THE SERVICES WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID TO PUKU FOR THE SERVICES IN THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM, OR (B) ONE HUNDRED U.S. DOLLARS (US$100). NOTHING IN THESE TERMS IS INTENDED TO EXCLUDE OR LIMIT ANY WARRANTY OR LIABILITY THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
+              - paragraph [ref=e169]:
+                - strong [ref=e170]: Indemnity.
+                - text: You agree to defend, indemnify, and hold harmless Puku and its affiliates, officers, and employees from any claims, damages, liabilities, costs, and expenses (including reasonable legal fees) arising from your use of the Services in violation of these Terms, your Materials, or your violation of any applicable law or third-party right.
+            - generic [ref=e171]:
+              - paragraph [ref=e172]: "12"
+              - heading "12. General terms." [level=2] [ref=e173]
+              - paragraph [ref=e174]:
+                - strong [ref=e175]: Changes to the Services.
+                - text: Our Services are novel and will change. We may sometimes add or remove features, increase or decrease capacity limits, offer new Services, or stop offering certain Services. Unless we specifically agree otherwise in a separate agreement with you, we reserve the right to modify, suspend, or discontinue the Services or your access to the Services, in whole or in part, at any time. Although we will strive to provide you with reasonable advance notice if practicable, this is not always possible.
+              - paragraph [ref=e176]:
+                - strong [ref=e177]: Changes to these Terms.
+                - text: Puku may update these Terms from time to time. We will notify you of any material changes, as appropriate, and update the Effective Date at the top of this page. Continued use of the Services after the effective date of updated Terms constitutes acceptance of the changes.
+              - paragraph [ref=e178]:
+                - strong [ref=e179]: Assignment.
+                - text: You may not assign or transfer your rights or obligations under these Terms without our prior written consent. We may assign these Terms to any of our affiliates or in connection with a merger, acquisition, financing, or sale of assets.
+              - paragraph [ref=e180]:
+                - strong [ref=e181]: Severability.
+                - text: If any provision of these Terms is held to be invalid or unenforceable, that provision will be enforced to the maximum extent permissible and the remaining provisions will remain in full force and effect.
+              - paragraph [ref=e182]:
+                - strong [ref=e183]: Entire agreement.
+                - text: These Terms, together with the policies incorporated by reference (including the
+                - link "Privacy Policy" [ref=e184] [cursor=pointer]:
+                  - /url: /privacy
+                - text: ), constitute the entire agreement between you and Puku regarding the Services and supersede any prior or contemporaneous agreements on the same subject matter.
+              - paragraph [ref=e185]:
+                - strong [ref=e186]: No waiver.
+                - text: Our failure to enforce any right or provision of these Terms will not be deemed a waiver of such right or provision.
+              - paragraph [ref=e187]:
+                - strong [ref=e188]: Notices.
+                - text: We may provide notices to you through the Services or by email to the address associated with your account. Notices to us should be sent to
+                - link "legal@puku.sh" [ref=e189] [cursor=pointer]:
+                  - /url: mailto:legal@puku.sh
+                - text: .
+            - generic [ref=e190]:
+              - paragraph [ref=e191]: "13"
+              - heading "13. In case of disputes." [level=2] [ref=e192]
+              - paragraph [ref=e193]:
+                - strong [ref=e194]: Equitable relief.
+                - text: You agree that (a) no adequate remedy exists at law if you breach Section 3 (Use of Our Services); (b) it would be difficult to determine the damages resulting from such breach, and any such breach would cause irreparable harm; and (c) a grant of injunctive relief provides the best remedy for any such breach. You waive any opposition to such injunctive relief, as well as any demand that we prove actual damage or post a bond or other security in connection with such injunctive relief.
+              - paragraph [ref=e195]:
+                - strong [ref=e196]: Governing law.
+                - text: These Terms are governed by the laws of the People's Republic of Bangladesh, without regard to conflict-of-laws principles.
+              - paragraph [ref=e197]:
+                - strong [ref=e198]: Venue and jurisdiction.
+                - text: Any dispute arising from or related to these Terms or the Services will be resolved exclusively in the courts of Dhaka, Bangladesh, and you consent to the personal jurisdiction of such courts. Nothing in this section limits a consumer's right to bring proceedings in the courts of their place of residence.
+              - paragraph [ref=e199]:
+                - strong [ref=e200]: Alternative dispute resolution.
+                - text: Before filing a claim, you agree to contact us at
+                - link "legal@puku.sh" [ref=e201] [cursor=pointer]:
+                  - /url: mailto:legal@puku.sh
+                - text: and attempt to resolve the dispute informally for at least 30 days. If the dispute is not resolved within 30 days, you or Puku may pursue formal resolution.
+              - paragraph [ref=e202]:
+                - strong [ref=e203]: Contact.
+                - text: For questions about these Terms, write to us at the address below or use one of the channels listed.
+              - generic [ref=e204]:
+                - generic [ref=e205]:
+                  - paragraph [ref=e206]: Corporate Office
+                  - generic [ref=e207]: Hashim Tower (3rd Floor), 205 (1/A), Tejgaon Link Road, Gulshan-1, Dhaka-1208, Bangladesh
+                  - paragraph [ref=e208]: "Trade License: TRAD/DNCC/005399/2026"
+                - generic [ref=e209]:
+                  - paragraph [ref=e210]: Registered Office
+                  - generic [ref=e211]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+                  - paragraph [ref=e212]: "Trade License: TRAD/DNCC/009542/2023"
+              - generic [ref=e213]:
+                - generic [ref=e214]:
+                  - term [ref=e215]: For Terms questions
+                  - definition [ref=e216]:
+                    - link "legal@puku.sh" [ref=e217] [cursor=pointer]:
+                      - /url: mailto:legal@puku.sh
+                - generic [ref=e218]:
+                  - term [ref=e219]: General support
+                  - definition [ref=e220]:
+                    - link "support@puku.sh" [ref=e221] [cursor=pointer]:
+                      - /url: mailto:support@puku.sh
+                - generic [ref=e222]:
+                  - term [ref=e223]: Governing law
+                  - definition [ref=e224]: People's Republic of Bangladesh
+        - paragraph [ref=e226]: © 2026 Puku. All rights reserved.
+    - contentinfo [ref=e227]:
+      - generic [ref=e230]:
+        - generic [ref=e231]:
+          - generic [ref=e232]:
+            - link "Puku Puku" [ref=e233] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e234]
+              - generic [ref=e235]: Puku
+            - paragraph [ref=e236]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e238]:
+              - radio "system" [ref=e239]
+              - radio "light" [checked] [ref=e240]
+              - radio "dark" [ref=e242]
+          - generic [ref=e243]:
+            - generic [ref=e244]:
+              - generic [ref=e245]: PRODUCT
+              - link "Puku Editor" [ref=e246] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e248] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e250] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e252] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e254] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e256]:
+              - generic [ref=e257]: RESOURCES
+              - link "Docs" [ref=e258] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e260] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e262] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e264] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e266] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e268]:
+              - generic [ref=e269]: COMPANY
+              - link "About" [ref=e270] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e272] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e274] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e276]: Careers · soon
+            - generic [ref=e277]:
+              - generic [ref=e278]: LEGAL
+              - link "Terms" [ref=e279] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e281] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e283] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - generic [ref=e287]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e288]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e289]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e290]
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - link "Discord" [ref=e293] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e294]:
+              - link "YouTube" [ref=e295] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e297] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

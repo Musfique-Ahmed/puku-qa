@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#main-content"
+      - generic [ref=e5]:
+        - link "Puku home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: Puku
+        - navigation "Main" [ref=e8]:
+          - list [ref=e9]:
+            - listitem [ref=e10]:
+              - button "Product" [ref=e11]
+            - listitem [ref=e14]:
+              - link "Pricing" [ref=e15] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e16]:
+              - button "Docs" [ref=e17]
+            - listitem [ref=e20]:
+              - button "Resources" [ref=e21]
+            - listitem [ref=e24]:
+              - link "Contact" [ref=e25] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e26]:
+          - link "Download" [ref=e27] [cursor=pointer]:
+            - /url: /download?platform=win32-x64
+          - 'button "Theme: system. Switch to light" [ref=e29] [cursor=pointer]'
+    - main [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - img [aria-hidden] [ref=e34]:
+            - generic [ref=e37]: ____ __ __ __ __ __ __/ __ \/ / / // //_// / / // /_/ / /_/ // ,< / /_/ // .___/\____//_/|_| \____//_/
+          - generic [ref=e237]:
+            - heading "Sign in to Puku" [level=1] [ref=e238]
+            - paragraph [ref=e239]: Conversations, code, design and deployment in one workspace.
+        - generic [ref=e240]:
+          - generic [ref=e241]:
+            - link "Continue with Google" [ref=e242] [cursor=pointer]:
+              - /url: /api/oauth/login?provider=google&next=%2F
+            - link "Continue with Microsoft" [ref=e243] [cursor=pointer]:
+              - /url: /api/oauth/login?provider=microsoft&next=%2F
+            - link "Continue with Apple" [ref=e244] [cursor=pointer]:
+              - /url: /api/oauth/login?provider=apple&next=%2F
+            - link "Continue with Email" [ref=e245] [cursor=pointer]:
+              - /url: /email-login?next=%2F
+          - paragraph [ref=e246]:
+            - text: By continuing, you agree to the Puku
+            - link "Terms of Service" [ref=e247] [cursor=pointer]:
+              - /url: /terms
+            - text: and
+            - link "Privacy Policy" [ref=e248] [cursor=pointer]:
+              - /url: /privacy
+            - text: .
+  - alert [ref=e249]

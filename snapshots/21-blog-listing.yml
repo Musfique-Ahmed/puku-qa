@@ -1,0 +1,175 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e22]:
+            - link "Contact" [ref=e23] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e24]:
+        - button "Switch to dark theme" [ref=e26]
+        - link "Sign in" [ref=e28] [cursor=pointer]:
+          - /url: /login?next=%2Fblog
+        - link "Download" [ref=e30] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e32]:
+    - main [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]: BLOG
+        - heading "Notes from the workbench." [level=1] [ref=e37]:
+          - generic [aria-hidden] [ref=e38]:
+            - generic [ref=e39]: Notes
+            - generic [ref=e41]: from
+            - generic [ref=e43]: the
+            - generic [ref=e45]: workbench.
+        - paragraph [ref=e48]: How we build Puku, what we learned shipping it, and guides for working with agents.
+        - generic [ref=e49]:
+          - button "All" [pressed] [ref=e50]
+          - button "Product" [ref=e52]
+          - button "Engineering" [ref=e53]
+          - button "Guides" [ref=e54]
+      - link "PRODUCT · OCT 9 · 6 MIN Designing a sandbox you can actually read How we turned four config files and a wall of flags into one table, and why the agent now explains every permission it asks for. Read post →" [ref=e56] [cursor=pointer]:
+        - /url: /blog/designing-a-readable-sandbox
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: PRODUCT · OCT 9 · 6 MIN
+            - heading "Designing a sandbox you can actually read" [level=2] [ref=e62]
+          - generic [ref=e63]:
+            - paragraph [ref=e64]: How we turned four config files and a wall of flags into one table, and why the agent now explains every permission it asks for.
+            - generic [ref=e65]:
+              - text: Read post
+              - generic [ref=e66]: →
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]: ALL POSTS
+          - heading "Recently written." [level=2] [ref=e71]
+          - paragraph [ref=e72]: One post every couple of weeks. RSS available.
+        - generic [ref=e73]:
+          - link "PKCE refresh without the logout loop What broke when sessions expired mid-run, and the fix. ENGINEERING OCT 2" [ref=e75] [cursor=pointer]:
+            - /url: /blog/pkce-refresh
+            - generic [ref=e78]:
+              - generic [ref=e79]: PKCE refresh without the logout loop
+              - generic [ref=e80]: What broke when sessions expired mid-run, and the fix.
+            - generic [ref=e81]: ENGINEERING OCT 2
+          - link "Writing a PUKU.md your agents will follow Short rules beat long docs. Six patterns that work. GUIDES SEP 28" [ref=e83] [cursor=pointer]:
+            - /url: /blog/writing-puku-md
+            - generic [ref=e86]:
+              - generic [ref=e87]: Writing a PUKU.md your agents will follow
+              - generic [ref=e88]: Short rules beat long docs. Six patterns that work.
+            - generic [ref=e89]: GUIDES SEP 28
+          - link "One memory, four surfaces Why Puku shares context instead of syncing it. PRODUCT SEP 20" [ref=e91] [cursor=pointer]:
+            - /url: /blog/one-memory
+            - generic [ref=e93]:
+              - generic [ref=e94]: One memory, four surfaces
+              - generic [ref=e95]: Why Puku shares context instead of syncing it.
+            - generic [ref=e96]: PRODUCT SEP 20
+          - link "A terminal that asks before it acts Inside the permission prompts in Puku CLI 1.8. PRODUCT SEP 12" [ref=e98] [cursor=pointer]:
+            - /url: /blog/terminal-asks
+            - generic [ref=e100]:
+              - generic [ref=e101]: A terminal that asks before it acts
+              - generic [ref=e102]: Inside the permission prompts in Puku CLI 1.8.
+            - generic [ref=e103]: PRODUCT SEP 12
+      - generic [ref=e106]:
+        - img "Puku" [ref=e109]
+        - heading "Try what we write about." [level=2] [ref=e110]:
+          - generic [aria-hidden] [ref=e111]:
+            - generic [ref=e112]: Try
+            - generic [ref=e114]: what
+            - generic [ref=e116]: we
+            - generic [ref=e118]: write
+            - generic [ref=e120]: about.
+        - paragraph [ref=e123]: Free to start. Works with the repo you already have.
+        - generic [ref=e124]:
+          - link "Download for Mac" [ref=e126] [cursor=pointer]:
+            - /url: /download
+          - 'button "Copy install command: curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash" [ref=e127]':
+            - generic [ref=e128]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+            - generic: Copied
+    - contentinfo [ref=e135]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - link "Puku Puku" [ref=e141] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e142]
+              - generic [ref=e143]: Puku
+            - paragraph [ref=e144]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e146]:
+              - radio "system" [ref=e147]
+              - radio "light" [checked] [ref=e148]
+              - radio "dark" [ref=e150]
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - generic [ref=e153]: PRODUCT
+              - link "Puku Editor" [ref=e154] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e156] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e158] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e160] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e162] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e164]:
+              - generic [ref=e165]: RESOURCES
+              - link "Docs" [ref=e166] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e168] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e170] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e172] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e174] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e176]:
+              - generic [ref=e177]: COMPANY
+              - link "About" [ref=e178] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e180] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e182] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e184]: Careers · soon
+            - generic [ref=e185]:
+              - generic [ref=e186]: LEGAL
+              - link "Terms" [ref=e187] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e189] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e191] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e193]:
+          - generic [ref=e194]:
+            - generic [ref=e195]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e196]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e197]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e198]
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - link "Discord" [ref=e201] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e202]:
+              - link "YouTube" [ref=e203] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e205] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

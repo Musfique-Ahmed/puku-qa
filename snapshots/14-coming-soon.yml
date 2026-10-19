@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#main-content"
+    - banner:
+      - navigation "Main" [ref=e5]:
+        - generic [ref=e6]:
+          - link "Puku home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Puku" [ref=e9]
+          - list [ref=e10]:
+            - listitem [ref=e11]:
+              - button "Product" [ref=e12]
+            - listitem [ref=e15]:
+              - link "Pricing" [ref=e16] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e17]:
+              - link "Docs" [ref=e18] [cursor=pointer]:
+                - /url: /docs
+            - listitem [ref=e19]:
+              - link "Resources" [ref=e20] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e21]:
+              - link "Contact" [ref=e22] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e23]:
+          - button "Switch to dark theme" [ref=e25]
+          - link "Sign in" [ref=e30] [cursor=pointer]:
+            - /url: /login?next=%2Fcoming-soon
+          - link "Download" [ref=e32] [cursor=pointer]:
+            - /url: /download
+    - generic [ref=e34]:
+      - main [ref=e35]:
+        - generic [ref=e40]:
+          - generic [ref=e41]: IN THE WORKSHOP
+          - heading "Three more tools, built on the same memory." [level=1] [ref=e42]:
+            - generic [aria-hidden] [ref=e43]:
+              - generic [ref=e44]: Three
+              - generic [ref=e46]: more
+              - generic [ref=e48]: tools,
+              - generic [ref=e50]: built
+              - generic [ref=e52]: "on"
+              - generic [ref=e54]: the
+              - generic [ref=e56]: same
+              - generic [ref=e58]: memory.
+          - paragraph [ref=e60]: We're building these in the open. Join the list and we'll invite you as each one opens.
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - textbox "Email" [ref=e64]:
+                - /placeholder: you@company.com
+              - button "Get early access" [ref=e65]
+            - status [ref=e66]: Opens an email draft to request early access.
+        - generic [ref=e69]:
+          - article [ref=e71]:
+            - img "Puku Co-Work preview" [ref=e73]
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - generic [ref=e76]: Puku Co-Work
+                - generic [ref=e79]: Soon
+              - paragraph [ref=e80]: A shared space where your team and agents plan, split and review work together.
+          - article [ref=e82]:
+            - generic [ref=e83]: PUKU DESIGN
+            - generic [ref=e86]:
+              - generic [ref=e87]:
+                - generic [ref=e88]: Puku Design
+                - generic [ref=e95]: Soon
+              - paragraph [ref=e96]: Turn a sketch or a screenshot into components that use your design system.
+          - article [ref=e98]:
+            - generic [ref=e99]: PUKU CLOUD
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - generic [ref=e104]: Puku Cloud
+                - generic [ref=e107]: Soon
+              - paragraph [ref=e108]: Run agents in the background on hosted sandboxes, with logs you can replay.
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: QUESTIONS
+            - heading "Before you sign up." [level=2] [ref=e113]
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - heading [level=3] [ref=e116]:
+                - button "When do they launch?" [expanded] [ref=e117]
+              - generic "When do they launch?" [ref=e121]:
+                - paragraph [ref=e122]: Each opens to the waitlist in small groups first. We'll post dates in the changelog as they firm up.
+            - heading [level=3] [ref=e124]:
+              - button "Will they be included in my plan?" [ref=e125]
+            - heading [level=3] [ref=e130]:
+              - button "Can my team join together?" [ref=e131]
+        - generic [ref=e137]:
+          - img "Puku" [ref=e140]
+          - heading "Be first to try what's next." [level=2] [ref=e141]:
+            - generic [aria-hidden] [ref=e142]:
+              - generic [ref=e143]: Be
+              - generic [ref=e145]: first
+              - generic [ref=e147]: to
+              - generic [ref=e149]: try
+              - generic [ref=e151]: what's
+              - generic [ref=e153]: next.
+          - paragraph [ref=e156]: Co-Work, Design and Cloud are on the way.
+          - generic [ref=e157]:
+            - link "Get notified" [ref=e159] [cursor=pointer]:
+              - /url: "#top"
+            - link "No spam · one email per launch" [ref=e161] [cursor=pointer]:
+              - /url: /changelog
+      - contentinfo [ref=e162]:
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - link "Puku Puku" [ref=e168] [cursor=pointer]:
+                - /url: /
+                - img "Puku" [ref=e169]
+                - generic [ref=e170]: Puku
+              - paragraph [ref=e171]: A calmer place to build, ship and learn.
+              - radiogroup "Theme" [ref=e173]:
+                - radio "system" [checked] [ref=e174]
+                - radio "light" [ref=e176]
+                - radio "dark" [ref=e177]
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - generic [ref=e180]: PRODUCT
+                - link "Puku Editor" [ref=e181] [cursor=pointer]:
+                  - /url: /puku-editor
+                - link "Puku CLI" [ref=e183] [cursor=pointer]:
+                  - /url: /puku-cli
+                - link "Puku Chat" [ref=e185] [cursor=pointer]:
+                  - /url: /puku-chat
+                - link "Puku App" [ref=e187] [cursor=pointer]:
+                  - /url: /puku-app
+                - link "Pricing" [ref=e189] [cursor=pointer]:
+                  - /url: /pricing
+              - generic [ref=e191]:
+                - generic [ref=e192]: RESOURCES
+                - link "Docs" [ref=e193] [cursor=pointer]:
+                  - /url: /docs
+                - link "Changelog" [ref=e195] [cursor=pointer]:
+                  - /url: /changelog
+                - link "Download" [ref=e197] [cursor=pointer]:
+                  - /url: /download
+                - link "Blog" [ref=e199] [cursor=pointer]:
+                  - /url: /blog
+                - link "Status" [ref=e201] [cursor=pointer]:
+                  - /url: /contact
+              - generic [ref=e203]:
+                - generic [ref=e204]: COMPANY
+                - link "About" [ref=e205] [cursor=pointer]:
+                  - /url: /about-us
+                - link "Contact" [ref=e207] [cursor=pointer]:
+                  - /url: /contact
+                - link "Support" [ref=e209] [cursor=pointer]:
+                  - /url: /support
+                - generic [ref=e211]: Careers · soon
+              - generic [ref=e212]:
+                - generic [ref=e213]: LEGAL
+                - link "Terms" [ref=e214] [cursor=pointer]:
+                  - /url: /terms
+                - link "Privacy" [ref=e216] [cursor=pointer]:
+                  - /url: /privacy
+                - link "Refunds" [ref=e218] [cursor=pointer]:
+                  - /url: /refund
+          - generic [ref=e220]:
+            - generic [ref=e221]:
+              - generic [ref=e222]: © 2026 Puku AI · Operated by Poridhi io Limited
+              - generic [ref=e223]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+              - generic [ref=e224]: "Trade License: TRAD/DNCC/009542/2023"
+            - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e225]
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - link "Discord" [ref=e228] [cursor=pointer]:
+                  - /url: https://discord.gg/WmsGeB68Rv
+                - text: ·
+              - generic [ref=e229]:
+                - link "YouTube" [ref=e230] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@poridhiio
+                - text: ·
+              - link "LinkedIn" [ref=e232] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/poridhiio/
+  - alert [ref=e233]

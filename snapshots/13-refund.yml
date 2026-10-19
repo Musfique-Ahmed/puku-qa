@@ -1,0 +1,330 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e23]:
+        - button "Switch to dark theme" [ref=e25]
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /login?next=%2Frefund
+        - link "Download" [ref=e29] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e31]:
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - navigation "Breadcrumb" [ref=e34]:
+          - link "Home" [ref=e35] [cursor=pointer]:
+            - /url: /
+          - text: ›Refund Policy
+        - generic [ref=e36]:
+          - navigation "Legal documents" [ref=e37]:
+            - generic [ref=e38]: LEGAL
+            - link "Terms of service" [ref=e39] [cursor=pointer]:
+              - /url: /terms
+            - link "Privacy policy" [ref=e40] [cursor=pointer]:
+              - /url: /privacy
+            - link "Refund policy" [ref=e41] [cursor=pointer]:
+              - /url: /refund
+          - article [ref=e42]:
+            - generic [ref=e43]:
+              - paragraph [ref=e44]: "Effective Date: 1 September 2026 · Last Updated: 1 September 2026"
+              - heading "Return and Refund Policy" [level=1] [ref=e45]
+              - generic [ref=e46]:
+                - paragraph [ref=e47]:
+                  - text: This Return and Refund Policy explains how cancellations, refunds, and billing disputes are handled for paid subscriptions to Puku Editor, Puku CLI, and any other paid Puku product or feature (collectively, the “Service”). It supplements, and should be read together with, the Puku
+                  - link "Terms of Service" [ref=e48] [cursor=pointer]:
+                    - /url: /terms
+                  - text: . In the event of a conflict between this Policy and the Terms of Service, the Terms of Service control.
+                - paragraph [ref=e49]:
+                  - text: As a standard timeline, approved refunds are processed within seven (7) to ten (10) working days, as detailed in
+                  - link "Section 8" [ref=e50] [cursor=pointer]:
+                    - /url: "#timeline"
+                  - text: below.
+                - list [ref=e51]:
+                  - listitem [ref=e52]:
+                    - generic [ref=e53]: Operator
+                    - generic [ref=e54]: Poridhi io Limited
+                  - listitem [ref=e55]:
+                    - generic [ref=e56]: Refund contact
+                    - link "legals@puku.sh" [ref=e58] [cursor=pointer]:
+                      - /url: mailto:legals@puku.sh
+                  - listitem [ref=e59]:
+                    - generic [ref=e60]: Support contact
+                    - link "support@puku.sh" [ref=e62] [cursor=pointer]:
+                      - /url: mailto:support@puku.sh
+                  - listitem [ref=e63]:
+                    - generic [ref=e64]: Governing law
+                    - generic [ref=e65]: People's Republic of Bangladesh
+            - complementary "At a glance" [ref=e66]:
+              - paragraph [ref=e67]: Summary
+              - paragraph [ref=e68]:
+                - text: This Return and Refund Policy explains how cancellations, refunds, and billing disputes are handled for paid Puku subscriptions. It supplements the Puku
+                - link "Terms of Service" [ref=e69] [cursor=pointer]:
+                  - /url: /terms
+                - text: .
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - term [ref=e72]: Standard timeline
+                  - definition [ref=e73]: Approved refunds are processed within 7 to 10 working days of receiving all the information we need.
+                - generic [ref=e74]:
+                  - term [ref=e75]: Cancellation
+                  - definition [ref=e76]: Cancel at least 24 hours before renewal to avoid being charged for the next billing period.
+                - generic [ref=e77]:
+                  - term [ref=e78]: Where to start
+                  - definition [ref=e79]:
+                    - text: Email
+                    - link "legals@puku.sh" [ref=e80] [cursor=pointer]:
+                      - /url: mailto:legals@puku.sh
+                    - text: with your account email, the date and amount of the charge, and the reason for the request.
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: "01"
+              - heading "1. Overview" [level=2] [ref=e83]
+              - paragraph [ref=e84]:
+                - text: This Return and Refund Policy explains how cancellations, refunds, and billing disputes are handled for paid subscriptions to Puku Editor, Puku CLI, and any other paid Puku product or feature (collectively, the “Service”). It supplements, and should be read together with, the Puku
+                - link "Terms of Service" [ref=e85] [cursor=pointer]:
+                  - /url: /terms
+                - text: . In the event of a conflict between this Policy and the Terms of Service, the Terms of Service control.
+              - paragraph [ref=e86]:
+                - text: As a standard timeline, approved refunds are processed within seven (7) to ten (10) working days, as detailed in
+                - link "Section 8" [ref=e87] [cursor=pointer]:
+                  - /url: "#timeline"
+                - text: below.
+            - generic [ref=e88]:
+              - paragraph [ref=e89]: "02"
+              - heading "2. Subscription Cancellation" [level=2] [ref=e90]
+              - paragraph [ref=e91]:
+                - text: You may cancel your subscription at any time through your Account settings or by contacting us at
+                - link "support@puku.sh" [ref=e92] [cursor=pointer]:
+                  - /url: mailto:support@puku.sh
+                - text: .
+              - paragraph [ref=e93]: To avoid being charged for the next billing period, you must cancel at least twenty-four (24) hours before your subscription is scheduled to renew. Once cancelled, you will keep access to paid features until the end of your then-current billing period, after which your Account will revert to the free plan (if available) or lose access to paid features.
+            - generic [ref=e94]:
+              - paragraph [ref=e95]: "03"
+              - heading "3. General Refund Policy" [level=2] [ref=e96]
+              - paragraph [ref=e97]:
+                - text: Except as described in
+                - link "Section 4" [ref=e98] [cursor=pointer]:
+                  - /url: "#when-we-refund"
+                - text: or as required by applicable law, all subscription fees are non-refundable, including for partial billing periods, unused features, downgrades made partway through a billing period, or Account inactivity. We do not prorate or refund fees simply because you decide to stop using the Service partway through a paid term.
+            - generic [ref=e99]:
+              - paragraph [ref=e100]: "04"
+              - heading "4. When We Will Issue a Refund" [level=2] [ref=e101]
+              - paragraph [ref=e102]: "We will issue a refund, in whole or in part, in the following circumstances:"
+              - list [ref=e103]:
+                - listitem [ref=e104]:
+                  - strong [ref=e105]: "Duplicate or erroneous charge:"
+                  - text: you were charged more than once for the same billing period, or charged an amount that does not match the plan you purchased.
+                - listitem [ref=e106]:
+                  - strong [ref=e107]: "Unauthorized charge:"
+                  - text: your payment method was charged without your authorization, subject to our standard verification process.
+                - listitem [ref=e108]:
+                  - strong [ref=e109]: "Service failure:"
+                  - text: the Service was materially unavailable or unusable for a significant portion of your billing period due to a fault on our side, and we were unable to resolve it within a reasonable time.
+                - listitem [ref=e110]:
+                  - strong [ref=e111]: "Termination for our convenience:"
+                  - text: if we terminate your paid subscription for a reason other than your breach of the Terms of Service, we will refund the unused, pro-rata portion of the fees you already paid for that subscription term.
+              - paragraph [ref=e112]: Refunds under this Section are issued at our reasonable discretion after we review your request, and may be full or partial depending on the circumstances.
+            - generic [ref=e113]:
+              - paragraph [ref=e114]: "05"
+              - heading "5. Free Trials and Promotional Credits" [level=2] [ref=e115]
+              - paragraph [ref=e116]: If we offer a free trial or promotional credit, no payment is due until the trial or credit period ends. If you do not cancel before a free trial converts to a paid subscription, you will be charged the applicable fee for the plan you selected, and that charge is subject to this Policy.
+              - paragraph [ref=e117]: Promotional credits have no cash value and are not refundable or redeemable for cash.
+            - generic [ref=e118]:
+              - paragraph [ref=e119]: "06"
+              - heading "6. Statutory Rights for Users Outside Bangladesh" [level=2] [ref=e120]
+              - paragraph [ref=e121]:
+                - text: Nothing in this Policy limits any non-waivable statutory right you may have to cancel a purchase or receive a refund under the mandatory consumer-protection law of your country of residence. For example, consumers in the European Union and United Kingdom may have a statutory right to withdraw from an online purchase of digital content within fourteen (14) days of purchase, subject to the conditions and exceptions in that law (including where you have expressly consented to immediate performance and acknowledged the resulting loss of the withdrawal right). Where such a right applies to you and you validly exercise it, we will honor it in place of the general policy set out in
+                - link "Section 3" [ref=e122] [cursor=pointer]:
+                  - /url: "#general"
+                - text: .
+            - generic [ref=e123]:
+              - paragraph [ref=e124]: "07"
+              - heading "7. How to Request a Refund" [level=2] [ref=e125]
+              - paragraph [ref=e126]:
+                - text: To request a refund, contact us at
+                - link "legals@puku.sh" [ref=e127] [cursor=pointer]:
+                  - /url: mailto:legals@puku.sh
+                - text: with your Account email, the date and amount of the charge, and the reason for your request. We will acknowledge your request within two (2) business days of receipt.
+            - generic [ref=e128]:
+              - paragraph [ref=e129]: "08"
+              - heading "8. Refund Method and Processing Time" [level=2] [ref=e130]
+              - paragraph [ref=e131]: As our standard timeline, we will review your request and, if approved, process your refund to the original payment method used for the charge within seven (7) to ten (10) working days of receiving all information we need.
+              - generic "Refund processing timeline" [ref=e132]:
+                - paragraph [ref=e133]:
+                  - generic [ref=e134]: 7–10
+                  - generic [ref=e135]: working days from a complete request to refund
+                - list [aria-hidden] [ref=e136]:
+                  - listitem [ref=e137]:
+                    - generic [ref=e139]: Day 0
+                    - generic [ref=e140]: Request received
+                  - listitem [ref=e141]:
+                    - generic [ref=e143]: Day 1–2
+                    - generic [ref=e144]: Acknowledgement
+                  - listitem [ref=e145]:
+                    - generic [ref=e147]: Day 3–4
+                    - generic [ref=e148]: Request reviewed
+                  - listitem [ref=e149]:
+                    - generic [ref=e151]: Day 5–6
+                    - generic [ref=e152]: Decision communicated
+                  - listitem [ref=e153]:
+                    - generic [ref=e155]: Day 7–10
+                    - generic [ref=e156]: Refund issued
+                - list [ref=e157]:
+                  - listitem [ref=e158]:
+                    - strong [ref=e159]: Day 0
+                    - text: — Request received
+                  - listitem [ref=e160]:
+                    - strong [ref=e161]: Day 1–2
+                    - text: — Acknowledgement
+                  - listitem [ref=e162]:
+                    - strong [ref=e163]: Day 3–4
+                    - text: — Request reviewed
+                  - listitem [ref=e164]:
+                    - strong [ref=e165]: Day 5–6
+                    - text: — Decision communicated
+                  - listitem [ref=e166]:
+                    - strong [ref=e167]: Day 7–10
+                    - text: — Refund issued
+              - paragraph [ref=e168]: Depending on your bank or card issuer, it may take additional time beyond that for the refund to appear on your statement; we are not responsible for delays caused by your bank, card network, or payment provider.
+            - generic [ref=e169]:
+              - paragraph [ref=e170]: "09"
+              - heading "9. Chargebacks and Payment Disputes" [level=2] [ref=e171]
+              - paragraph [ref=e172]:
+                - text: If you believe you were charged in error, please contact us at
+                - link "legals@puku.sh" [ref=e173] [cursor=pointer]:
+                  - /url: mailto:legals@puku.sh
+                - text: before initiating a chargeback or payment dispute with your bank or card issuer, so we have an opportunity to resolve the issue directly.
+              - paragraph [ref=e174]:
+                - text: Initiating a chargeback without first contacting us, or disputing a charge in bad faith, may result in suspension or termination of your Account in accordance with the
+                - link "Terms of Service" [ref=e175] [cursor=pointer]:
+                  - /url: /terms
+                - text: .
+            - generic [ref=e176]:
+              - paragraph [ref=e177]: "10"
+              - heading "10. Changes to This Policy" [level=2] [ref=e178]
+              - paragraph [ref=e179]: We may update this Policy from time to time. If we make material changes, we will notify you by posting the updated Policy on the Service, updating the “Effective Date” above, or sending an email or in-app notice, before the changes take effect.
+              - paragraph [ref=e180]: Charges processed before a change takes effect are governed by the version of this Policy in force at the time of that charge.
+            - generic [ref=e181]:
+              - paragraph [ref=e182]: "11"
+              - heading "11. Contact Us" [level=2] [ref=e183]
+              - paragraph [ref=e184]: "If you have any questions about this Return and Refund Policy, please contact us at:"
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - paragraph [ref=e187]: Corporate Office
+                  - generic [ref=e188]: Hashim Tower (3rd Floor), 205 (1/A), Tejgaon Link Road, Gulshan-1, Dhaka-1208, Bangladesh
+                  - paragraph [ref=e189]: "Trade License: TRAD/DNCC/005399/2026"
+                - generic [ref=e190]:
+                  - paragraph [ref=e191]: Registered Office
+                  - generic [ref=e192]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+                  - paragraph [ref=e193]: "Trade License: TRAD/DNCC/009542/2023"
+              - generic [ref=e194]:
+                - generic [ref=e195]:
+                  - term [ref=e196]: Refunds and billing
+                  - definition [ref=e197]:
+                    - link "legals@puku.sh" [ref=e198] [cursor=pointer]:
+                      - /url: mailto:legals@puku.sh
+                - generic [ref=e199]:
+                  - term [ref=e200]: General support
+                  - definition [ref=e201]:
+                    - link "support@puku.sh" [ref=e202] [cursor=pointer]:
+                      - /url: mailto:support@puku.sh
+                - generic [ref=e203]:
+                  - term [ref=e204]: Legal questions
+                  - definition [ref=e205]:
+                    - link "legal@puku.sh" [ref=e206] [cursor=pointer]:
+                      - /url: mailto:legal@puku.sh
+                - generic [ref=e207]:
+                  - term [ref=e208]: Governing law
+                  - definition [ref=e209]: People's Republic of Bangladesh
+        - paragraph [ref=e211]: © 2026 Puku. All rights reserved.
+    - contentinfo [ref=e212]:
+      - generic [ref=e215]:
+        - generic [ref=e216]:
+          - generic [ref=e217]:
+            - link "Puku Puku" [ref=e218] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e219]
+              - generic [ref=e220]: Puku
+            - paragraph [ref=e221]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e223]:
+              - radio "system" [ref=e224]
+              - radio "light" [checked] [ref=e225]
+              - radio "dark" [ref=e227]
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - generic [ref=e230]: PRODUCT
+              - link "Puku Editor" [ref=e231] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e233] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e235] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e237] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e239] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e241]:
+              - generic [ref=e242]: RESOURCES
+              - link "Docs" [ref=e243] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e245] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e247] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e249] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e251] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e253]:
+              - generic [ref=e254]: COMPANY
+              - link "About" [ref=e255] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e257] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e259] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e261]: Careers · soon
+            - generic [ref=e262]:
+              - generic [ref=e263]: LEGAL
+              - link "Terms" [ref=e264] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e266] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e268] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - generic [ref=e272]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e273]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e274]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e275]
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - link "Discord" [ref=e278] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e279]:
+              - link "YouTube" [ref=e280] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e282] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

@@ -1,0 +1,344 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e23]:
+        - button "Switch to dark theme" [ref=e25]
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /login?next=%2Fpuku-chat
+        - link "Download" [ref=e29] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e31]:
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e38]:
+          - link "CHAT Research mode now cites every claim →" [ref=e40] [cursor=pointer]:
+            - /url: /changelog
+            - generic [ref=e41]: CHAT
+            - generic [ref=e43]:
+              - text: Research mode now cites every claim
+              - generic [ref=e44]: →
+          - heading "Research that turns into work." [level=1] [ref=e45]:
+            - generic [aria-hidden] [ref=e46]:
+              - generic [ref=e47]: Research
+              - generic [ref=e49]: that
+            - generic [aria-hidden] [ref=e51]:
+              - generic [ref=e52]: turns
+              - generic [ref=e54]: into
+              - generic [ref=e56]: work.
+          - paragraph [ref=e58]: Chat, work with files, and explore projects and research in your browser.
+          - generic [ref=e59]:
+            - link "Open Puku Chat" [ref=e61] [cursor=pointer]:
+              - /url: https://chat.puku.sh/new
+            - link "See plans" [ref=e63] [cursor=pointer]:
+              - /url: /pricing
+          - paragraph [ref=e64]: chat.puku.sh · no install · works in any modern browser
+        - generic [ref=e71]:
+          - complementary [ref=e73]:
+            - generic [ref=e74]: puku
+            - generic [ref=e81]:
+              - generic [ref=e82]:
+                - text: Search
+                - generic [ref=e86]: ⌘K
+              - button "New chat" [ref=e87]
+            - generic [ref=e90]:
+              - generic [ref=e91]: All projects
+              - button [ref=e97]
+            - generic [ref=e100]:
+              - button "Compare model baselines" [ref=e101]
+              - generic [ref=e107]: Recent
+              - button "Plan next week's experiments" [ref=e111]
+            - generic [ref=e116]: Customize
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - generic [ref=e130]: ᵔᴥᵔ
+                - text: Alex Morgan
+              - generic [ref=e131]: Pro
+          - generic [ref=e135]:
+            - generic [ref=e137]:
+              - heading "Where will your curiosity take you?" [level=3] [ref=e138]: Where will yourcuriosity take you?
+              - generic [ref=e140]:
+                - button "Pick up where we left off" [ref=e141]
+                - button "Untangle a problem" [ref=e142]
+                - button "Make a plan" [ref=e143]
+            - generic [ref=e146]:
+              - textbox "Message Puku Chat" [ref=e147]:
+                - /placeholder: A question, a thought, a wild idea…
+              - generic [ref=e148]:
+                - button "Attach a file" [ref=e149]
+                - button "Puku-ai 2.8 Fast" [ref=e153]:
+                  - text: Puku-ai 2.8
+                  - generic [ref=e154]: Fast
+                - button "Think" [ref=e158]
+                - button "Voice input" [ref=e161]
+                - button "Send message" [disabled] [ref=e165]
+            - generic [ref=e168]: ⌘ / Ctrl + Enter to send
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - generic [ref=e173]: 01 / 04
+          - generic [ref=e179]:
+            - complementary [ref=e181]:
+              - generic [ref=e182]: puku
+              - generic [ref=e188]:
+                - generic [ref=e189]:
+                  - text: Search
+                  - generic [ref=e193]: ⌘K
+                - button "New chat" [ref=e194]
+              - generic [ref=e197]:
+                - generic [ref=e198]: All projects
+                - button [ref=e204]
+              - generic [ref=e207]:
+                - button "Compare model baselines" [ref=e208]
+                - generic [ref=e214]: Recent
+                - button "Plan next week's experiments" [ref=e218]
+              - generic [ref=e223]: Customize
+              - generic [ref=e235]:
+                - generic [ref=e236]:
+                  - generic [ref=e237]: ᵔᴥᵔ
+                  - text: Alex Morgan
+                - generic [ref=e238]: Pro
+            - generic [ref=e242]:
+              - generic [ref=e244]:
+                - heading "Compare model baselines" [level=3] [ref=e245]
+                - generic [ref=e246]:
+                  - button "Rename" [ref=e247]
+                  - button "Share" [ref=e248]
+                  - button "Archive" [ref=e249]
+                  - button "Delete" [ref=e250]
+                  - button "New project" [ref=e251]
+                  - button "Preview streaming" [ref=e252]
+                - generic [ref=e253]:
+                  - generic [ref=e254]:
+                    - generic [ref=e259]: evaluation-notes
+                    - generic [ref=e260]: TXT
+                  - paragraph [ref=e261]: Compare a small baseline with a larger model.
+                - generic [ref=e262]:
+                  - button [ref=e263]
+                  - button [ref=e267]
+                - button [ref=e270]
+              - generic [ref=e281]:
+                - textbox "Message Puku Chat" [ref=e282]:
+                  - /placeholder: A question, a thought, a wild idea…
+                - generic [ref=e283]:
+                  - button "Attach a file" [ref=e284]
+                  - button "Puku-ai 2.8 Fast" [ref=e288]:
+                    - text: Puku-ai 2.8
+                    - generic [ref=e289]: Fast
+                  - button "Think" [ref=e293]
+                  - button "Voice input" [ref=e296]
+                  - button "Send message" [disabled] [ref=e300]
+        - paragraph [ref=e305]:
+          - generic [ref=e306]: Research with receipts.
+          - text: Research mode searches the web and your project, cites every claim and flags what it couldn't verify.
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - generic [ref=e311]: 02 / 04
+          - generic [ref=e317]:
+            - complementary [ref=e319]:
+              - generic [ref=e320]: puku
+              - generic [ref=e326]:
+                - generic [ref=e327]:
+                  - text: Search
+                  - generic [ref=e331]: ⌘K
+                - button "New chat" [ref=e332]
+              - generic [ref=e335]:
+                - generic [ref=e336]: All projects
+                - button [ref=e342]
+              - generic [ref=e345]:
+                - button "Compare model baselines" [ref=e346]
+                - generic [ref=e352]: Recent
+                - button "Plan next week's experiments" [ref=e356]
+              - generic [ref=e361]: Customize
+              - generic [ref=e373]:
+                - generic [ref=e374]:
+                  - generic [ref=e375]: ᵔᴥᵔ
+                  - text: Alex Morgan
+                - generic [ref=e376]: Pro
+            - generic [ref=e380]:
+              - generic [ref=e382]:
+                - heading "Where will your curiosity take you?" [level=3] [ref=e383]: Where will yourcuriosity take you?
+                - generic [ref=e384]:
+                  - button "Pick up where we left off" [ref=e385]
+                  - button "Untangle a problem" [ref=e386]
+                  - button "Make a plan" [ref=e387]
+              - generic [ref=e390]:
+                - textbox "Message Puku Chat" [ref=e391]:
+                  - /placeholder: A question, a thought, a wild idea…
+                - generic [ref=e392]:
+                  - button "Attach a file" [ref=e393]
+                  - button "Puku-ai 2.8 Fast" [ref=e397]:
+                    - text: Puku-ai 2.8
+                    - generic [ref=e398]: Fast
+                  - button "Think" [ref=e402]
+                  - button "Voice input" [ref=e405]
+                  - button "Send message" [disabled] [ref=e409]
+              - generic [ref=e412]: ⌘ / Ctrl + Enter to send
+        - paragraph [ref=e415]:
+          - generic [ref=e416]: Answers become artifacts.
+          - text: Docs, code and slides open beside the chat, ready to edit or send to the CLI as a task.
+      - generic [ref=e419]:
+        - generic [ref=e420]:
+          - generic [ref=e421]: THREE WAYS TO ASK
+          - heading "Pick the depth. Puku picks the tools." [level=2] [ref=e423]:
+            - generic [aria-hidden] [ref=e424]:
+              - generic [ref=e425]: Pick
+              - generic [ref=e427]: the
+              - generic [ref=e429]: depth.
+              - generic [ref=e431]: Puku
+              - generic [ref=e433]: picks
+              - generic [ref=e435]: the
+              - generic [ref=e437]: tools.
+        - generic [ref=e439]:
+          - button "~2s Quick Fast answers for syntax, errors and everyday questions." [ref=e441]:
+            - generic [ref=e442]: ~2s
+            - generic [ref=e446]:
+              - generic [ref=e447]: Quick
+              - generic [ref=e448]: Fast answers for syntax, errors and everyday questions.
+          - button "DEFAULT Research Searches the web and your project, cites every claim, flags what it couldn't verify." [pressed] [ref=e450]:
+            - generic [ref=e451]: DEFAULT
+            - generic [ref=e456]:
+              - generic [ref=e457]: Research
+              - generic [ref=e458]: Searches the web and your project, cites every claim, flags what it couldn't verify.
+          - button "minutes Deep Long investigations. Leaves a written report and a task list for the CLI." [ref=e461]:
+            - generic [ref=e462]: minutes
+            - generic [ref=e466]:
+              - generic [ref=e467]: Deep
+              - generic [ref=e468]: Long investigations. Leaves a written report and a task list for the CLI.
+      - generic [ref=e470]:
+        - generic [ref=e471]:
+          - generic [ref=e472]: CONNECTED WORKFLOWS
+          - heading "From answer to pull request." [level=2] [ref=e473]
+          - paragraph [ref=e474]: Send to CLI turns the conversation into a task with the context attached. Nothing to copy, nothing to re-explain.
+        - generic [ref=e475]:
+          - button "01 Research Cited sources" [pressed] [ref=e476]:
+            - generic [ref=e477]: "01"
+            - generic [ref=e478]: Research
+            - generic [ref=e479]: Cited sources
+          - button "02 Design Artifacts & specs" [ref=e481]:
+            - generic [ref=e482]: "02"
+            - generic [ref=e483]: Design
+            - generic [ref=e484]: Artifacts & specs
+          - button "03 Development Send to CLI" [ref=e485]:
+            - generic [ref=e486]: "03"
+            - generic [ref=e487]: Development
+            - generic [ref=e488]: Send to CLI
+          - button "04 Deployment Ship the PR" [ref=e489]:
+            - generic [ref=e490]: "04"
+            - generic [ref=e491]: Deployment
+            - generic [ref=e492]: Ship the PR
+      - generic [ref=e493]:
+        - generic [ref=e494]:
+          - generic [ref=e499]: Not used for training
+          - generic [ref=e500]: Your chats and code stay yours.
+        - generic [ref=e501]:
+          - generic [ref=e505]: Delete any time
+          - generic [ref=e506]: One chat or your whole history.
+        - generic [ref=e507]:
+          - generic [ref=e513]: Shared projects
+          - generic [ref=e514]: Invite your team to a project's chats on Team plans.
+      - generic [ref=e517]:
+        - img "Puku" [ref=e520]
+        - heading "Ask your first question." [level=2] [ref=e521]:
+          - generic [aria-hidden] [ref=e522]:
+            - generic [ref=e523]: Ask
+            - generic [ref=e525]: your
+            - generic [ref=e527]: first
+            - generic [ref=e529]: question.
+        - paragraph [ref=e532]: Chat, files and research — right in your browser.
+        - generic [ref=e533]:
+          - link "Open Puku Chat" [ref=e535] [cursor=pointer]:
+            - /url: https://chat.puku.sh/new
+          - link "chat.puku.sh" [ref=e537] [cursor=pointer]:
+            - /url: https://chat.puku.sh/new
+    - contentinfo [ref=e538]:
+      - generic [ref=e541]:
+        - generic [ref=e542]:
+          - generic [ref=e543]:
+            - link "Puku Puku" [ref=e544] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e545]
+              - generic [ref=e546]: Puku
+            - paragraph [ref=e547]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e549]:
+              - radio "system" [ref=e550]
+              - radio "light" [checked] [ref=e551]
+              - radio "dark" [ref=e553]
+          - generic [ref=e554]:
+            - generic [ref=e555]:
+              - generic [ref=e556]: PRODUCT
+              - link "Puku Editor" [ref=e557] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e559] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e561] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e563] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e565] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e567]:
+              - generic [ref=e568]: RESOURCES
+              - link "Docs" [ref=e569] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e571] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e573] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e575] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e577] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e579]:
+              - generic [ref=e580]: COMPANY
+              - link "About" [ref=e581] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e583] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e585] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e587]: Careers · soon
+            - generic [ref=e588]:
+              - generic [ref=e589]: LEGAL
+              - link "Terms" [ref=e590] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e592] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e594] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e596]:
+          - generic [ref=e597]:
+            - generic [ref=e598]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e599]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e600]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e601]
+          - generic [ref=e602]:
+            - generic [ref=e603]:
+              - link "Discord" [ref=e604] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e605]:
+              - link "YouTube" [ref=e606] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e608] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

@@ -1,0 +1,18 @@
+# Tooling transient state — playwright-cli working dir, debug dumps.
+.playwright-cli/
+
+# Node / Playwright test artifacts.
+node_modules/
+test-results/
+playwright-report/
+
+# Stray terminal mishap output (matching `head`, `eval` that misfired, etc.)
+# These start with digits or curly braces and were never meant to live in the repo.
+/20)
+/\{
+/document.queryselector*
+
+# OS / editor scratch.
+.DS_Store
+Thumbs.db
+*.swp

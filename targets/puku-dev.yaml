@@ -1,0 +1,49 @@
+# Target profile — Puku web marketing site (dev environment)
+# Filled in by scenario-mapper run on 2026-10-19 against https://web.dev.puku.sh/
+
+name: Puku Web Dev
+base_url: https://web.dev.puku.sh/
+
+credentials:                        # required if the app is gated — web marketing site is ungated for browsing
+  source: .env
+  # NO login required for marketing pages. Auth-gated routes only appear after sign-in.
+  # No creds to track here yet; fill in if/when the test suite grows to cover post-login flows.
+
+login: |
+  Not required for the marketing site. Auth surface is exposed but not enforced.
+  The login page (/login) lists four providers: Google, Microsoft, Apple, Email.
+  The Email path goes to /email-login and sends a magic link (15-min expiry).
+  DO NOT click any OAuth provider from automated runs — these initiate real OAuth.
+
+tenants:
+  # safe_to_mutate: omit this key entirely. web.dev.puku.sh is a shared dev environment
+  # and any UI test could disturb someone else's session. Absence of the key is what
+  # makes crud-tester stop and ask before mutating.
+  read_only_rich_data: N/A   # marketing site, not app data
+
+recovery:                           # known ways to unstick the app
+  stale_session: |
+    Marketing site has no session; if a /login flow gets stuck, clear cookies and localStorage
+    and reload /login.
+  dev_env_quirks: |
+    web.dev.puku.sh occasionally 502s on cold cache; retry once before treating as a regression.
+
+known_noise:
+  - description: "Pricing page 'Yearly' billing toggle is disabled by design"
+    why: "Monthly billing only at the moment; see S006 notes."
+  - description: "Login page redirects /login?next=/email-login back to /login"
+    why: "Intentional — Email button deep-links to /email-login, but typing /email-login in nav is redirected."
+
+app_notes: |
+  - This is a marketing-only site (no app code, no projects, no user data). Sanity flows should
+    cover rendering, navigation, link integrity, and form behavior — not CRUD.
+  - Theme toggle persists in localStorage; verify on one page after reload before navigating.
+  - Contact form (S012) does NOT POST — it builds a mailto: and hands off to the OS email client.
+    Headless runs must intercept the navigation, not look for a 200 response.
+  - Email magic link (S004) sends a real email. Use a disposable inbox (mail.tm / guerrillamail)
+    in staging; do not run S004 against shared mailboxes.
+  - OAuth buttons (S003) should be visually present and clickable, but actual OAuth flow is
+    out of scope for sanity — they would need a test IdP tenant and PKCE state.
+  - The 'Product' nav button uses a hover/focus dropdown, not an aria-expanded menu — its items
+    are not in the accessibility tree until activated. Treat the four product links (visible in
+    the page body) as the canonical product navigation surface.

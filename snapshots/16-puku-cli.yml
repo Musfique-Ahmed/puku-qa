@@ -1,0 +1,371 @@
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner:
+    - navigation "Main" [ref=e5]:
+      - generic [ref=e6]:
+        - link "Puku home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Puku" [ref=e9]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - button "Product" [ref=e12]
+          - listitem [ref=e15]:
+            - link "Pricing" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "Docs" [ref=e18] [cursor=pointer]:
+              - /url: /docs
+          - listitem [ref=e19]:
+            - link "Resources" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "Contact" [ref=e22] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e23]:
+        - button "Switch to dark theme" [ref=e25]
+        - link "Sign in" [ref=e27] [cursor=pointer]:
+          - /url: /login?next=%2Fpuku-cli
+        - link "Download" [ref=e29] [cursor=pointer]:
+          - /url: /download
+  - generic [ref=e31]:
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e38]:
+          - link "CLI Puku CLI v1.8.66 · background tasks →" [ref=e40] [cursor=pointer]:
+            - /url: /changelog
+            - generic [ref=e41]: CLI
+            - generic [ref=e43]:
+              - text: Puku CLI v1.8.66 · background tasks
+              - generic [ref=e44]: →
+          - heading "Your agent, right in the terminal." [level=1] [ref=e45]:
+            - generic [aria-hidden] [ref=e46]:
+              - generic [ref=e47]: Your
+              - generic [ref=e49]: agent,
+              - generic [ref=e51]: right
+              - generic [ref=e53]: in
+              - generic [ref=e55]: the
+              - generic [ref=e57]: terminal.
+          - paragraph [ref=e59]: Inspect your project, automate tasks and coordinate infrastructure. It plans first and asks before it runs anything.
+          - generic [ref=e60]:
+            - link "Install the CLI" [ref=e62] [cursor=pointer]:
+              - /url: "#install"
+            - 'button "Copy install command: curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash" [ref=e63]':
+              - generic [ref=e64]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+              - generic: Copied
+          - paragraph [ref=e71]: v1.8.66 · macOS · Linux · WSL · then run puku
+        - generic [ref=e79]:
+          - generic [ref=e80]: ~/aideployed-cms — puku
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - generic [ref=e89]: Welcome back, Md. Imtiaz Ahamed
+              - img "Puku" [ref=e90]
+              - generic [ref=e91]: Puku-ai 2.8~/aideployed-cms
+            - generic [ref=e93]:
+              - generic [ref=e94]: Recent activity
+              - generic [ref=e95]: Fix 404 shape · 2h ago
+              - generic [ref=e96]: Rate limiting · yesterday
+              - generic [ref=e98]: What's new
+              - generic [ref=e99]: /remote-control live message feed
+              - generic [ref=e100]: Puku mobile app relay session view
+              - generic [ref=e101]: /release-notes for more
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - generic [ref=e106]: ►
+              - textbox "Puku CLI input" [ref=e107]:
+                - /placeholder: type a task, or /help
+            - generic [ref=e108]: / for commands · ? for help · context 23% · ask before edits
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - generic [ref=e113]: 02 / 04
+          - generic [ref=e119]:
+            - complementary [ref=e121]:
+              - generic [ref=e122]: puku
+              - generic [ref=e128]:
+                - generic [ref=e129]:
+                  - text: Search
+                  - generic [ref=e133]: ⌘K
+                - button "New chat" [ref=e134]
+              - generic [ref=e137]:
+                - generic [ref=e138]: All projects
+                - button [ref=e144]
+              - generic [ref=e147]:
+                - button "Compare model baselines" [ref=e148]
+                - generic [ref=e154]: Recent
+                - button "Plan next week's experiments" [ref=e158]
+              - generic [ref=e163]: Customize
+              - generic [ref=e175]:
+                - generic [ref=e176]:
+                  - generic [ref=e177]: ᵔᴥᵔ
+                  - text: Alex Morgan
+                - generic [ref=e178]: Pro
+            - generic [ref=e182]:
+              - generic [ref=e184]:
+                - heading "Compare model baselines" [level=3] [ref=e185]
+                - generic [ref=e186]:
+                  - button "Rename" [ref=e187]
+                  - button "Share" [ref=e188]
+                  - button "Archive" [ref=e189]
+                  - button "Delete" [ref=e190]
+                  - button "New project" [ref=e191]
+                  - button "Preview streaming" [ref=e192]
+                - generic [ref=e193]:
+                  - generic [ref=e194]:
+                    - generic [ref=e199]: evaluation-notes
+                    - generic [ref=e200]: TXT
+                  - paragraph [ref=e201]: Compare a small baseline with a larger model.
+                - generic [ref=e202]:
+                  - button [ref=e203]
+                  - button [ref=e207]
+                - button [ref=e210]
+              - generic [ref=e221]:
+                - textbox "Message Puku Chat" [ref=e222]:
+                  - /placeholder: A question, a thought, a wild idea…
+                - generic [ref=e223]:
+                  - button "Attach a file" [ref=e224]
+                  - button "Puku-ai 2.8 Fast" [ref=e228]:
+                    - text: Puku-ai 2.8
+                    - generic [ref=e229]: Fast
+                  - button "Think" [ref=e233]
+                  - button "Voice input" [ref=e236]
+                  - button "Send message" [disabled] [ref=e240]
+        - paragraph [ref=e245]:
+          - generic [ref=e246]: Or watch it from the browser.
+          - text: Every CLI session streams to the web view, so you can follow along, read the transcript, or send the next message from anywhere.
+      - generic [ref=e249]:
+        - generic [ref=e250]:
+          - generic [ref=e251]: 01 — INSTALL
+          - heading "Run automation, infrastructure operations and execution workflows from your terminal." [level=2] [ref=e253]:
+            - generic [aria-hidden] [ref=e254]:
+              - generic [ref=e255]: Run
+              - generic [ref=e257]: automation,
+              - generic [ref=e259]: infrastructure
+              - generic [ref=e261]: operations
+              - generic [ref=e263]: and
+              - generic [ref=e265]: execution
+              - generic [ref=e267]: workflows
+              - generic [ref=e269]: from
+              - generic [ref=e271]: your
+              - generic [ref=e273]: terminal.
+        - generic [ref=e275]:
+          - generic [ref=e276]:
+            - button "Native RECOMMENDED" [pressed] [ref=e277]:
+              - generic [ref=e279]: Native
+              - generic [ref=e280]: RECOMMENDED
+            - button "npm" [ref=e281]
+          - generic [ref=e283]:
+            - code [ref=e284]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+            - button "Copy" [ref=e285]:
+              - status [ref=e289]: Copy
+        - generic [ref=e290]:
+          - generic [ref=e291]:
+            - paragraph [ref=e292]: Model routing.
+            - paragraph [ref=e293]: Every request is read for intent, context, complexity and goal, then sent to the AI system that fits.
+          - generic [ref=e294]:
+            - generic [ref=e295]: request
+            - generic [ref=e296]: →
+            - generic [ref=e297]:
+              - generic [ref=e298]: intent
+              - generic [ref=e299]: context
+              - generic [ref=e300]: complexity
+              - generic [ref=e301]: goal
+            - generic [ref=e302]: →
+            - generic [ref=e303]: AI system
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - generic [ref=e307]: 02 — WHAT IT DOES
+          - heading "Four jobs it takes off your plate." [level=2] [ref=e309]:
+            - generic [aria-hidden] [ref=e310]:
+              - generic [ref=e311]: Four
+              - generic [ref=e313]: jobs
+              - generic [ref=e315]: it
+              - generic [ref=e317]: takes
+              - generic [ref=e319]: "off"
+              - generic [ref=e321]: your
+              - generic [ref=e323]: plate.
+        - generic [ref=e325]:
+          - generic [ref=e327]:
+            - generic [ref=e328]: Deployments
+            - generic [ref=e329]: Coordinate infrastructure changes across environments with full project context.
+            - generic [ref=e330]: › deploy api to staging, then smoke test
+          - generic [ref=e333]:
+            - generic [ref=e334]: Automation
+            - generic [ref=e335]: Hand repetitive engineering and infrastructure tasks to an agent, as a one-off or a saved skill.
+            - generic [ref=e336]: › $users-docs --runner --open-pr
+          - generic [ref=e339]:
+            - generic [ref=e340]: Inspection
+            - generic [ref=e341]: Ask about runtime systems, services and deployment state without leaving the terminal.
+            - generic [ref=e342]: › why is p95 up on /checkout?
+          - generic [ref=e345]:
+            - generic [ref=e346]: Project context
+            - generic [ref=e347]: Project memory and context-aware execution in one workflow, shared with Puku Editor.
+            - generic [ref=e348]: › /memory add "use pnpm, never npm"
+      - generic [ref=e351]:
+        - generic [ref=e353]:
+          - generic [ref=e354]:
+            - generic [ref=e355]: SLASH COMMANDS
+            - textbox "Filter slash commands" [ref=e356]:
+              - /placeholder: / filter
+          - generic [ref=e357]:
+            - generic [ref=e358]:
+              - generic [ref=e359]: /sandbox
+              - generic [ref=e360]: what the agent can touch
+            - generic [ref=e361]:
+              - generic [ref=e362]: /permissions
+              - generic [ref=e363]: allow, ask or deny per tool
+            - generic [ref=e364]:
+              - generic [ref=e365]: /plan
+              - generic [ref=e366]: think first, edit later
+            - generic [ref=e367]:
+              - generic [ref=e368]: /memory
+              - generic [ref=e369]: read or edit PUKU.md
+            - generic [ref=e370]:
+              - generic [ref=e371]: /skills
+              - generic [ref=e372]: list and run saved skills
+            - generic [ref=e373]:
+              - generic [ref=e374]: /feedback
+              - generic [ref=e375]: send a report with logs
+            - generic [ref=e376]:
+              - generic [ref=e377]: /release-notes
+              - generic [ref=e378]: what changed in this version
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - generic [ref=e382]: .puku/config.toml
+            - button "Copy" [ref=e383]:
+              - status [ref=e387]: Copy
+          - generic [ref=e388]:
+            - generic [ref=e389]: model = "puku-ai-2.7"
+            - generic [ref=e391]: "[sandbox]"
+            - generic [ref=e392]: enabled = true
+            - generic [ref=e393]: network = "ask"
+            - generic [ref=e395]: "[permissions]"
+            - generic [ref=e396]: "write = { allow = [\"src/**\", \"tests/**\"] }"
+            - generic [ref=e397]: "shell = { allow = [\"pnpm test\", \"pnpm lint\"] }"
+            - generic [ref=e399]: "[memory]"
+            - generic [ref=e400]: file = "PUKU.md"
+      - generic [ref=e402]:
+        - generic [ref=e403]:
+          - generic [ref=e404]: 03 — RECENT RELEASES
+          - heading "Small releases, often." [level=2] [ref=e406]:
+            - generic [aria-hidden] [ref=e407]:
+              - generic [ref=e408]: Small
+              - generic [ref=e410]: releases,
+              - generic [ref=e412]: often.
+          - link "Full changelog →" [ref=e415] [cursor=pointer]:
+            - /url: /changelog
+            - generic [ref=e416]: Full changelog
+            - generic [ref=e417]: →
+        - generic [ref=e418]:
+          - link "1.8.66 CLI Polished /sandbox and /permissions UX, clearer install instructions Oct 9" [ref=e420] [cursor=pointer]:
+            - /url: /changelog
+            - generic [ref=e421]: 1.8.66
+            - generic [ref=e422]: CLI
+            - generic [ref=e423]: Polished /sandbox and /permissions UX, clearer install instructions
+            - generic [ref=e424]: Oct 9
+          - link "2.7.0 Editor Agent panel with keep / review per file, puku-ai-2.7 as default model Oct 6" [ref=e426] [cursor=pointer]:
+            - /url: /changelog
+            - generic [ref=e427]: 2.7.0
+            - generic [ref=e428]: Editor
+            - generic [ref=e429]: Agent panel with keep / review per file, puku-ai-2.7 as default model
+            - generic [ref=e430]: Oct 6
+          - link "1.8.65 CLI Smoother installer, automatic PKCE refresh, new /feedback command Oct 2" [ref=e432] [cursor=pointer]:
+            - /url: /changelog
+            - generic [ref=e433]: 1.8.65
+            - generic [ref=e434]: CLI
+            - generic [ref=e435]: Smoother installer, automatic PKCE refresh, new /feedback command
+            - generic [ref=e436]: Oct 2
+          - link "0.9.0 CHAT Research mode with cited sources and Send to CLI Sep 28" [ref=e438] [cursor=pointer]:
+            - /url: /changelog
+            - generic [ref=e439]: 0.9.0
+            - generic [ref=e440]: CHAT
+            - generic [ref=e441]: Research mode with cited sources and Send to CLI
+            - generic [ref=e442]: Sep 28
+      - generic [ref=e445]:
+        - img "Puku" [ref=e448]
+        - heading "Install the CLI in one line." [level=2] [ref=e449]:
+          - generic [aria-hidden] [ref=e450]:
+            - generic [ref=e451]: Install
+            - generic [ref=e453]: the
+            - generic [ref=e455]: CLI
+            - generic [ref=e457]: in
+            - generic [ref=e459]: one
+            - generic [ref=e461]: line.
+        - paragraph [ref=e464]: Native installer or npm. Works in any terminal.
+        - generic [ref=e465]:
+          - link "Read the docs" [ref=e467] [cursor=pointer]:
+            - /url: /docs/puku-cli/introduction
+          - 'button "Copy install command: curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash" [ref=e468]':
+            - generic [ref=e469]: $ curl -fsSL https://puku-cli.pkgs.puku.sh/install.sh | bash
+            - generic: Copied
+    - contentinfo [ref=e476]:
+      - generic [ref=e479]:
+        - generic [ref=e480]:
+          - generic [ref=e481]:
+            - link "Puku Puku" [ref=e482] [cursor=pointer]:
+              - /url: /
+              - img "Puku" [ref=e483]
+              - generic [ref=e484]: Puku
+            - paragraph [ref=e485]: A calmer place to build, ship and learn.
+            - radiogroup "Theme" [ref=e487]:
+              - radio "system" [ref=e488]
+              - radio "light" [checked] [ref=e489]
+              - radio "dark" [ref=e491]
+          - generic [ref=e492]:
+            - generic [ref=e493]:
+              - generic [ref=e494]: PRODUCT
+              - link "Puku Editor" [ref=e495] [cursor=pointer]:
+                - /url: /puku-editor
+              - link "Puku CLI" [ref=e497] [cursor=pointer]:
+                - /url: /puku-cli
+              - link "Puku Chat" [ref=e499] [cursor=pointer]:
+                - /url: /puku-chat
+              - link "Puku App" [ref=e501] [cursor=pointer]:
+                - /url: /puku-app
+              - link "Pricing" [ref=e503] [cursor=pointer]:
+                - /url: /pricing
+            - generic [ref=e505]:
+              - generic [ref=e506]: RESOURCES
+              - link "Docs" [ref=e507] [cursor=pointer]:
+                - /url: /docs
+              - link "Changelog" [ref=e509] [cursor=pointer]:
+                - /url: /changelog
+              - link "Download" [ref=e511] [cursor=pointer]:
+                - /url: /download
+              - link "Blog" [ref=e513] [cursor=pointer]:
+                - /url: /blog
+              - link "Status" [ref=e515] [cursor=pointer]:
+                - /url: /contact
+            - generic [ref=e517]:
+              - generic [ref=e518]: COMPANY
+              - link "About" [ref=e519] [cursor=pointer]:
+                - /url: /about-us
+              - link "Contact" [ref=e521] [cursor=pointer]:
+                - /url: /contact
+              - link "Support" [ref=e523] [cursor=pointer]:
+                - /url: /support
+              - generic [ref=e525]: Careers · soon
+            - generic [ref=e526]:
+              - generic [ref=e527]: LEGAL
+              - link "Terms" [ref=e528] [cursor=pointer]:
+                - /url: /terms
+              - link "Privacy" [ref=e530] [cursor=pointer]:
+                - /url: /privacy
+              - link "Refunds" [ref=e532] [cursor=pointer]:
+                - /url: /refund
+        - generic [ref=e534]:
+          - generic [ref=e535]:
+            - generic [ref=e536]: © 2026 Puku AI · Operated by Poridhi io Limited
+            - generic [ref=e537]: 32/1, Metropolitan Co-operative Housing Society, Babar Road, Mohammadpur, Dhaka-1207, Bangladesh
+            - generic [ref=e538]: "Trade License: TRAD/DNCC/009542/2023"
+          - img "Pay with Visa, Mastercard, American Express, UnionPay, bKash, Nagad, Rocket and other cards, mobile wallets and bank apps. Verified by SSLCommerz." [ref=e539]
+          - generic [ref=e540]:
+            - generic [ref=e541]:
+              - link "Discord" [ref=e542] [cursor=pointer]:
+                - /url: https://discord.gg/WmsGeB68Rv
+              - text: ·
+            - generic [ref=e543]:
+              - link "YouTube" [ref=e544] [cursor=pointer]:
+                - /url: https://www.youtube.com/@poridhiio
+              - text: ·
+            - link "LinkedIn" [ref=e546] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/poridhiio/

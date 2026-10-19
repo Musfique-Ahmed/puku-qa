@@ -1,0 +1,15 @@
+/puku-editor         -> Puku Editor — AI-Native Development Environment
+/puku-cli            -> Puku CLI — Terminal-Native Infrastructure Operations
+/puku-chat           -> Puku Chat | Chat, research, and create in your browser
+/puku-app            -> Puku App | Mobile chats and projects
+/pricing             -> Pricing — Puku Editor
+/docs                -> Documentation — Puku
+/changelog           -> Changelog · Puku
+/download            -> Download — Puku Editor
+/blog                -> Blog · Puku
+/about-us            -> About Us — Puku
+/contact             -> Contact — Puku
+/support             -> Support — Puku
+/terms               -> Terms of Service — Puku
+/privacy             -> Privacy Policy — Puku
+/refund              -> Refund Policy — Puku
