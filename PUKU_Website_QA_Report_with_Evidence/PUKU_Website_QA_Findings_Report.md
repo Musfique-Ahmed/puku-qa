@@ -1,621 +1,717 @@
 <div align="center">
 
-# Puku Website
-## Quality Assurance Findings Report
+# Puku Website QA
+## Comprehensive Findings & Evidence Report
 
-**Visual QA · Content Integrity · Navigation · Contact Workflows**
+**Visual QA · Pricing & Checkout · Navigation · Content Integrity · Accessibility · Account UX**
 
-`Puku Web — Development Environment` · `web.dev.puku.sh`
+`https://web.dev.puku.sh`  ·  **Report date:** 20 October 2026
 
-**Report date:** 20 October 2026  
-**Primary automated run:** 19 October 2026  
-**Prepared from:** Flow-runner report and manuall QA
+**Evidence set:** 17 findings · 17 original screenshots plus 1 supplemental homepage pricing capture
 
 </div>
 
 ---
 
-## Executive summary
+## 1. Executive summary
 
-This report consolidates the issues observed during the Puku website QA review. The automated flow-runner run was largely successful: **14 of 15 reported test cases passed, and one failed**. The failed case, **TC-016**, identified a mismatch between the homepage's Puku 2.8 release announcement and the changelog's latest listed release.
+This report consolidates the 17 QA findings documented to date for the Puku website review, including the original 16 screenshot-backed items and a pricing-consistency finding added on 20 October 2026. It distinguishes observed UI states from claims that still require confirmation against product or release source-of-truth data. The report includes payment/checkout, pricing, product and support pages, footer/navigation consistency, contact routing, community access, account UI, homepage release messaging, changelog consistency, Puku Chat artwork, and layout consistency.
 
-Additional manual screenshot review surfaced issues that the existing automated flows did not cover, including contact-email routing, an invalid Discord invitation, stale account/profile content, asset presentation, readability, layout consistency, and the removal of the issue-reporting entry point.
+**Important:** A screenshot proves the displayed state, not necessarily its backend cause. Findings that need product-owner confirmation are marked accordingly; do not treat account-specific values or product claims as incorrect until verified.
 
-The automated pass rate should not be interpreted as evidence that the entire website is defect-free. The flow-runner report explicitly notes that mobile-only behavior, deeper accessibility auditing, mutation/CRUD workflows, and some authentication completion steps were not fully exercised.
+### Priority summary
 
-### At a glance
+| Priority | Count | Interpretation |
+|---|---:|---|
+| P1 | 2 | Conversion/contact workflow failures requiring prompt investigation |
+| P2 | 11 | User-facing content, navigation, release, account, pricing, or product UX issues |
+| P3 | 4 | Visual consistency and polish |
 
-| Measure | Result |
-|---|---:|
-| Automated test cases reported | 15 |
-| Passed | 14 |
-| Failed | 1 |
-| Additional manually reported findings | 8 |
-| Distinct findings in this report | 9 |
-| Primary target | `https://web.dev.puku.sh/` |
+### Findings index
 
-> **Counting note:** The flow-runner report lists 14 passing rows and one failing row (TC-001–TC-016, with TC-004 noted as “PASS with follow-up”). Its summary line says “Pass: 14 / Fail: 1 / Total executed: 16,” which is internally inconsistent if “Pass” and “Fail” are mutually exclusive. This report uses the individual test-case rows as the basis for the 14-pass/1-fail summary and preserves the follow-up caveat for TC-004.
-
-## Priority overview
-
-Priorities below are triage recommendations based on the supplied evidence and likely user impact. They are not claims that a production incident or data loss has occurred.
-
-| ID | Finding | Recommended priority | Area |
-|---|---|---:|---|
-| PUKU-QA-001 | Contact form routes Team plan inquiries to the support address | **P1** | Contact / lead routing |
-| PUKU-QA-002 | Discord community invitation is invalid | **P2** | External navigation |
-| PUKU-QA-003 | Personal profile / usage experience appears outdated | **P2** | Account / product UI |
-| PUKU-QA-004 | Homepage release messaging is inconsistent and difficult to read | **P2** | Homepage / content |
-| PUKU-QA-005 | Homepage release badge and changelog are inconsistent (TC-016) | **P2** | Release communication |
-| PUKU-QA-006 | Puku logo and computer artwork should use transparent-background assets | **P3** | Visual assets |
-| PUKU-QA-007 | Puku Chat feature strip breaks the site's content-width consistency | **P3** | Layout / responsive design |
-| PUKU-QA-008 | Issue-reporting entry point is no longer available | **P2** | Support / feedback |
-| PUKU-QA-009 | Docs page footer has not been updated | **P3** | Documentation / content |
+| ID | Finding | Priority | Evidence |
+|---|---|:---:|---|
+| PUKU-QA-001 | Footer navigation content needs verification | P3 | [`01-footer-navigation-content.png`](evidence/01-footer-navigation-content.png) |
+| PUKU-QA-002 | Payment checkout flow fails to complete | P1 | [`02-payment-checkout-state.png`](evidence/02-payment-checkout-state.png) |
+| PUKU-QA-003 | Support page content and help paths need an end-to-end audit | P2 | [`03-puku-support-page.png`](evidence/03-puku-support-page.png) |
+| PUKU-QA-004 | Product overview cards need content and consistency validation | P2 | [`04-product-overview-cards.png`](evidence/04-product-overview-cards.png) |
+| PUKU-QA-005 | Pricing page layout leaves the Max plan isolated below the main plan row | P2 | [`05-pricing-plans.png`](evidence/05-pricing-plans.png) |
+| PUKU-QA-006 | Homepage footer highlights product and pricing labels inconsistently | P2 | [`06-homepage-footer-links.png`](evidence/06-homepage-footer-links.png) |
+| PUKU-QA-007 | Docs footer appears stale relative to the current site footer | P3 | [`07-docs-footer-outdated.png`](evidence/07-docs-footer-outdated.png) |
+| PUKU-QA-008 | Contact form recipient routing is incorrect for Team plan inquiries | P1 | [`08-contact-page-form.png`](evidence/08-contact-page-form.png) |
+| PUKU-QA-009 | Discord community invitation is invalid | P2 | [`09-discord-invalid-invite.png`](evidence/09-discord-invalid-invite.png) |
+| PUKU-QA-010 | Authenticated Usage/profile area appears behind the public-site update | P2 | [`10-account-usage-page.png`](evidence/10-account-usage-page.png) |
+| PUKU-QA-011 | Homepage platform/version text is difficult to read and needs source verification | P2 | [`11-homepage-release-text.png`](evidence/11-homepage-release-text.png) |
+| PUKU-QA-012 | Homepage “NEW Puku 2.8” badge needs a valid, matching release destination | P2 | [`12-homepage-new-release-badge.png`](evidence/12-homepage-new-release-badge.png) |
+| PUKU-QA-013 | Changelog does not show a matching Puku Editor 2.8.0 release | P2 | [`13-changelog-latest-release.png`](evidence/13-changelog-latest-release.png) |
+| PUKU-QA-014 | Puku Chat feature preview uses a product mockup that needs accuracy review | P2 | [`14-puku-chat-feature-preview.png`](evidence/14-puku-chat-feature-preview.png) |
+| PUKU-QA-015 | Puku Chat logo and computer artwork should use transparent-background assets | P3 | [`15-puku-chat-logo-and-computer-artwork.png`](evidence/15-puku-chat-logo-and-computer-artwork.png) |
+| PUKU-QA-016 | Puku Chat feature strip stretches full width and breaks site layout consistency | P3 | [`16-puku-chat-full-width-feature-strip.png`](evidence/16-puku-chat-full-width-feature-strip.png) |
+| PUKU-QA-017 | Homepage and Pricing page show inconsistent currency values and team-plan currency availability | P2 | [`17-homepage-pricing-currency.png`](evidence/17-homepage-pricing-currency.png), [`05-pricing-plans.png`](evidence/05-pricing-plans.png) |
 
 ---
 
-## Detailed findings
+## 2. Detailed findings
 
 <a id="puku-qa-001"></a>
-### PUKU-QA-001 — Team plan contact inquiries use the wrong recipient
 
-**Priority:** P1 · **Category:** Contact workflow / lead routing  
-**Affected page:** [`/contact`](https://web.dev.puku.sh/contact)
+### PUKU-QA-001 — Footer navigation content needs verification
+
+**Recommended priority:** P3  
+**Area:** Global footer / information architecture
 
 #### Observation
 
-The contact form offers a **Team plan** inquiry category, but the reported behavior is that contact scenarios—including Team plan inquiries—are routed to `support@puku.sh`. The intended recipient for Team plan inquiries is `sales@puku.sh`.
-
-The contact page separately lists Support (`support@puku.sh`) and Team & Enterprise (`sales@puku.sh`), which makes the form's reported routing behavior inconsistent with the contact information presented on the same page.
+The supplied footer screenshot shows Product, Resources, Company and Legal link groups. Several entries appear to be planned or placeholder items (for example “Careers · soon”), and the footer content should be reconciled with currently available pages.
 
 #### Expected behavior
 
-- **Team plan / Team & Enterprise:** address the generated email to `sales@puku.sh`.
-- **Support and product-help requests:** address the generated email to `support@puku.sh`.
-- Other categories should follow an explicitly defined routing rule rather than silently defaulting to Support.
+Confirm every footer link has a valid destination and that unavailable pages are explicitly labeled or omitted. Verify product and resource destinations, terms/privacy/refunds, and status/community links.
 
-#### Actual behavior
+#### Reproduction / verification
 
-Team plan inquiries are reported to use `support@puku.sh` instead of the sales inbox.
+Open each footer link from the homepage and verify destination, availability, and label accuracy.
 
-#### Reproduction
+#### Recommended action
 
-1. Open `https://web.dev.puku.sh/contact`.
-2. Enter a name and valid work email.
-3. Select **Team plan** under “What's this about?”
-4. Complete the remaining required fields.
-5. Select **Open email draft**.
-6. Inspect the generated draft's recipient.
-
-#### Recommended fix
-
-Centralize category-to-recipient mapping in one explicit configuration or routing function. Add automated tests that assert the recipient for every contact category. Verify the generated `mailto:` URL's `to`, `subject`, and body fields, including correct URL encoding.
+Footer link inventory and destinations are not fully aligned with a production-ready navigation experience.
 
 #### Acceptance criteria
 
-- Selecting **Team plan** opens a draft addressed to `sales@puku.sh`.
-- Selecting **Support** opens a draft addressed to `support@puku.sh`.
-- Each remaining category has a documented, tested recipient.
-- No category unintentionally falls back to the Support address.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
+**Screenshot evidence — 01-footer-navigation-content.png**
 
-**Screenshot evidence — contact form and routing context**
-
-![Contact page form and contact routes](evidence/08-contact-page-form.png)
+![Evidence for PUKU-QA-001: Footer navigation content needs verification](evidence/01-footer-navigation-content.png)
 
 ---
 
 <a id="puku-qa-002"></a>
-### PUKU-QA-002 — Discord community link opens an invalid invitation
 
-**Priority:** P2 · **Category:** External navigation  
-**Affected page:** [`/contact`](https://web.dev.puku.sh/contact)  
-**Reported destination:** [`https://discord.com/invite/puku`](https://discord.com/invite/puku)
+### PUKU-QA-002 — Payment checkout flow fails to complete
+
+**Recommended priority:** P1  
+**Area:** Pricing / payment
 
 #### Observation
 
-Selecting the Community link on the Contact page opens Discord, which displays **“Invite Invalid”** and states that the invitation may have expired or the visitor may not have permission to join.
-
-This prevents visitors from using the website's advertised community entry point.
+The checkout screenshot displays a “Payment could not finish” error state. The screenshot establishes a failed checkout attempt, but does not identify the underlying payment-provider or account cause.
 
 #### Expected behavior
 
-The Community link should lead to a valid, active invitation for the official Puku Discord community, with permissions appropriate for intended visitors.
+A valid purchase attempt should either complete successfully with a clear confirmation or provide a recoverable, actionable error without leaving the user uncertain about payment status.
 
-#### Actual behavior
+#### Reproduction / verification
 
-The supplied invitation URL displays Discord's invalid-invitation page.
+Open Pricing, choose a paid package, initiate checkout, and reproduce the error with a supported test account/payment method. Capture browser console and provider logs.
 
-#### Recommended fix
+#### Recommended action
 
-1. Obtain or generate a verified, current invitation from an authorized Puku Discord administrator.
-2. Replace the stale URL wherever it is referenced, not only on the Contact page.
-3. Check invitation expiration, usage limits, and server membership requirements.
-4. Add a periodic link check where practical, while recognizing that HTTP success alone cannot guarantee an invitation remains joinable.
+Checkout failure blocks conversion and should be investigated before lower-priority visual polish.
 
 #### Acceptance criteria
 
-- The published link opens the intended Puku community.
-- A logged-in eligible visitor can accept the invitation.
-- The link is consistent across the Contact page, footer, and other community references.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
+**Screenshot evidence — 02-payment-checkout-state.png**
 
-**Screenshot evidence — invalid Discord invitation**
-
-![Discord invitation invalid state](evidence/09-discord-invalid-invite.png)
+![Evidence for PUKU-QA-002: Payment checkout flow fails to complete](evidence/02-payment-checkout-state.png)
 
 ---
 
 <a id="puku-qa-003"></a>
-### PUKU-QA-003 — Personal profile and usage pages have not been updated
 
-**Priority:** P2 · **Category:** Account UI / content consistency  
-**Affected page shown:** [`/usage`](https://web.dev.puku.sh/usage)
+### PUKU-QA-003 — Support page content and help paths need an end-to-end audit
+
+**Recommended priority:** P2  
+**Area:** Support / help content
 
 #### Observation
 
-The supplied screenshot of the Usage page shows account-related information and navigation for **Usage**, **Settings**, **API keys**, and **Organization**. The page appears not to have received the same update as the main marketing site. The user specifically reports that personal profile pages have not been updated yet.
-
-The screenshot also shows values such as **Plan: None**, **Requests used: 0 of 0**, and an activity-availability message dated 27 August 2026. These values may be legitimate for the captured account or environment; the screenshot alone does not establish that the underlying account data is incorrect. The confirmed concern is the reported update gap and inconsistent presentation.
+The supplied Puku Support page contains a long-form support/help experience. This evidence is included as a separate review item because support is a primary recovery path when users encounter product or account problems. The screenshot alone does not prove every listed path is broken.
 
 #### Expected behavior
 
-Authenticated account/profile pages should use the current product navigation, visual design, terminology, and responsive layout. Account-specific metrics should remain accurate for the signed-in user and clearly explain unavailable or unconfigured quotas.
+Support content should be accurate, scannable, and provide working routes for contacting support, troubleshooting, and relevant account or billing needs.
 
-#### Actual behavior
+#### Reproduction / verification
 
-The Usage/profile experience appears visually or functionally behind the updated public website.
+Open the Support page; test each visible internal/external link and confirm the guidance matches current product behavior.
 
-#### Recommended fix
+#### Recommended action
 
-- Audit the full authenticated account area, including Usage, Settings, API keys, Organization, and profile controls.
-- Reconcile shared navigation, typography, spacing, theme controls, and component versions with the current design system.
-- Validate empty states such as zero quota or no active plan so they communicate whether the account is unconfigured, inactive, or genuinely has no allowance.
-- Confirm that activity date labels and account data are driven by the correct environment and timezone.
+Validate help content and all contact/troubleshooting destinations; update stale or non-actionable guidance.
 
 #### Acceptance criteria
 
-- Account pages follow the approved current design system.
-- Navigation and profile controls behave consistently across account routes.
-- Quota, plan, and activity states are accurate and unambiguous.
-- Desktop and mobile layouts are reviewed before the update is considered complete.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
+**Screenshot evidence — 03-puku-support-page.png**
 
-**Screenshot evidence — account Usage page**
-
-![Personal account Usage page](evidence/10-account-usage-page.png)
+![Evidence for PUKU-QA-003: Support page content and help paths need an end-to-end audit](evidence/03-puku-support-page.png)
 
 ---
 
 <a id="puku-qa-004"></a>
-### PUKU-QA-004 — Homepage release messaging contains questionable information and low-readability text
 
-**Priority:** P2 · **Category:** Homepage content / readability  
-**Affected page:** [`Homepage`](https://web.dev.puku.sh/)
+### PUKU-QA-004 — Product overview cards need content and consistency validation
+
+**Recommended priority:** P2  
+**Area:** Product overview / marketing
 
 #### Observation
 
-The supplied homepage screenshot highlights two concerns:
-
-1. The small release/version line beneath the primary download controls is reported as containing incorrect information.
-2. The text is difficult to read against the decorative dot-pattern artwork and dark background.
-
-The screenshot shows the line **“Version 2.8 for Apple Silicon · Windows and Linux in beta”**. This report records that as the displayed text in the screenshot, not as a verified statement about the actual release state.
+The product overview presents multiple product cards. The page should be checked for consistency between each card’s product name, description, availability, and linked destination; the screenshot is evidence of the current card layout, not independent proof that every claim is false.
 
 #### Expected behavior
 
-Homepage release messaging should match the actual release and platform-support state. Supporting text should remain legible against all backgrounds and at common desktop and mobile viewport sizes.
+Each card should describe a real, currently available product accurately and link to the corresponding product page or a clearly marked preview/waitlist.
 
-#### Actual behavior
+#### Reproduction / verification
 
-The displayed release/platform statement is reported to be inaccurate, and its low contrast or visual interference makes it difficult to read.
+Review every product card against the current product inventory and open each card CTA. Check status labels, descriptions, and destinations.
 
-#### Recommended fix
+#### Recommended action
 
-- Confirm the authoritative release version and platform-support status with the product/release owner.
-- Render version and platform availability from a single release metadata source where feasible.
-- Increase foreground/background contrast and avoid placing small text directly over visually busy artwork.
-- Review font size, weight, line height, and responsive wrapping at standard viewport widths.
-- Check contrast against WCAG 2.2 AA targets: generally **4.5:1 for normal text** and **3:1 for large text**.
+Perform a content-integrity pass over product cards and remove or label unsupported/coming-soon claims.
 
 #### Acceptance criteria
 
-- Version and platform-support claims match the approved release information.
-- Supporting text is readable without relying on zoom.
-- Contrast meets the applicable accessibility target.
-- The text remains legible when the page is resized and when the theme changes.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
+**Screenshot evidence — 04-product-overview-cards.png**
 
-**Screenshot evidence — homepage release/platform text**
-
-![Homepage release and platform text](evidence/11-homepage-release-text.png)
+![Evidence for PUKU-QA-004: Product overview cards need content and consistency validation](evidence/04-product-overview-cards.png)
 
 ---
 
 <a id="puku-qa-005"></a>
-### PUKU-QA-005 — Homepage “NEW Puku 2.8” badge does not match the changelog (TC-016)
 
-**Priority:** P2 · **Category:** Release communication / content integrity  
-**Affected pages:** [`Homepage`](https://web.dev.puku.sh/) · [`Changelog`](https://web.dev.puku.sh/changelog)  
-**Automated evidence:** [TC-016 result](https://github.com/Musfique-Ahmed/puku-qa/blob/main/runs/TC-016/result.md) · [Full flow-runner report](https://github.com/Musfique-Ahmed/puku-qa/blob/main/runs/REPORT.md)
+### PUKU-QA-005 — Pricing page layout leaves the Max plan isolated below the main plan row
+
+**Recommended priority:** P2  
+**Area:** Pricing / responsive layout
 
 #### Observation
 
-The homepage advertises **“NEW Puku 2.8 · subagents in parallel”** as the latest release. The latest changelog entry shown in the 19 October 2026 flow-runner run is **Puku CLI v1.8.66**, dated **7 October 2026**. The changelog does not list a **Puku Editor 2.8.0** release.
+The Pricing page presents five plans in the primary row, while the Max plan ($100/month in the screenshot) wraps to a second row by itself, leaving a large unused area. This creates an uneven pricing comparison and makes the last tier easy to miss.
 
 #### Expected behavior
 
-The homepage's release badge should point to a published release entry that substantiates the version and feature claim. The changelog should make the latest release for the relevant product surface discoverable.
+Plan cards should use a deliberate responsive grid that presents all tiers in a coherent hierarchy, with the final tier placement intentional at common desktop widths.
 
-#### Actual behavior
+#### Reproduction / verification
 
-The homepage promotes Puku 2.8, but the changelog's newest entry is Puku CLI v1.8.66. A visitor following the release claim cannot find the corresponding Puku Editor 2.8.0 entry.
+Open /pricing at desktop width and inspect the full plan grid; repeat at narrower widths and confirm plan order and alignment.
 
-#### Automated reproduction
+#### Recommended action
 
-1. Open the homepage and record the “NEW Puku 2.8 · subagents in parallel” badge.
-2. Follow the badge or open the changelog.
-3. Inspect the most recent changelog entry.
-4. Compare the release product, version, date, and feature claim.
-
-#### Recommended fix
-
-Choose and implement one source-of-truth-consistent resolution:
-
-- **Option A:** Publish a Puku Editor 2.8.0 changelog entry with verified release notes, date, and feature details, if the release is genuinely available.
-- **Option B:** Update the homepage badge and destination to reflect the actual latest published release.
-
-Do not publish a release entry merely to make the pages agree if the release has not shipped.
+Adjust grid columns/card sizing or create an intentional featured/highest-tier row; verify all plan prices and quota claims with the source of truth.
 
 #### Acceptance criteria
 
-- The homepage release badge points to a real, published changelog entry.
-- Version, product surface, release date, and feature description agree across both pages.
-- TC-016 passes after the fix and is retained as a regression test.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
-#### Flow-runner result
+**Screenshot evidence — 05-pricing-plans.png**
 
-The 19 October 2026 report records TC-016 as **FAIL (P2)**. The other reported scenarios passed, with TC-004 carrying a follow-up caveat for the final post-confirm authentication snapshot. See the test-run report for the full evidence and scope limitations.
-
-
-**Screenshot evidence — homepage badge and changelog**
-
-![Homepage Puku 2.8 badge](evidence/12-homepage-new-release-badge.png)
-
-![Changelog latest release](evidence/13-changelog-latest-release.png)
+![Evidence for PUKU-QA-005: Pricing page layout leaves the Max plan isolated below the main plan row](evidence/05-pricing-plans.png)
 
 ---
 
 <a id="puku-qa-006"></a>
-### PUKU-QA-006 — Puku logo and computer illustration need transparent-background assets
 
-**Priority:** P3 · **Category:** Asset quality / visual polish  
-**Affected page shown:** [`/puku-chat`](https://web.dev.puku.sh/puku-chat)
+### PUKU-QA-006 — Homepage footer highlights product and pricing labels inconsistently
+
+**Recommended priority:** P2  
+**Area:** Homepage footer / navigation
 
 #### Observation
 
-The supplied Puku Chat screenshots highlight two visual assets:
-
-- The Puku logo displayed in the product interface.
-- A retro-computer illustration displayed in the chat landing section.
-
-The request is to use versions of both assets with their backgrounds removed. The computer illustration currently appears inside a light rectangular background, which clashes with the surrounding dark interface. The logo is also called out for background removal.
+The homepage footer screenshot highlights the Product heading and Pricing entry. The footer should make the distinction between product destinations and commercial navigation clear and remain consistent with the top navigation and other pages.
 
 #### Expected behavior
 
-Both assets should integrate cleanly with the site's dark and light themes, without an unintended rectangular background or halo around transparent edges.
+Footer grouping and labels should be consistent across the site, with Pricing placed in the agreed information-architecture group and no duplicated or misleading headings.
 
-#### Recommended fix
+#### Reproduction / verification
 
-- Use the official logo artwork exported with a genuinely transparent alpha channel (for example, SVG or transparent PNG), rather than applying a visual workaround to a flattened image.
-- Use a properly isolated computer illustration with a transparent background and clean edges.
-- Preserve the intended original artwork, aspect ratio, and brand colors.
-- Verify asset rendering on both light and dark backgrounds and at high-density displays.
-- If the original source is unavailable, request a licensed/source asset from the design owner rather than attempting to remove a background in a way that damages the subject.
+Compare the homepage footer with the global navigation and footer on Docs and Contact pages; verify the Pricing link target and group placement.
+
+#### Recommended action
+
+Standardize footer groups and link placement across all routes; avoid page-specific drift.
 
 #### Acceptance criteria
 
-- No unwanted solid rectangle is visible behind either asset.
-- Transparent edges are clean and do not show white fringes.
-- Both assets retain the correct dimensions and visual quality on supported themes and viewport sizes.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
+**Screenshot evidence — 06-homepage-footer-links.png**
 
-**Screenshot evidence — logo and computer artwork**
-
-![Puku Chat logo and computer artwork](evidence/15-puku-chat-logo-and-computer-artwork.png)
+![Evidence for PUKU-QA-006: Homepage footer highlights product and pricing labels inconsistently](evidence/06-homepage-footer-links.png)
 
 ---
 
 <a id="puku-qa-007"></a>
-### PUKU-QA-007 — Puku Chat feature strip spans the viewport and breaks layout consistency
 
-**Priority:** P3 · **Category:** Layout / design consistency  
-**Affected page:** [`/puku-chat`](https://web.dev.puku.sh/puku-chat)
+### PUKU-QA-007 — Docs footer appears stale relative to the current site footer
+
+**Recommended priority:** P3  
+**Area:** Documentation footer
 
 #### Observation
 
-The feature strip containing **“Not used for training,” “Delete any time,”** and **“Shared projects”** stretches across nearly the full browser viewport. Other major sections on the same site use a centered, constrained content width. The supplied screenshot marks this strip and the surrounding area as the inconsistent region.
+The Docs page footer differs from the homepage footer and includes a different set of product/resource entries. The screenshot supports a cross-page consistency issue; individual links should also be checked for validity.
 
 #### Expected behavior
 
-The feature strip should align to the same content grid and maximum-width rules as neighboring sections, with consistent horizontal padding and responsive behavior.
+Documentation should use the current shared footer or a deliberately maintained docs-specific variant with accurate product, resource, company, and legal links.
 
-#### Actual behavior
+#### Reproduction / verification
 
-The strip spans much more widely than the site's other content sections, weakening alignment and creating a visual discontinuity.
+Open /docs and compare footer content, links, address/legal details, and theme controls with the current shared site footer.
 
-#### Recommended fix
+#### Recommended action
 
-- Reuse the site's shared page-container component or design token for maximum content width.
-- Apply consistent horizontal padding at desktop, tablet, and mobile breakpoints.
-- Keep the three feature items within the same container; use a three-column layout on wide screens and a responsive stack or grid on narrow screens.
-- Avoid one-off viewport-width styling unless a full-bleed section is intentional and consistently designed.
+Update the docs footer from the shared footer component or reconcile its intentional differences.
 
 #### Acceptance criteria
 
-- The strip aligns with the primary content edges used by adjacent sections.
-- Feature columns have consistent spacing and vertical alignment.
-- No horizontal overflow is introduced at mobile widths.
-- Full-width sections elsewhere remain unaffected.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
+**Screenshot evidence — 07-docs-footer-outdated.png**
 
-**Screenshot evidence — full-width feature strip**
-
-![Puku Chat full-width feature strip](evidence/16-puku-chat-full-width-feature-strip.png)
+![Evidence for PUKU-QA-007: Docs footer appears stale relative to the current site footer](evidence/07-docs-footer-outdated.png)
 
 ---
 
 <a id="puku-qa-008"></a>
-### PUKU-QA-008 — The issue-reporting entry point is missing
 
-**Priority:** P2 · **Category:** Supportability / feedback workflow  
-**Affected page:** Website-wide; exact previous location not confirmed
+### PUKU-QA-008 — Contact form recipient routing is incorrect for Team plan inquiries
+
+**Recommended priority:** P1  
+**Area:** Contact / lead routing
 
 #### Observation
 
-The user reports that there is **no longer a way to report an issue as there was before**. The previous entry point appears to have been removed or is no longer discoverable.
-
+The Contact page provides a Team plan category. The reported behavior is that all scenarios are addressed to support@puku.sh, although Team plan inquiries should go to sales@puku.sh.
 
 #### Expected behavior
 
-Visitors should have a clear, discoverable way to report a website or product issue without having to locate an unrelated support channel manually. The reporting path should make it possible to describe the problem and, where appropriate, provide the affected page and relevant diagnostic context.
+Team plan / Team & Enterprise inquiries should open a draft addressed to sales@puku.sh; support/product-help inquiries should go to support@puku.sh. Other categories need explicit routing rules.
 
-#### Actual behavior
+#### Reproduction / verification
 
-The previous issue-reporting path is reportedly absent, leaving no obvious equivalent route from the website.
+Open /contact, select Team plan, fill the form, choose Open email draft, and inspect the To field. Repeat for Support.
 
-#### Recommended fix
+#### Recommended action
 
-- Restore the prior **Report an issue** entry point or provide an explicitly equivalent replacement.
-- Place it in a predictable location, such as the site footer, Help/Support menu, or relevant product interface.
-- Route submissions to the appropriate support or issue-tracking workflow.
-- Include the current page URL and optional reproduction steps; make screenshots or diagnostic attachments optional where supported.
-- Provide a clear success state and an alternative contact path if submission fails.
-- Avoid exposing secrets, access tokens, private user data, or sensitive logs in automatically attached diagnostics.
+Centralize category-to-recipient mapping and add tests for every category and generated mailto field.
 
 #### Acceptance criteria
 
-- A visitor can find the reporting option from the intended website areas.
-- The form or link successfully opens the documented reporting workflow.
-- The user receives clear confirmation or an understandable failure state.
-- The route is tested end-to-end, including required-field validation and failure handling.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
-#### Clarification for implementation
+**Screenshot evidence — 08-contact-page-form.png**
 
-The exact former placement and whether the old control opened a form, email draft, or external issue tracker were not established by the supplied evidence. Confirm the previous behavior before choosing the replacement implementation.
+![Evidence for PUKU-QA-008: Contact form recipient routing is incorrect for Team plan inquiries](evidence/08-contact-page-form.png)
 
 ---
 
 <a id="puku-qa-009"></a>
-### PUKU-QA-009 — Docs page footer has not been updated
 
-**Priority:** P3 · **Category:** Documentation / content consistency  
-**Affected page:** [`/docs`](https://web.dev.puku.sh/docs)
+### PUKU-QA-009 — Discord community invitation is invalid
+
+**Recommended priority:** P2  
+**Area:** Contact / external navigation
 
 #### Observation
 
-The supplied screenshot of the Docs page shows a footer that appears not to have been updated alongside the rest of the website. The footer contains product links, resource links, company/legal links, social links, a theme selector, copyright information, and company/trade-license details.
-
-The evidence establishes a reported update gap, but does not identify every specific footer item that is stale. Those details should be verified before editing legal or company information.
+The Community link opens https://discord.com/invite/puku, where Discord displays “Invite Invalid.” This prevents visitors from joining through the advertised community link.
 
 #### Expected behavior
 
-The Docs footer should use the current shared site footer and display accurate, consistent navigation and company information.
+The link should open a current, valid invitation to the official Puku community.
 
-#### Actual behavior
+#### Reproduction / verification
 
-The Docs page footer appears outdated relative to the current site experience.
+Open /contact and select Community; verify that an eligible user can accept the invite.
 
-#### Recommended fix
+#### Recommended action
 
-- Compare the Docs footer with the current canonical footer used on the main website.
-- Prefer one shared footer component or shared content configuration to prevent route-specific drift.
-- Verify product/resource links and ensure they point to current destinations.
-- Confirm company, copyright, and legal text with the appropriate owner before changing it.
-- Check theme switching, keyboard navigation, and responsive layout.
+Replace the invitation with one verified by an authorized server administrator and update all site references.
 
 #### Acceptance criteria
 
-- The Docs page uses the approved current footer structure and content.
-- Footer links resolve to the intended pages and do not produce 404s.
-- Legal and company details remain accurate.
-- Footer presentation is consistent across public routes and both themes.
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
+**Screenshot evidence — 09-discord-invalid-invite.png**
 
-**Screenshot evidence — Docs footer**
-
-![Docs page footer](evidence/07-docs-footer-outdated.png)
-
----
-
-## Automated flow-runner results
-
-The following table transcribes the individual test-case rows in the supplied [flow-runner report](https://github.com/Musfique-Ahmed/puku-qa/blob/main/runs/REPORT.md). The original report remains the source of truth for detailed test evidence.
-
-| Test case | Scenario | Reported result |
-|---|---|---|
-| TC-001 | Homepage renders | PASS |
-| TC-002 | Header links route correctly | PASS |
-| TC-003 | Login providers presence | PASS — presence only |
-| TC-004 | Email magic link with valid email | PASS with follow-up |
-| TC-005 | Email magic-link validation | PASS |
-| TC-006 | Pricing plans and Individual/Teams toggle | PASS |
-| TC-007 | Pricing FAQ accordion | PASS |
-| TC-008 | Docs hub list | PASS |
-| TC-009 | Docs sidebar navigation | PASS |
-| TC-010 | Docs Cmd+K search | PASS |
-| TC-011 | Blog category filter | PASS |
-| TC-012 | Contact form mailto handoff | PASS |
-| TC-013 | Theme toggle | PASS |
-| TC-014 | Footer links do not return 404 | PASS |
-| TC-015 | Product sub-pages | PASS |
-| TC-016 | Changelog recency | **FAIL — P2** |
-
-### Important scope limitations
-
-The source report identifies the following gaps, which should be considered when interpreting the green results:
-
-- **OAuth completion:** TC-003 checked provider presence; it did not complete the full OAuth round-trip.
-- **Magic-link completion:** TC-004 reached the CSRF confirmation page, but the final confirmation click and post-authentication snapshot were not re-run in that session.
-- **Mutation/CRUD:** These scenarios were out of scope because the target environment was not marked safe to mutate.
-- **Accessibility:** No comprehensive axe-core or pa11y audit was run.
-- **Mobile:** The run used a desktop-default viewport and does not rule out mobile-specific regressions.
-
-The manually reported findings in this document are additional to the automated test cases; they should not be treated as failures already detected by the flow-runner.
+![Evidence for PUKU-QA-009: Discord community invitation is invalid](evidence/09-discord-invalid-invite.png)
 
 ---
 
-## Recommended remediation order
+<a id="puku-qa-010"></a>
 
-The order below prioritizes business impact and user-facing blockage. Reassess after engineering confirms the underlying implementation and release state.
+### PUKU-QA-010 — Authenticated Usage/profile area appears behind the public-site update
 
-### Phase 1 — Restore important user journeys
+**Recommended priority:** P2  
+**Area:** Account / authenticated UI
 
-1. **PUKU-QA-001:** Correct Team plan email routing to Sales and test every contact category.
-2. **PUKU-QA-008:** Restore a discoverable issue-reporting workflow.
-3. **PUKU-QA-002:** Replace the invalid Discord invitation with a verified active link.
+#### Observation
 
-### Phase 2 — Correct release and account information
+The Usage page shows account navigation for Usage, Settings, API keys, and Organization, plus plan/quota/activity states. The user reports that personal profile pages have not been updated. Values such as “Plan: None” and “0 of 0” may be account-specific and should not be declared incorrect without checking the test account.
 
-4. **PUKU-QA-005:** Resolve the homepage/changelog mismatch and rerun TC-016.
-5. **PUKU-QA-004:** Verify the homepage version/platform statement and improve text readability.
-6. **PUKU-QA-003:** Audit and update the personal profile/account pages.
+#### Expected behavior
 
-### Phase 3 — Align the visual system
+Authenticated account pages should follow the current design system and communicate empty, unconfigured, and active account states accurately.
 
-7. **PUKU-QA-006:** Replace the logo and computer illustration with transparent-background assets.
-8. **PUKU-QA-007:** Constrain the Puku Chat feature strip to the shared content grid.
-9. **PUKU-QA-009:** Update the Docs footer using the canonical shared component.
+#### Reproduction / verification
+
+Sign in and review Usage, Settings, API keys, Organization, and profile-related routes; compare navigation, typography, layout, and empty states with the approved current design.
+
+#### Recommended action
+
+Audit the complete account area and validate quota/plan values against backend data before changing the displayed values.
+
+#### Acceptance criteria
+
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
+
+**Screenshot evidence — 10-account-usage-page.png**
+
+![Evidence for PUKU-QA-010: Authenticated Usage/profile area appears behind the public-site update](evidence/10-account-usage-page.png)
 
 ---
 
-## Regression and verification checklist
+<a id="puku-qa-011"></a>
 
-Use this checklist to close findings consistently and preserve the fixes.
+### PUKU-QA-011 — Homepage platform/version text is difficult to read and needs source verification
 
-- [ ] **Contact routing:** Verify each contact category's generated email recipient, subject, and body.
-- [ ] **Discord link:** Open the invitation and confirm it reaches the intended community.
-- [ ] **Account pages:** Review Usage, Settings, API keys, Organization, and profile/navigation behavior.
-- [ ] **Homepage copy:** Verify version, release status, platform support, contrast, and text wrapping.
-- [ ] **Release consistency:** Confirm homepage badge, changelog entry, version, date, and feature description; rerun TC-016.
-- [ ] **Transparent assets:** Inspect logo and computer artwork on both dark and light backgrounds.
-- [ ] **Layout consistency:** Check the Puku Chat feature strip at desktop, tablet, and mobile widths.
-- [ ] **Issue reporting:** Complete a report submission or open the intended reporting workflow and verify feedback to the user.
-- [ ] **Docs footer:** Verify links, shared styling, theme behavior, legal copy, and responsive presentation.
-- [ ] **Broader regression:** Rerun the existing sanity suite and document any skipped or partially completed steps.
+**Recommended priority:** P2  
+**Area:** Homepage / accessibility / release content
 
-## Evidence and source material
+#### Observation
 
-- **Primary target:** [https://web.dev.puku.sh/](https://web.dev.puku.sh/)
-- **Automated flow-runner report:** [runs/REPORT.md](https://github.com/Musfique-Ahmed/puku-qa/blob/main/runs/REPORT.md)
-- **TC-016 detailed result:** [runs/TC-016/result.md](https://github.com/Musfique-Ahmed/puku-qa/blob/main/runs/TC-016/result.md)
-- **Pages represented in supplied screenshots:** `/docs`, `/contact`, `/usage`, `/`, `/changelog`, and `/puku-chat`
-- **Evidence basis:** Screenshots and issue descriptions supplied during this QA conversation, plus the linked automated run report.
+The screenshot shows the supporting line “Version 2.8 for Apple Silicon · Windows and Linux in beta” over a decorative dot pattern. It is reported as inaccurate and difficult to read.
 
-### Reporting conventions
+#### Expected behavior
 
-- **P1:** Important user journey or business workflow is impaired; prioritize prompt remediation.
-- **P2:** Meaningful content, navigation, release-communication, or supportability issue; schedule for the next appropriate fix cycle.
-- **P3:** Visual consistency, polish, or lower-impact content issue; address as part of the relevant design/content pass.
+Release/platform claims should match approved release metadata, and supporting text should meet contrast and readability expectations across themes and viewport sizes.
 
-These priorities are recommendations for triage, not a substitute for the team's incident/severity policy.
+#### Reproduction / verification
 
+Inspect the homepage release line in light/dark themes and at desktop/mobile widths; confirm the statement with the release owner.
 
+#### Recommended action
 
-## Complete screenshot evidence gallery
+Verify platform status; increase contrast and separate small text from busy artwork. Target WCAG 2.2 AA contrast where applicable.
 
-All **16 screenshots supplied in the conversation** are included in this package. Images are stored as local PNG files under `evidence/` and linked with relative paths, so the report remains readable after the ZIP is extracted. The first eight images above are embedded in the relevant findings where the relationship is clear; the full gallery below preserves every submitted screenshot for review.
+#### Acceptance criteria
 
-### Evidence 01 — Footer/navigation content screenshot
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
-![Evidence 01: Footer/navigation content screenshot](evidence/01-footer-navigation-content.png)
+**Screenshot evidence — 11-homepage-release-text.png**
 
-### Evidence 02 — Payment/checkout state screenshot
+![Evidence for PUKU-QA-011: Homepage platform/version text is difficult to read and needs source verification](evidence/11-homepage-release-text.png)
 
-![Evidence 02: Payment/checkout state screenshot](evidence/02-payment-checkout-state.png)
+---
 
-### Evidence 03 — Puku Support page screenshot
+<a id="puku-qa-012"></a>
 
-![Evidence 03: Puku Support page screenshot](evidence/03-puku-support-page.png)
+### PUKU-QA-012 — Homepage “NEW Puku 2.8” badge needs a valid, matching release destination
 
-### Evidence 04 — Product overview and cards screenshot
+**Recommended priority:** P2  
+**Area:** Homepage / release navigation
 
-![Evidence 04: Product overview and cards screenshot](evidence/04-product-overview-cards.png)
+#### Observation
 
-### Evidence 05 — Pricing plans screenshot
+The homepage badge advertises “NEW Puku 2.8 · subagents in parallel.” A visitor following the badge should land on release information that substantiates this version and feature claim.
 
-![Evidence 05: Pricing plans screenshot](evidence/05-pricing-plans.png)
+#### Expected behavior
 
-### Evidence 06 — Homepage/footer links screenshot
+The badge must link to a published and matching release entry, or be updated to point to the actual latest release.
 
-![Evidence 06: Homepage/footer links screenshot](evidence/06-homepage-footer-links.png)
+#### Reproduction / verification
 
-### Evidence 07 — Docs page footer screenshot
+Click the badge and compare the destination’s product, version, release date, and feature details with the homepage claim.
 
-![Evidence 07: Docs page footer screenshot](evidence/07-docs-footer-outdated.png)
+#### Recommended action
 
-### Evidence 08 — Contact page form and contact routes screenshot
+Align the badge target and copy with the approved release source of truth.
 
-![Evidence 08: Contact page form and contact routes screenshot](evidence/08-contact-page-form.png)
+#### Acceptance criteria
 
-### Evidence 09 — Discord invitation invalid-state screenshot
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
 
-![Evidence 09: Discord invitation invalid-state screenshot](evidence/09-discord-invalid-invite.png)
+**Screenshot evidence — 12-homepage-new-release-badge.png**
 
-### Evidence 10 — Personal account Usage page screenshot
+![Evidence for PUKU-QA-012: Homepage “NEW Puku 2.8” badge needs a valid, matching release destination](evidence/12-homepage-new-release-badge.png)
 
-![Evidence 10: Personal account Usage page screenshot](evidence/10-account-usage-page.png)
+---
 
-### Evidence 11 — Homepage release/platform text screenshot
+<a id="puku-qa-013"></a>
 
-![Evidence 11: Homepage release/platform text screenshot](evidence/11-homepage-release-text.png)
+### PUKU-QA-013 — Changelog does not show a matching Puku Editor 2.8.0 release
 
-### Evidence 12 — Homepage Puku 2.8 badge screenshot
+**Recommended priority:** P2  
+**Area:** Changelog / release consistency
 
-![Evidence 12: Homepage Puku 2.8 badge screenshot](evidence/12-homepage-new-release-badge.png)
+#### Observation
 
-### Evidence 13 — Changelog latest CLI release screenshot
+The supplied changelog screenshot shows Puku CLI v1.8.66 dated Oct 7, 2026 as the most recent listed entry. The flow-runner report identifies no Puku Editor 2.8.0 entry matching the homepage badge.
 
-![Evidence 13: Changelog latest CLI release screenshot](evidence/13-changelog-latest-release.png)
+#### Expected behavior
 
-### Evidence 14 — Puku Chat feature preview screenshot
+The changelog should include the release promoted by the homepage, or the homepage should promote the actual latest release.
 
-![Evidence 14: Puku Chat feature preview screenshot](evidence/14-puku-chat-feature-preview.png)
+#### Reproduction / verification
 
-### Evidence 15 — Puku Chat logo and computer artwork screenshot
+Open /changelog and inspect the newest entry; compare with the homepage badge and release metadata. See the flow-runner report: https://github.com/Musfique-Ahmed/puku-qa/blob/main/runs/REPORT.md
 
-![Evidence 15: Puku Chat logo and computer artwork screenshot](evidence/15-puku-chat-logo-and-computer-artwork.png)
+#### Recommended action
 
-### Evidence 16 — Puku Chat full-width feature strip screenshot
+Publish the missing Editor release entry if it is real, otherwise correct the homepage claim. Automated check: badge destination resolves to matching release metadata.
 
-![Evidence 16: Puku Chat full-width feature strip screenshot](evidence/16-puku-chat-full-width-feature-strip.png)
+#### Acceptance criteria
+
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
+
+**Screenshot evidence — 13-changelog-latest-release.png**
+
+![Evidence for PUKU-QA-013: Changelog does not show a matching Puku Editor 2.8.0 release](evidence/13-changelog-latest-release.png)
+
+---
+
+<a id="puku-qa-014"></a>
+
+### PUKU-QA-014 — Puku Chat feature preview uses a product mockup that needs accuracy review
+
+**Recommended priority:** P2  
+**Area:** Puku Chat / marketing visuals
+
+#### Observation
+
+The Puku Chat feature-preview section uses a product-interface image with Puku branding and a mock conversation. The supplied evidence flags the visual area for review. Verify the UI shown is current and not misleading before using it as product documentation/marketing.
+
+#### Expected behavior
+
+Feature imagery should represent the current product UI and should not contain mismatched logos, outdated controls, or demo details that could be mistaken for live functionality.
+
+#### Reproduction / verification
+
+Open /puku-chat and compare the preview against the current Chat product; check branding, labels, controls, and sample content.
+
+#### Recommended action
+
+Replace outdated or inaccurate mockups with approved current screenshots and add alt text.
+
+#### Acceptance criteria
+
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
+
+**Screenshot evidence — 14-puku-chat-feature-preview.png**
+
+![Evidence for PUKU-QA-014: Puku Chat feature preview uses a product mockup that needs accuracy review](evidence/14-puku-chat-feature-preview.png)
+
+---
+
+<a id="puku-qa-015"></a>
+
+### PUKU-QA-015 — Puku Chat logo and computer artwork should use transparent-background assets
+
+**Recommended priority:** P3  
+**Area:** Puku Chat / visual assets
+
+#### Observation
+
+The screenshot highlights the Puku wordmark and a computer illustration whose background appears as a solid light rectangle. The request is to use the Puku logo and computer image with their backgrounds removed.
+
+#### Expected behavior
+
+The logo and illustration should be supplied as transparent assets where they sit on the page background, preserving clean edges and consistent appearance in both themes.
+
+#### Reproduction / verification
+
+Inspect the Chat preview in light and dark themes and check whether the asset background creates a visible rectangular block.
+
+#### Recommended action
+
+Use approved transparent PNG/WebP/SVG assets, preserve correct logo proportions, and verify contrast and image rendering.
+
+#### Acceptance criteria
+
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
+
+**Screenshot evidence — 15-puku-chat-logo-and-computer-artwork.png**
+
+![Evidence for PUKU-QA-015: Puku Chat logo and computer artwork should use transparent-background assets](evidence/15-puku-chat-logo-and-computer-artwork.png)
+
+---
+
+<a id="puku-qa-016"></a>
+
+### PUKU-QA-016 — Puku Chat feature strip stretches full width and breaks site layout consistency
+
+**Recommended priority:** P3  
+**Area:** Puku Chat / layout consistency
+
+#### Observation
+
+The screenshot shows the section containing “Not used for training,” “Delete any time,” and “Shared projects” stretching across nearly the full viewport, unlike the narrower centered content sections above and below.
+
+#### Expected behavior
+
+Content sections should follow the site’s shared max-width, spacing, and responsive grid rules unless a full-bleed section is intentional.
+
+#### Reproduction / verification
+
+Open /puku-chat and compare the highlighted strip’s left/right edges with adjacent content containers at desktop and mobile widths.
+
+#### Recommended action
+
+Constrain the strip to the shared content container and standardize section padding, grid behavior, and responsive breakpoints.
+
+#### Acceptance criteria
+
+- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
+- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
+- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
+- Regression coverage is added for functional flows and navigation where feasible.
+
+**Screenshot evidence — 16-puku-chat-full-width-feature-strip.png**
+
+![Evidence for PUKU-QA-016: Puku Chat feature strip stretches full width and breaks site layout consistency](evidence/16-puku-chat-full-width-feature-strip.png)
+
+---
+
+### PUKU-QA-017 — Homepage and Pricing page show inconsistent currency values and team-plan currency availability
+
+**Recommended priority:** P2  
+**Area:** Pricing / currency presentation / plan comparison  
+**Status:** Requires pricing-source-of-truth confirmation
+
+#### Observation
+
+The homepage pricing section displays the Pro plan as **$20/month** with an adjacent local-currency value of **৳2,400/month**. The same homepage section displays the Team plan at **$40/seat/month**. On the Pricing page, the individual subscription view can display the Pro plan at **৳2,000/month** when BDT is selected, rather than the homepage’s ৳2,400 value. In addition, the Team-plan view does not expose a USD currency option in the supplied evidence, even though the homepage advertises the Team plan in USD.
+
+These differences make it difficult for customers to determine the authoritative price and compare individual and team subscriptions. The screenshots establish inconsistent displayed values/options; the intended prices and currency-conversion policy should be confirmed with the billing/pricing source of truth before changing amounts.
+
+#### Expected behavior
+
+- The homepage and Pricing page display the same approved price for each equivalent plan, billing interval, and currency.
+- If USD and BDT are supported, the currency selector behaves consistently for both individual and team plans, or the UI clearly explains any intentional restriction.
+- Team pricing clearly states whether the amount is per seat, per month, and which currency is being shown.
+- Currency conversion, rounding, and any localized pricing rules are applied consistently across all pricing surfaces.
+
+#### Reproduction / verification
+
+1. Open the homepage at `https://web.dev.puku.sh` and inspect the pricing section.
+2. Note the Pro plan’s `$20/month` and adjacent `৳2,400` value, and the Team plan’s `$40/seat/month` value.
+3. Open `https://web.dev.puku.sh/pricing`.
+4. Compare the Pro plan with BDT selected (reported as `৳2,000/month`) against the homepage’s BDT value.
+5. Switch to the Teams view and inspect the available currency options; verify whether USD can be selected and whether the displayed Team price matches the homepage’s `$40/seat/month` claim.
+6. Repeat after a hard refresh and at desktop/mobile widths to rule out stale client state or responsive-only rendering.
+
+#### Recommended action
+
+Use one authoritative pricing configuration for both homepage and Pricing page, including plan type, billing cadence, currency, localized amount, and per-seat semantics. Confirm the approved Pro BDT price and Team USD availability with the billing owner before updating the UI. Add a regression test covering the Individual/Teams and USD/BDT selector combinations.
+
+#### Acceptance criteria
+
+- [ ] The approved Pro price is identical across homepage and Pricing page for the same currency and billing cadence.
+- [ ] The Team plan’s USD availability is either implemented consistently or its intentional absence is explicitly communicated.
+- [ ] Team pricing clearly identifies currency and per-seat/per-month billing semantics.
+- [ ] Currency switching updates all applicable plan cards without stale or contradictory amounts.
+- [ ] Automated or manual regression coverage checks the homepage and Pricing page against the approved pricing configuration.
+
+**Screenshot evidence — 17-homepage-pricing-currency.png**
+
+![Homepage pricing section showing Pro at $20/month with ৳2,400 and Team at $40/seat/month](evidence/17-homepage-pricing-currency.png)
+
+**Related comparison evidence — 05-pricing-plans.png**
+
+![Pricing page plan cards for comparison with the homepage pricing display](evidence/05-pricing-plans.png)
+
+---
+
+## 3. Cross-cutting recommendations
+
+1. **Establish source-of-truth data** for product availability, prices, quotas, platform support, and release versions; avoid maintaining conflicting hard-coded copies across pages.
+2. **Add functional link checks** for footer navigation, support resources, community invites, release badges, and changelog destinations. A successful HTTP response alone does not prove a Discord invite or a user workflow is valid.
+3. **Test conversion and contact workflows end to end.** Verify checkout success/failure recovery and contact-form recipient routing by category.
+4. **Use shared design-system components** for navigation, footer, content-width containers, plan grids, typography, and theme-aware assets.
+5. **Include responsive and accessibility checks:** keyboard operation, visible focus, readable text, contrast, alt text, reduced-motion behavior, and common viewport widths.
+6. **Treat account values carefully.** Confirm data and account state before changing apparent zero quotas, plan labels, or activity dates.
+
+## 4. Regression checklist
+
+- [ ] A valid paid-plan checkout completes and a failed payment presents a clear, recoverable state.
+- [ ] Team plan inquiries are addressed to `sales@puku.sh`; support inquiries are addressed to `support@puku.sh`.
+- [ ] Discord invitation opens the official Puku community.
+- [ ] Footer and support links resolve to intended, current destinations.
+- [ ] Pricing cards are coherent at desktop, tablet, and mobile widths; prices and included quotas are verified.
+- [ ] Homepage version/platform copy matches approved release metadata and remains readable.
+- [ ] Homepage release badge leads to a matching published release entry.
+- [ ] Changelog newest entries are accurate and discoverable.
+- [ ] Account pages use the approved design system and accurately communicate plan/quota states.
+- [ ] Puku Chat artwork has clean/transparent backgrounds where required and matches the current product UI.
+- [ ] Puku Chat feature strip follows the site’s intended max-width and responsive layout.
+- [ ] All evidence images render from relative paths in the Markdown preview, including the supplemental pricing capture.
+
+## 5. Source and scope notes
+
+- The supplied screenshots are included in `evidence/` and embedded inline below the corresponding findings. The supplemental homepage pricing capture is included unmodified; the related Pricing-page screenshot is reused from the original evidence set.
+- Automated release-consistency reference: https://github.com/Musfique-Ahmed/puku-qa/blob/main/runs/REPORT.md
+- The flow-runner TC-016 report concerns the homepage “NEW Puku 2.8” badge versus the latest changelog entry (Puku CLI v1.8.66 dated 7 October 2026); it is captured in PUKU-QA-012 and PUKU-QA-013 as separate verification surfaces for the badge and changelog.
+- Severity is a triage recommendation based on apparent user impact, not a claim that a production incident has been confirmed.
 
 ---
 
 <div align="center">
-
-**End of report**
-
-*Prepared for engineering triage and QA follow-up.*
-
+**End of report** · Puku Website QA · 20 October 2026
 </div>

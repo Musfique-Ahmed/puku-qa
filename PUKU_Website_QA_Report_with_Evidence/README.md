@@ -1,18 +1,13 @@
-# Puku Website QA Report Package
+# Puku Website QA — Complete Evidence Package
 
-This package contains the full Markdown QA report and all 16 screenshot files uploaded in the QA conversation.
+This package contains the comprehensive Markdown QA report and all 16 original screenshots plus the supplemental pricing screenshot.
 
-## Contents
+## Files
+- `PUKU_Website_QA_Findings_Report.md` — 17 numbered findings, priorities, observations, expected behavior, reproduction/verification steps, recommended actions, acceptance criteria, regression checklist, and inline screenshot evidence.
+- `evidence/` — the 16 original PNG screenshots, copied without modification.
 
-- `PUKU_Website_QA_Findings_Report.md` — detailed findings, priorities, reproduction guidance, recommendations, acceptance criteria, automated flow-runner results, regression checklist, and an image gallery.
-- `evidence/` — all 16 original PNG screenshots, copied without recompression. The Markdown references these using relative paths, so images render in GitHub and common Markdown editors after extraction.
-
-## How to view
-
-1. Extract the ZIP while preserving the `evidence/` folder.
-2. Open `PUKU_Website_QA_Findings_Report.md` in VS Code or another Markdown editor with preview support.
-3. Keep the Markdown file and `evidence/` directory together; do not move the report on its own.
+## View the report
+Extract the ZIP and open `PUKU_Website_QA_Findings_Report.md` in VS Code or another Markdown viewer. Keep the `evidence/` directory beside the Markdown file so the relative image links resolve.
 
 ## Evidence integrity
-
-The evidence directory contains 16 PNGs copied from the uploaded screenshots. The report labels screenshots descriptively based on their visible content. Where an image's connection to a specific finding was not unambiguous, it is still preserved in the complete evidence gallery rather than being omitted.
+The report embeds all 16 PNGs using relative paths. Findings that require product-owner/source-of-truth confirmation are explicitly described as such rather than treating screenshot-only context as definitive backend proof.
