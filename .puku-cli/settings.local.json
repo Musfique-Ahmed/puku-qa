@@ -1,3 +1,11 @@
 {
-  "prefersReducedMotion": false
+  "enabledPlugins": {
+    "sentry@claude-plugins-official": true
+  },
+  "prefersReducedMotion": false,
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:skills.sh)"
+    ]
+  }
 }

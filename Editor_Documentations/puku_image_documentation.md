@@ -1,4 +1,4 @@
-# Image Upload
+ # Image Upload
 
 Seamlessly integrate visual content into your development workflow. Upload mockups, screenshots, wireframes, and architectural diagrams directly into Puku Editor to generate code, refactor UI, or debug visual elements with context-aware AI.
 
