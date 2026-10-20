@@ -31,7 +31,7 @@ This report consolidates the 17 QA findings documented to date for the Puku webs
 
 | ID | Finding | Priority | Evidence |
 |---|---|:---:|---|
-| PUKU-QA-001 | Footer navigation content needs verification | P3 | [`01-footer-navigation-content.png`](evidence/01-footer-navigation-content.png) |
+| PUKU-QA-001 | Footer Design Causes Text Readability Issues | P2 | [`01-footer-navigation-content.png`](evidence/01-footer-navigation-content.png) |
 | PUKU-QA-002 | Payment checkout flow fails to complete | P1 | [`02-payment-checkout-state.png`](evidence/02-payment-checkout-state.png) |
 | PUKU-QA-003 | Support page content and help paths need an end-to-end audit | P2 | [`03-puku-support-page.png`](evidence/03-puku-support-page.png) |
 | PUKU-QA-004 | Product overview cards need content and consistency validation | P2 | [`04-product-overview-cards.png`](evidence/04-product-overview-cards.png) |
@@ -55,35 +55,37 @@ This report consolidates the 17 QA findings documented to date for the Puku webs
 
 <a id="puku-qa-001"></a>
 
-### PUKU-QA-001 — Footer navigation content needs verification
+### PUKU-QA-001 — Footer Design Causes Text Readability Issues
 
-**Recommended priority:** P3  
-**Area:** Global footer / information architecture
+**Recommended priority:** P2  
+**Area:** Global footer / UI design / readability
 
-#### Observation
+## Observation
 
-The supplied footer screenshot shows Product, Resources, Company and Legal link groups. Several entries appear to be planned or placeholder items (for example “Careers · soon”), and the footer content should be reconciled with currently available pages.
+The footer section's design makes the text difficult to read. The footer content is displayed within a visually crowded layout, with insufficient separation between the footer and the surrounding content. This negatively affects text readability and the overall visual experience.
 
-#### Expected behavior
+## Expected Behavior
 
-Confirm every footer link has a valid destination and that unavailable pages are explicitly labeled or omitted. Verify product and resource destinations, terms/privacy/refunds, and status/community links.
+The footer should have a clear visual structure, adequate spacing, and sufficient contrast to ensure that all text is easily readable. Its layout should feel consistent with the rest of the website and remain visually distinct from adjacent sections.
 
-#### Reproduction / verification
+## Reproduction Steps
 
-Open each footer link from the homepage and verify destination, availability, and label accuracy.
+1. Open the Puku website.
+2. Navigate to the bottom of the homepage or the `/puku-chat` page.
+3. Observe the footer section and assess the readability of its text.
 
-#### Recommended action
+## Recommended Action
 
-Footer link inventory and destinations are not fully aligned with a production-ready navigation experience.
+Improve the footer's visual design by refining spacing, section boundaries, text contrast, and typography. Ensure that footer content is clearly separated from adjacent sections and remains easy to read across different screen sizes.
 
-#### Acceptance criteria
+## Acceptance Criteria
 
-- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
-- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
-- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
-- Regression coverage is added for functional flows and navigation where feasible.
+- Footer text is clearly readable without visual obstruction.
+- Adequate spacing separates the footer from adjacent sections.
+- Text contrast and typography support comfortable reading.
+- The footer layout remains consistent and responsive across desktop and mobile devices.
 
-**Screenshot evidence — 01-footer-navigation-content.png**
+**Evidence:** The existing screenshot remains unchanged.
 
 ![Evidence for PUKU-QA-001: Footer navigation content needs verification](evidence/01-footer-navigation-content.png)
 
