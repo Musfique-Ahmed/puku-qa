@@ -32,8 +32,8 @@ This report consolidates the 17 QA findings documented to date for the Puku webs
 | ID | Finding | Priority | Evidence |
 |---|---|:---:|---|
 | PUKU-QA-001 | Footer Design Causes Text Readability Issues | P2 | [`01-footer-navigation-content.png`](evidence/01-footer-navigation-content.png) |
-| PUKU-QA-002 | Payment checkout flow fails to complete | P1 | [`02-payment-checkout-state.png`](evidence/02-payment-checkout-state.png) |
-| PUKU-QA-003 | Support page content and help paths need an end-to-end audit | P2 | [`03-puku-support-page.png`](evidence/03-puku-support-page.png) |
+| PUKU-QA-002 | Payment Failure Page Has Insufficient Content | P2 | [`02-payment-checkout-state.png`](evidence/02-payment-checkout-state.png) |
+| PUKU-QA-003 | Payment Failure Page Redirects to the Wrong Support Destination | P2 | [`03-puku-support-page.png`](evidence/03-puku-support-page.png) |
 | PUKU-QA-004 | Product overview cards need content and consistency validation | P2 | [`04-product-overview-cards.png`](evidence/04-product-overview-cards.png) |
 | PUKU-QA-005 | Pricing page layout leaves the Max plan isolated below the main plan row | P2 | [`05-pricing-plans.png`](evidence/05-pricing-plans.png) |
 | PUKU-QA-006 | Homepage footer highlights product and pricing labels inconsistently | P2 | [`06-homepage-footer-links.png`](evidence/06-homepage-footer-links.png) |
@@ -93,71 +93,76 @@ Improve the footer's visual design by refining spacing, section boundaries, text
 
 <a id="puku-qa-002"></a>
 
-### PUKU-QA-002 — Payment checkout flow fails to complete
+### PUKU-QA-002 — Payment Failure Page Has Insufficient Content
 
-**Recommended priority:** P1  
-**Area:** Pricing / payment
+**Recommended priority:** P2  
+**Area:** Pricing / Payment / Error-state UI
 
 #### Observation
 
-The checkout screenshot displays a “Payment could not finish” error state. The screenshot establishes a failed checkout attempt, but does not identify the underlying payment-provider or account cause.
+The payment failure page displays a “Payment could not finish” message but otherwise appears largely empty. The page lacks sufficient explanatory content, visual structure, and clear next steps, resulting in a poor user experience.
 
 #### Expected behavior
 
-A valid purchase attempt should either complete successfully with a clear confirmation or provide a recoverable, actionable error without leaving the user uncertain about payment status.
+The payment failure page should provide a clear explanation of the unsuccessful payment state, maintain consistent website styling, and offer actionable options such as retrying the payment or returning to the pricing page.
 
 #### Reproduction / verification
 
-Open Pricing, choose a paid package, initiate checkout, and reproduce the error with a supported test account/payment method. Capture browser console and provider logs.
+1. Open the Pricing page.
+2. Initiate a paid-plan checkout.
+3. Navigate to the payment failure page.
+4. Observe the lack of meaningful content and actionable navigation.
 
 #### Recommended action
 
-Checkout failure blocks conversion and should be investigated before lower-priority visual polish.
+Improve the payment failure page layout by adding appropriate explanatory text, consistent visual elements, and clear recovery actions. Ensure the page feels complete and aligned with the overall website design.
 
 #### Acceptance criteria
 
-- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
-- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
-- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
-- Regression coverage is added for functional flows and navigation where feasible.
+- The page displays a clear, user-friendly message explaining the payment failure state.
+- Appropriate next steps, such as retrying checkout or returning to Pricing, are available.
+- The page uses consistent typography, spacing, and visual styling.
+- The layout remains usable on desktop and mobile viewports.
 
-**Screenshot evidence — 02-payment-checkout-state.png**
-
+#### Screenshot evidence
 ![Evidence for PUKU-QA-002: Payment checkout flow fails to complete](evidence/02-payment-checkout-state.png)
 
 ---
 
 <a id="puku-qa-003"></a>
 
-### PUKU-QA-003 — Support page content and help paths need an end-to-end audit
+### PUKU-QA-003 — Payment Failure Page Redirects to the Wrong Support Destination
 
 **Recommended priority:** P2  
-**Area:** Support / help content
+**Area:** Payment / Error-state navigation
 
 #### Observation
 
-The supplied Puku Support page contains a long-form support/help experience. This evidence is included as a separate review item because support is a primary recovery path when users encounter product or account problems. The screenshot alone does not prove every listed path is broken.
+On the payment failure page, clicking the **Contact Support** button redirects users to the Support page instead of the Contact page. Users who need assistance with a failed payment should be directed to the dedicated Contact page to reach the appropriate support channel.
 
 #### Expected behavior
 
-Support content should be accurate, scannable, and provide working routes for contacting support, troubleshooting, and relevant account or billing needs.
+The **Contact Support** button should redirect users to the Contact page, providing a direct path to request assistance with payment-related issues.
 
 #### Reproduction / verification
 
-Open the Support page; test each visible internal/external link and confirm the guidance matches current product behavior.
+1. Open the Pricing page.
+2. Initiate a paid-plan checkout and navigate to the payment failure page.
+3. Click the **Contact Support** button.
+4. Observe that the user is redirected to the Support page instead of the Contact page.
 
 #### Recommended action
 
-Validate help content and all contact/troubleshooting destinations; update stale or non-actionable guidance.
+Update the **Contact Support** button's destination to the Contact page and verify that the navigation works correctly.
 
 #### Acceptance criteria
 
-- The observed issue is either corrected or documented as expected behavior with an explicit rationale.
-- Relevant links, labels, prices, plan limits, product claims, and release details are verified against the appropriate source of truth.
-- The behavior is rechecked at desktop and mobile viewport sizes where applicable.
-- Regression coverage is added for functional flows and navigation where feasible.
+- The **Contact Support** button redirects to the correct Contact page.
+- The Contact page provides a clear route for users to request assistance.
+- The redirect works correctly on desktop and mobile viewports.
+- No unrelated navigation or payment flows are affected.
 
-**Screenshot evidence — 03-puku-support-page.png**
+**Screenshot evidence — `03-puku-support-page.png`**
 
 ![Evidence for PUKU-QA-003: Support page content and help paths need an end-to-end audit](evidence/03-puku-support-page.png)
 
